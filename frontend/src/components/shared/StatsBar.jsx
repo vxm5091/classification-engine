@@ -22,6 +22,7 @@ export default function StatsBar() {
 
   const byStatus = data.by_review_status || {};
   const byConf = data.by_confidence || {};
+  const byMethod = data.by_method || {};
 
   return (
     <div className="mb-4 flex flex-wrap items-center justify-start gap-2 divide-x divide-gray-200 rounded-lg border border-gray-200 bg-white py-3">
@@ -42,6 +43,11 @@ export default function StatsBar() {
         color="text-yellow-600"
       />
       <Stat label="Low Conf." value={byConf.Low || 0} color="text-red-600" />
+      <Stat
+        label="Unclassified"
+        value={byMethod.Unclassified || 0}
+        color="text-orange-600"
+      />
       <Stat
         label="Flagged"
         value={byStatus.Flagged || 0}

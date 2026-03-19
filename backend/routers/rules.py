@@ -3,10 +3,25 @@ from sqlalchemy import func
 from sqlalchemy.orm import Session
 
 from backend.database import get_db
-from backend.models import ClassificationRule, Transaction
+from backend.models import ClassificationRule, GLCode, Transaction, Vendor, VendorService
 from backend.schemas import RuleOut, RuleCreate, RuleUpdate
 
 router = APIRouter(tags=["rules"])
+
+
+def _enrich_rule(db: Session, rule_out: RuleOut) -> RuleOut:
+    if rule_out.vendor_id:
+        vendor = db.query(Vendor).filter(Vendor.vendor_id == rule_out.vendor_id).first()
+        if vendor:
+            rule_out.vendor_name = vendor.vendor_name
+    if rule_out.service_id:
+        service = db.query(VendorService).filter(VendorService.service_id == rule_out.service_id).first()
+        if service:
+            rule_out.service_name = service.service_name
+    gl = db.query(GLCode).filter(GLCode.gl_code == rule_out.gl_code, GLCode.gl_level == 3).first()
+    if gl:
+        rule_out.gl_class = gl.gl_class
+    return rule_out
 
 
 @router.get("/rules", response_model=list[RuleOut])
@@ -33,7 +48,7 @@ def list_rules(db: Session = Depends(get_db)):
     for rule, match_count in rows:
         out = RuleOut.model_validate(rule)
         out.match_count = match_count
-        result.append(out)
+        result.append(_enrich_rule(db, out))
     return result
 
 
@@ -47,6 +62,7 @@ def create_rule(body: RuleCreate, db: Session = Depends(get_db)):
         time_of_month_start=body.time_of_month_start,
         time_of_month_end=body.time_of_month_end,
         gl_code=body.gl_code,
+        reasoning=body.reasoning,
         created_by=body.user_id,
     )
     db.add(rule)
@@ -55,7 +71,7 @@ def create_rule(body: RuleCreate, db: Session = Depends(get_db)):
 
     out = RuleOut.model_validate(rule)
     out.match_count = 0
-    return out
+    return _enrich_rule(db, out)
 
 
 @router.put("/rules/{rule_id}", response_model=RuleOut)
@@ -80,7 +96,7 @@ def update_rule(rule_id: int, body: RuleUpdate, db: Session = Depends(get_db)):
 
     out = RuleOut.model_validate(rule)
     out.match_count = match_count
-    return out
+    return _enrich_rule(db, out)
 
 
 @router.post("/rules/{rule_id}/deactivate", response_model=RuleOut)
@@ -101,4 +117,4 @@ def deactivate_rule(rule_id: int, db: Session = Depends(get_db)):
 
     out = RuleOut.model_validate(rule)
     out.match_count = match_count
-    return out
+    return _enrich_rule(db, out)

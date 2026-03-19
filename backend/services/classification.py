@@ -5,8 +5,8 @@ Steps:
 1. Detect non-expense transactions
 2. Run vendor resolution (cache-first, LLM fallback)
 3. Run deterministic rule matching
-4. Run LLM inference for unmatched transactions
-5. Return summary stats
+4. For Medium confidence (rule conflicts), call LLM conflict advisor
+5. Unmatched transactions → Unclassified (gl_code=NULL, confidence=Low)
 """
 
 import logging
@@ -19,7 +19,7 @@ from backend.models import Transaction
 from backend.services.vendor_cache import normalise_pattern
 from backend.services.vendor_resolution import resolve_vendors
 from backend.services.rule_engine import classify_deterministic, load_active_rules
-from backend.services.llm_classifier import classify_with_llm
+from backend.services.llm_conflict_advisor import advise_on_conflicts
 
 logger = logging.getLogger(__name__)
 
@@ -33,9 +33,9 @@ NON_EXPENSE_KEYWORDS = [
 class ClassificationSummary:
     total: int = 0
     non_expense: int = 0
+    pre_classified: int = 0
     rule_matched: int = 0
-    llm_classified: int = 0
-    flagged: int = 0
+    medium_confidence: int = 0
     unclassified: int = 0
     errors: list[str] = field(default_factory=list)
 
@@ -56,24 +56,52 @@ def _apply_non_expense(txn: Transaction) -> None:
     txn.review_status = "Approved"
 
 
+def _format_rule_reasoning(rule) -> str:
+    """Build a human-readable summary of the rule that matched."""
+    parts = [f"Rule R-{rule.rule_id}"]
+    if rule.vendor_id:
+        parts.append(f"vendor={rule.vendor_id}")
+    if rule.service_id:
+        parts.append(f"service={rule.service_id}")
+    if rule.amount_min is not None or rule.amount_max is not None:
+        lo = f"${rule.amount_min}" if rule.amount_min is not None else "any"
+        hi = f"${rule.amount_max}" if rule.amount_max is not None else "any"
+        parts.append(f"amount={lo}–{hi}")
+    if rule.time_of_month_start is not None:
+        parts.append(f"day={rule.time_of_month_start}–{rule.time_of_month_end}")
+    parts.append(f"→ GL {rule.gl_code}")
+    return " | ".join(parts)
+
+
 def _apply_rule_result(txn: Transaction, result) -> None:
     """Apply a deterministic rule match result to a transaction."""
     txn.gl_code = result.gl_code
     txn.confidence = result.confidence
     txn.method = "Rule Match"
     txn.rule_id = result.rule_id
-    txn.reasoning = f"Matched rule {result.rule_id}"
     if result.flagged:
+        conflict_detail = "; ".join(
+            _format_rule_reasoning(r) for r in (result.matching_rules or [])
+        )
+        txn.reasoning = f"RULE CONFLICT — multiple rules matched with different GL codes. {conflict_detail}. Most specific rule selected. Review recommended."
         txn.review_status = "Flagged"
-        txn.reasoning += " (multiple rules with conflicting GL codes)"
+    else:
+        rule_desc = _format_rule_reasoning(result.matched_rule) if result.matched_rule else f"Rule R-{result.rule_id}"
+        parts = [f"Deterministic match: {rule_desc}"]
+        if result.matched_rule and getattr(result.matched_rule, "reasoning", None):
+            parts.append(f"\n\nRule Justification: {result.matched_rule.reasoning}")
+        txn.reasoning = "".join(parts)
+        txn.review_status = "Unreviewed"
 
 
-def _apply_llm_result(txn: Transaction, llm_item: dict) -> None:
-    """Apply an LLM classification result to a transaction."""
-    txn.gl_code = llm_item.get("gl_code")
-    txn.confidence = llm_item.get("confidence", "Low")
-    txn.method = "LLM Inference"
-    txn.reasoning = llm_item.get("reasoning", "")
+def _apply_unclassified(txn: Transaction) -> None:
+    """Mark a transaction as unclassified (no rule matched)."""
+    txn.gl_code = None
+    txn.confidence = "Low"
+    txn.method = "Unclassified"
+    txn.rule_id = None
+    txn.reasoning = "No classification rule matched this transaction."
+    txn.review_status = "Flagged"
 
 
 def classify_transactions(
@@ -115,9 +143,7 @@ def classify_transactions(
         logger.error("Vendor resolution failed: %s", str(e)[:200])
         summary.errors.append(f"Vendor resolution error: {e}")
         vendor_map = {}
-        # Continue — transactions will still attempt rule/LLM matching without vendor info
 
-    # Apply vendor info to transactions
     for txn in expense_txns:
         pattern = normalise_pattern(txn.raw_description)
         info = vendor_map.get(pattern)
@@ -129,61 +155,46 @@ def classify_transactions(
             txn.country = info.get("country")
 
     # ------------------------------------------------------------------
-    # Step 3: Deterministic rule matching
+    # Step 3: Deterministic rule matching (skip pre-classified)
     # ------------------------------------------------------------------
     rules = load_active_rules(db)
-    needs_llm: list[Transaction] = []
+    conflict_items: list[dict] = []
 
     for txn in expense_txns:
+        if txn.method == "Pre-classified" and txn.gl_code is not None:
+            summary.pre_classified += 1
+            continue
+
         result = classify_deterministic(txn, rules)
         if result is not None:
             _apply_rule_result(txn, result)
             summary.rule_matched += 1
             if result.flagged:
-                summary.flagged += 1
+                summary.medium_confidence += 1
+                conflict_items.append({
+                    "transaction": txn,
+                    "matching_rules": result.matching_rules or [],
+                })
         else:
-            needs_llm.append(txn)
+            _apply_unclassified(txn)
+            summary.unclassified += 1
 
     # ------------------------------------------------------------------
-    # Step 4: LLM inference for unmatched transactions (batched)
+    # Step 4: Conflict advisory (Medium confidence transactions)
     # ------------------------------------------------------------------
-    BATCH_SIZE = 30  # Keep batches small enough for reliable JSON output
-
-    if needs_llm:
-        for batch_start in range(0, len(needs_llm), BATCH_SIZE):
-            batch = needs_llm[batch_start : batch_start + BATCH_SIZE]
-            try:
-                llm_results = classify_with_llm(db, batch)
-                # Build lookup by transaction_id
-                llm_by_id = {str(r["transaction_id"]): r for r in llm_results}
-
-                for txn in batch:
-                    llm_item = llm_by_id.get(txn.transaction_id)
-                    if llm_item and llm_item.get("gl_code") is not None:
-                        _apply_llm_result(txn, llm_item)
-                        summary.llm_classified += 1
-                    elif llm_item:
-                        # LLM returned null gl_code
-                        _apply_llm_result(txn, llm_item)
-                        txn.review_status = "Flagged"
-                        summary.unclassified += 1
-                    else:
-                        # LLM did not return a result for this transaction
-                        txn.method = "LLM Inference"
-                        txn.confidence = "Low"
-                        txn.reasoning = "LLM did not return a classification"
-                        txn.review_status = "Flagged"
-                        summary.unclassified += 1
-            except Exception as e:
-                logger.error("LLM classification failed for batch: %s", e)
-                summary.errors.append(f"LLM classification error: {e}")
-                # Mark all transactions in this failed batch
-                for txn in batch:
-                    txn.method = "LLM Inference"
-                    txn.confidence = "Low"
-                    txn.reasoning = f"Classification failed: {e}"
-                    txn.review_status = "Flagged"
-                summary.unclassified += len(batch)
+    if conflict_items:
+        try:
+            advisory_map = advise_on_conflicts(db, conflict_items)
+            for item in conflict_items:
+                txn = item["transaction"]
+                advisory = advisory_map.get(txn.transaction_id)
+                if advisory:
+                    txn.reasoning = (
+                        txn.reasoning + f"\n\nLLM Advisory: {advisory['advisory']}"
+                    )
+        except Exception as e:
+            logger.error("Conflict advisor failed: %s", e)
+            summary.errors.append(f"Conflict advisor error: {e}")
 
     db.flush()
     return summary

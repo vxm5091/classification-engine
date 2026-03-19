@@ -4,20 +4,29 @@ import re
 from datetime import datetime
 from decimal import Decimal, InvalidOperation
 
-from fastapi import APIRouter, Depends, UploadFile, File
+from fastapi import APIRouter, Depends, UploadFile, File, Form
 from sqlalchemy import func
 from sqlalchemy.orm import Session
 
 from backend.database import get_db
-from backend.models import Transaction
-from backend.schemas import ClassifyRequest, ClassifyResponse, UploadResponse
+from backend.models import Transaction, ClassificationRule
+from backend.schemas import (
+    ClassifyRequest,
+    ClassifyResponse,
+    UploadResponse,
+    SuggestRulesResponse,
+    RuleSuggestion,
+    AcceptSuggestionsRequest,
+    ReclassifyResponse,
+)
 from backend.services.classification import classify_transactions
+from backend.services.llm_rule_suggester import suggest_rules
 
 router = APIRouter(tags=["classify"])
 
 
 # ---------------------------------------------------------------------------
-# CSV parsing helpers (same logic as seed.py)
+# CSV parsing helpers
 # ---------------------------------------------------------------------------
 
 def _parse_amount(raw: str) -> Decimal | None:
@@ -25,7 +34,6 @@ def _parse_amount(raw: str) -> Decimal | None:
         return None
     s = raw.strip()
     negative = False
-    # Handle parenthetical negatives: ($X.XX) or $(X.XX)
     if ("(" in s) and s.endswith(")"):
         negative = True
         s = s.replace("(", "").replace(")", "")
@@ -48,20 +56,31 @@ def _parse_date(raw: str) -> datetime | None:
         return None
 
 
+def _latest_version_subquery(db: Session):
+    return (
+        db.query(
+            Transaction.transaction_id,
+            func.max(Transaction.version).label("max_version"),
+        )
+        .group_by(Transaction.transaction_id)
+        .subquery()
+    )
+
+
 # ---------------------------------------------------------------------------
 # Upload endpoint
 # ---------------------------------------------------------------------------
 
 @router.post("/upload-csv", response_model=UploadResponse)
-async def upload_csv(file: UploadFile = File(...), db: Session = Depends(get_db)):
+async def upload_csv(
+    file: UploadFile = File(...),
+    batch_label: str = Form(None),
+    db: Session = Depends(get_db),
+):
     """
     Upload a CSV file of transactions to ingest (but not yet classify).
-
-    Expected CSV columns: Date, Description, Amount
-    (Same format as classify.csv — no GL code column.)
     """
     content = await file.read()
-    # Try utf-8-sig first (handles BOM), then utf-8
     try:
         text = content.decode("utf-8-sig")
     except UnicodeDecodeError:
@@ -69,7 +88,6 @@ async def upload_csv(file: UploadFile = File(...), db: Session = Depends(get_db)
 
     reader = csv.reader(io.StringIO(text))
 
-    # Read header row
     header = next(reader, None)
     if not header:
         return UploadResponse(
@@ -77,24 +95,21 @@ async def upload_csv(file: UploadFile = File(...), db: Session = Depends(get_db)
             transactions_ingested=0,
             transactions_skipped=0,
             source_file=file.filename,
+            upload_batch=file.filename,
         )
 
-    # Normalise header names
     clean_header = [h.strip().lower() for h in header]
 
-    # Determine column indices
     date_idx = next((i for i, h in enumerate(clean_header) if "date" in h), 0)
     desc_idx = next((i for i, h in enumerate(clean_header) if "desc" in h), 1)
     amount_idx = next((i for i, h in enumerate(clean_header) if "amount" in h), 2)
 
-    # Check for GL code column (pre-classified CSV like classified.csv)
     gl_idx = next(
         (i for i, h in enumerate(clean_header) if "gl" in h or "assigned" in h),
         None,
     )
     has_gl_column = gl_idx is not None
 
-    # Figure out the next available UPL-xxx ID
     max_upl = (
         db.query(func.max(Transaction.transaction_id))
         .filter(Transaction.transaction_id.like("UPL-%"))
@@ -105,6 +120,11 @@ async def upload_csv(file: UploadFile = File(...), db: Session = Depends(get_db)
         m = re.search(r"UPL-(\d+)", max_upl)
         if m:
             start_num = int(m.group(1)) + 1
+
+    if batch_label:
+        batch_label = batch_label
+    else:
+        batch_label = f"{file.filename} ({datetime.now().strftime('%b %d, %Y %I:%M %p')})"
 
     ingested = 0
     skipped = 0
@@ -124,7 +144,6 @@ async def upload_csv(file: UploadFile = File(...), db: Session = Depends(get_db)
             skipped += 1
             continue
 
-        # Parse GL code if present
         gl_code = None
         if has_gl_column and gl_idx < len(row):
             gl_str = row[gl_idx].strip()
@@ -142,7 +161,8 @@ async def upload_csv(file: UploadFile = File(...), db: Session = Depends(get_db)
             raw_description=raw_desc,
             amount=amount,
             source_file=file.filename,
-            review_status="Approved" if gl_code else "Unreviewed",
+            upload_batch=batch_label,
+            review_status="Unreviewed",
             gl_code=gl_code,
             confidence="High" if gl_code else None,
             method="Pre-classified" if gl_code else None,
@@ -157,6 +177,7 @@ async def upload_csv(file: UploadFile = File(...), db: Session = Depends(get_db)
         transactions_ingested=ingested,
         transactions_skipped=skipped,
         source_file=file.filename,
+        upload_batch=batch_label,
     )
 
 
@@ -166,15 +187,15 @@ async def upload_csv(file: UploadFile = File(...), db: Session = Depends(get_db)
 
 @router.post("/classify", response_model=ClassifyResponse)
 def run_classification(body: ClassifyRequest, db: Session = Depends(get_db)):
-    """Trigger classification pipeline on unclassified transactions."""
-    latest_version = (
-        db.query(
-            Transaction.transaction_id,
-            func.max(Transaction.version).label("max_version"),
-        )
-        .group_by(Transaction.transaction_id)
-        .subquery()
-    )
+    """
+    Trigger classification pipeline on transactions that need processing.
+    Includes transactions missing vendor info OR missing GL codes.
+    Pre-classified transactions (with GL codes from CSV) get vendor resolution
+    but keep their existing GL code.
+    """
+    latest_version = _latest_version_subquery(db)
+
+    from sqlalchemy import or_
 
     query = (
         db.query(Transaction)
@@ -183,8 +204,14 @@ def run_classification(body: ClassifyRequest, db: Session = Depends(get_db)):
             (Transaction.transaction_id == latest_version.c.transaction_id)
             & (Transaction.version == latest_version.c.max_version),
         )
-        .filter(Transaction.gl_code.is_(None))
-        .filter(Transaction.is_expense.is_(True))
+        .filter(Transaction.is_expense.isnot(False))
+        .filter(
+            or_(
+                Transaction.vendor_id.is_(None),
+                Transaction.gl_code.is_(None),
+                Transaction.method.is_(None),
+            )
+        )
     )
 
     if body.source_file:
@@ -197,8 +224,150 @@ def run_classification(body: ClassifyRequest, db: Session = Depends(get_db)):
 
     return ClassifyResponse(
         total=summary.total,
+        pre_classified=summary.pre_classified,
         classified_by_rule=summary.rule_matched,
-        classified_by_llm=summary.llm_classified,
-        unclassifiable=summary.unclassified,
+        medium_confidence=summary.medium_confidence,
+        unclassified=summary.unclassified,
         non_expense=summary.non_expense,
     )
+
+
+# ---------------------------------------------------------------------------
+# Rule Suggestion endpoints
+# ---------------------------------------------------------------------------
+
+@router.post("/suggest-rules", response_model=SuggestRulesResponse)
+def suggest_rules_endpoint(db: Session = Depends(get_db)):
+    """
+    Triggers the rule suggestion engine for all currently unclassified
+    (Low confidence, Unclassified method) transactions.
+    Returns suggested rules — does NOT create them.
+    """
+    latest_version = _latest_version_subquery(db)
+
+    unclassified = (
+        db.query(Transaction)
+        .join(
+            latest_version,
+            (Transaction.transaction_id == latest_version.c.transaction_id)
+            & (Transaction.version == latest_version.c.max_version),
+        )
+        .filter(Transaction.is_expense.is_(True))
+        .filter(
+            (Transaction.gl_code.is_(None))
+            | (Transaction.method == "Unclassified")
+        )
+        .all()
+    )
+
+    if not unclassified:
+        return SuggestRulesResponse(suggestions=[], total_unclassified=0)
+
+    raw_suggestions = suggest_rules(db, unclassified)
+
+    suggestions = [RuleSuggestion(**s) for s in raw_suggestions]
+
+    return SuggestRulesResponse(
+        suggestions=suggestions,
+        total_unclassified=len(unclassified),
+    )
+
+
+@router.post("/suggest-rules/accept")
+def accept_suggestions(body: AcceptSuggestionsRequest, db: Session = Depends(get_db)):
+    """
+    Creates classification rules from accepted suggestions.
+    """
+    created_ids = []
+    for s in body.suggestions:
+        rule = ClassificationRule(
+            vendor_id=s.get("vendor_id"),
+            service_id=s.get("service_id"),
+            amount_min=s.get("amount_min"),
+            amount_max=s.get("amount_max"),
+            gl_code=s["gl_code"],
+            reasoning=s.get("reasoning"),
+            is_active=True,
+            created_by=body.user_id,
+        )
+        db.add(rule)
+        db.flush()
+        created_ids.append(rule.rule_id)
+
+    db.commit()
+    return {"created_rule_ids": created_ids}
+
+
+# ---------------------------------------------------------------------------
+# Reclassify endpoint
+# ---------------------------------------------------------------------------
+
+@router.post("/reclassify", response_model=ReclassifyResponse)
+def reclassify_transactions(db: Session = Depends(get_db)):
+    """
+    Re-runs the rule engine on all unclassified (Low confidence) and
+    Flagged transactions using the current rules table.
+    """
+    latest_version = _latest_version_subquery(db)
+
+    candidates = (
+        db.query(Transaction)
+        .join(
+            latest_version,
+            (Transaction.transaction_id == latest_version.c.transaction_id)
+            & (Transaction.version == latest_version.c.max_version),
+        )
+        .filter(Transaction.is_expense.is_(True))
+        .filter(
+            (Transaction.method == "Unclassified")
+            | (Transaction.gl_code.is_(None))
+        )
+        .all()
+    )
+
+    if not candidates:
+        return ReclassifyResponse(
+            total_reclassified=0, newly_classified=0, still_unclassified=0
+        )
+
+    summary = classify_transactions(db, candidates)
+    db.commit()
+
+    return ReclassifyResponse(
+        total_reclassified=len(candidates),
+        newly_classified=summary.rule_matched,
+        still_unclassified=summary.unclassified,
+    )
+
+
+@router.post("/reclassify/{transaction_id}")
+def reclassify_single_transaction(transaction_id: str, db: Session = Depends(get_db)):
+    """Re-run the classification pipeline on a single transaction."""
+    from fastapi import HTTPException
+
+    txn = (
+        db.query(Transaction)
+        .filter(Transaction.transaction_id == transaction_id)
+        .order_by(Transaction.version.desc())
+        .first()
+    )
+    if not txn:
+        raise HTTPException(status_code=404, detail="Transaction not found")
+
+    txn.gl_code = None
+    txn.confidence = None
+    txn.method = None
+    txn.rule_id = None
+    txn.reasoning = None
+    txn.review_status = "Unreviewed"
+
+    summary = classify_transactions(db, [txn])
+    db.commit()
+
+    return {
+        "transaction_id": transaction_id,
+        "classified": summary.rule_matched > 0,
+        "gl_code": txn.gl_code,
+        "confidence": txn.confidence,
+        "method": txn.method,
+    }

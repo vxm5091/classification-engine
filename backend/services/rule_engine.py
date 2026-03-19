@@ -7,8 +7,8 @@ service_id, amount range, and time-of-month window.
 Confidence logic:
 - Single match                        -> High confidence
 - Multiple matches, same GL code      -> High confidence
-- Multiple matches, different GL codes -> Low confidence, Flagged
-- No match                            -> None (route to LLM)
+- Multiple matches, different GL codes -> Medium confidence, Flagged
+- No match                            -> None (Unclassified)
 """
 
 from dataclasses import dataclass
@@ -23,9 +23,11 @@ from backend.models import ClassificationRule, Transaction
 @dataclass
 class RuleMatchResult:
     gl_code: int
-    confidence: str          # "High" or "Low"
+    confidence: str          # "High" or "Medium"
     rule_id: Optional[int]   # The matched rule (first one, if multiple with same GL)
     flagged: bool            # True when multiple rules disagree on GL code
+    matched_rule: object = None  # The winning ClassificationRule object
+    matching_rules: list = None  # Populated on conflict for the conflict advisor
 
 
 def _rule_matches(rule: ClassificationRule, vendor_id: Optional[str],
@@ -55,6 +57,25 @@ def _rule_matches(rule: ClassificationRule, vendor_id: Optional[str],
     return True
 
 
+def _specificity_score(rule: ClassificationRule) -> int:
+    """Higher score = more specific rule. Used to pick the best match on conflicts."""
+    score = 0
+    if rule.vendor_id is not None:
+        score += 1
+    if rule.service_id is not None:
+        score += 2
+    if rule.amount_min is not None or rule.amount_max is not None:
+        score += 1
+    if rule.time_of_month_start is not None:
+        score += 1
+    return score
+
+
+def _most_specific_rule(rules: list[ClassificationRule]) -> ClassificationRule:
+    """Return the rule with the highest specificity score."""
+    return max(rules, key=_specificity_score)
+
+
 def classify_deterministic(
     transaction: Transaction,
     rules: list[ClassificationRule],
@@ -77,21 +98,23 @@ def classify_deterministic(
     gl_codes = {r.gl_code for r in matches}
 
     if len(gl_codes) == 1:
-        # Single GL code (one or many rules agree) -> High confidence
+        most_specific = _most_specific_rule(matches)
         return RuleMatchResult(
-            gl_code=matches[0].gl_code,
+            gl_code=most_specific.gl_code,
             confidence="High",
-            rule_id=matches[0].rule_id,
+            rule_id=most_specific.rule_id,
             flagged=False,
+            matched_rule=most_specific,
         )
     else:
-        # Multiple rules disagree on GL code -> Low confidence, flagged
-        # Pick the GL code from the first matching rule (arbitrary but deterministic)
+        most_specific = _most_specific_rule(matches)
         return RuleMatchResult(
-            gl_code=matches[0].gl_code,
-            confidence="Low",
-            rule_id=matches[0].rule_id,
+            gl_code=most_specific.gl_code,
+            confidence="Medium",
+            rule_id=most_specific.rule_id,
             flagged=True,
+            matched_rule=most_specific,
+            matching_rules=matches,
         )
 
 

@@ -7,6 +7,10 @@ import {
   flagTransaction,
   convertToRule,
   getStats,
+  suggestRules,
+  acceptSuggestions,
+  reclassifyAll,
+  reclassifySingle,
 } from "../api/client";
 
 export function useTransactions(params) {
@@ -71,5 +75,49 @@ export function useStats() {
   return useQuery({
     queryKey: ["stats"],
     queryFn: getStats,
+  });
+}
+
+export function useSuggestRules() {
+  const qc = useQueryClient();
+  return useMutation({
+    mutationFn: () => suggestRules(),
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ["stats"] });
+    },
+  });
+}
+
+export function useAcceptSuggestions() {
+  const qc = useQueryClient();
+  return useMutation({
+    mutationFn: (body) => acceptSuggestions(body),
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ["rules"] });
+      qc.invalidateQueries({ queryKey: ["transactions"] });
+      qc.invalidateQueries({ queryKey: ["stats"] });
+    },
+  });
+}
+
+export function useReclassifyAll() {
+  const qc = useQueryClient();
+  return useMutation({
+    mutationFn: () => reclassifyAll(),
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ["transactions"] });
+      qc.invalidateQueries({ queryKey: ["stats"] });
+    },
+  });
+}
+
+export function useReclassifySingle() {
+  const qc = useQueryClient();
+  return useMutation({
+    mutationFn: (transactionId) => reclassifySingle(transactionId),
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ["transactions"] });
+      qc.invalidateQueries({ queryKey: ["stats"] });
+    },
   });
 }

@@ -4,6 +4,31 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### LLM Rule Suggestion Engine (v2 Architecture)
+- **LLM removed from classification loop** — LLM no longer directly assigns GL codes. Every classification traces to a deterministic rule or manual user decision (`backend/services/classification.py`)
+- **Rule Suggestion Engine** — New `POST /suggest-rules` endpoint sends unclassified transactions to LLM, which returns suggested rules (not classifications) for the user to review/approve (`backend/services/llm_rule_suggester.py`, `backend/routers/classify.py`)
+- **Conflict Advisor** — New service generates advisory text for Medium confidence transactions (multiple rules with conflicting GL codes). Advisory is stored in the reasoning field but does NOT change the classification (`backend/services/llm_conflict_advisor.py`)
+- **Confidence score redefined** — High = single rule match; Medium = conflicting rules (was Low); Low = no rule match, unclassified (`backend/services/rule_engine.py`)
+- **Rule specificity scoring** — When multiple rules conflict, the most specific rule (vendor+service+amount > vendor+service > vendor) is selected (`backend/services/rule_engine.py`)
+- **Unclassified method** — Unmatched transactions now get `method='Unclassified'`, `gl_code=NULL`, `confidence='Low'`, `review_status='Flagged'` instead of being sent to LLM for classification (`backend/services/classification.py`)
+- **Accept & reclassify endpoints** — `POST /suggest-rules/accept` creates rules from approved suggestions; `POST /reclassify` re-runs rule engine on unclassified transactions (`backend/routers/classify.py`)
+- **Method constraint updated** — Added 'Unclassified', 'Pre-classified', 'Manual' to valid method values (`backend/models.py`)
+
+### Batch Identifier
+- **upload_batch column** — New `upload_batch` column on transactions stores "filename.csv (Mar 19, 2026 2:45 PM)" format for unique batch identification across re-uploads of the same file (`backend/models.py`)
+- **Batches endpoint** — `GET /transactions/batches` returns distinct upload_batch values ordered by most recent, with fallback to source_file for backward compatibility (`backend/routers/transactions.py`)
+- **Upload generates batch labels** — CSV upload endpoint now generates and stores batch labels with filename + timestamp (`backend/routers/classify.py`)
+- **Frontend uses upload_batch** — Batch filter dropdown now uses upload_batch values instead of source_file (`frontend/src/pages/TransactionsPage.jsx`, `frontend/src/api/client.js`)
+
+### Rule Suggestions UI
+- **RuleSuggestionsPanel** — New component shows suggested rules as cards with vendor, GL code, reasoning, affected transaction count, and approve/edit/reject actions. Supports approve all, create rules, and re-classify flow (`frontend/src/components/transactions/RuleSuggestionsPanel.jsx`)
+- **3-step upload flow** — Upload → Classify → Suggest Rules (if unclassified exist). StagedFileCard updated with color-coded result summary showing High/Medium/Low counts (`frontend/src/pages/TransactionsPage.jsx`)
+- **Unclassified banner** — Amber banner appears when unclassified transactions exist with "Suggest Rules" button (`frontend/src/pages/TransactionsPage.jsx`)
+- **GL Code column** — Shows "Unclassified" chip for null GL codes on unclassified transactions (`frontend/src/pages/TransactionsPage.jsx`)
+- **Advisory display** — Medium confidence transaction detail shows LLM advisory text in a distinct sky-blue callout, separate from rule conflict reasoning (`frontend/src/pages/TransactionsPage.jsx`)
+- **Method column styling** — Color-coded method values (Rule Match, LLM Inference, Pre-classified, Unclassified, etc.) (`frontend/src/pages/TransactionsPage.jsx`)
+- **Stats bar updated** — Added "Unclassified" count alongside confidence breakdown (`frontend/src/components/shared/StatsBar.jsx`)
+
 ### AG Grid & Sortable Transactions Table
 - **AG Grid integration** — Replaced manual HTML table with AG Grid Community v35 (`ag-grid-react`, `ag-grid-community`) for sortable columns, resizable columns, and better data handling (`frontend/src/pages/TransactionsPage.jsx`)
 - **Server-side sorting** — Default sort is confidence ascending (Low → Medium → High → null) using SQL CASE expressions. Clicking column headers triggers server-side re-sort (`backend/routers/transactions.py`)

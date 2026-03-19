@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+.ag-cell,
+.ag-header-cell-label {
+  font-size: 12px !important;
+}

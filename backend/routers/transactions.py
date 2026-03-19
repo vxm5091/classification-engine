@@ -56,6 +56,7 @@ def _create_new_version(db: Session, latest: Transaction, **overrides) -> Transa
         reviewed_by=latest.reviewed_by,
         reviewed_at=latest.reviewed_at,
         source_file=latest.source_file,
+        upload_batch=latest.upload_batch,
     )
     for key, value in overrides.items():
         setattr(new_txn, key, value)
@@ -67,13 +68,37 @@ def _create_new_version(db: Session, latest: Transaction, **overrides) -> Transa
 
 @router.get("/transactions/source-files")
 def list_source_files(db: Session = Depends(get_db)):
-    """Return distinct source_file values for the batch filter."""
+    """Return distinct source_file values (legacy endpoint)."""
     rows = (
         db.query(distinct(Transaction.source_file))
         .filter(Transaction.source_file.isnot(None))
         .all()
     )
     return [r[0] for r in rows if r[0]]
+
+
+@router.get("/transactions/batches")
+def list_batches(db: Session = Depends(get_db)):
+    """Return distinct upload_batch values for the batch filter, most recent first."""
+    rows = (
+        db.query(
+            Transaction.upload_batch,
+            func.max(Transaction.created_at).label("latest"),
+        )
+        .filter(Transaction.upload_batch.isnot(None))
+        .group_by(Transaction.upload_batch)
+        .order_by(desc(func.max(Transaction.created_at)))
+        .all()
+    )
+    result = [r[0] for r in rows if r[0]]
+    if not result:
+        source_rows = (
+            db.query(distinct(Transaction.source_file))
+            .filter(Transaction.source_file.isnot(None))
+            .all()
+        )
+        result = [r[0] for r in source_rows if r[0]]
+    return result
 
 
 # Custom ordering for confidence: Low=0, Medium=1, High=2, NULL=3
@@ -102,6 +127,7 @@ def list_transactions(
     vendor_id: Optional[str] = Query(None),
     vendor_search: Optional[str] = Query(None),
     source_file: Optional[str] = Query(None),
+    upload_batch: Optional[str] = Query(None),
     date_from: Optional[date] = Query(None),
     date_to: Optional[date] = Query(None),
     sort_by: Optional[str] = Query("confidence"),
@@ -148,6 +174,8 @@ def list_transactions(
         query = query.filter(Vendor.vendor_name.ilike(f"%{vendor_search}%"))
     if source_file:
         query = query.filter(Transaction.source_file == source_file)
+    if upload_batch:
+        query = query.filter(Transaction.upload_batch == upload_batch)
     if date_from:
         query = query.filter(Transaction.date >= date_from)
     if date_to:

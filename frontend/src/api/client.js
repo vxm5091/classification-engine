@@ -96,16 +96,24 @@ export async function getGLHierarchy() {
   return data;
 }
 
-// --- Source Files ---
+// --- Source Files / Batches ---
 export async function getSourceFiles() {
   const { data } = await api.get("/transactions/source-files");
   return data;
 }
 
+export async function getBatches() {
+  const { data } = await api.get("/transactions/batches");
+  return data;
+}
+
 // --- Upload & Classify ---
 export async function uploadCSV(file) {
+  const now = new Date();
+  const batchLabel = `${file.name} (${now.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })} ${now.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", hour12: true })})`;
   const formData = new FormData();
   formData.append("file", file);
+  formData.append("batch_label", batchLabel);
   const { data } = await api.post("/upload-csv", formData, {
     headers: { "Content-Type": "multipart/form-data" },
   });
@@ -114,6 +122,28 @@ export async function uploadCSV(file) {
 
 export async function triggerClassify(body) {
   const { data } = await api.post("/classify", body);
+  return data;
+}
+
+// --- Rule Suggestions ---
+export async function suggestRules() {
+  const { data } = await api.post("/suggest-rules");
+  return data;
+}
+
+export async function acceptSuggestions(body) {
+  const { data } = await api.post("/suggest-rules/accept", body);
+  return data;
+}
+
+// --- Reclassify ---
+export async function reclassifyAll() {
+  const { data } = await api.post("/reclassify");
+  return data;
+}
+
+export async function reclassifySingle(transactionId) {
+  const { data } = await api.post(`/reclassify/${transactionId}`);
   return data;
 }
 

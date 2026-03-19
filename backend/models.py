@@ -95,6 +95,7 @@ class ClassificationRule(Base):
     time_of_month_start = Column(Integer)
     time_of_month_end = Column(Integer)
     gl_code = Column(Integer, ForeignKey("gl_codes.gl_code"), nullable=False)
+    reasoning = Column(Text)
     is_active = Column(Boolean, server_default="true")
     created_by = Column(Integer, ForeignKey("users.user_id"))
     created_at = Column(DateTime, server_default=func.now())
@@ -136,6 +137,7 @@ class Transaction(Base):
     reviewed_by = Column(Integer, ForeignKey("users.user_id"))
     reviewed_at = Column(DateTime)
     source_file = Column(String(255))
+    upload_batch = Column(String(255))
     created_at = Column(DateTime, server_default=func.now())
 
     __table_args__ = (
@@ -146,7 +148,7 @@ class Transaction(Base):
             name="ck_txn_confidence",
         ),
         CheckConstraint(
-            "method IS NULL OR method IN ('Rule Match', 'LLM Inference', 'Unclassifiable')",
+            "method IS NULL OR method IN ('Rule Match', 'LLM Inference', 'Unclassifiable', 'Unclassified', 'Pre-classified', 'Manual')",
             name="ck_txn_method",
         ),
         CheckConstraint(

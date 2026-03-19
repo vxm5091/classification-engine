@@ -1,26 +1,37 @@
-import { useState, useMemo, useCallback, useRef } from "react";
+import { useState, useMemo, useCallback, useRef, useEffect } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { AgGridReact } from "ag-grid-react";
 import { AllCommunityModule, ModuleRegistry, themeAlpine } from "ag-grid-community";
-import { getGLCodes, getSourceFiles, uploadCSV, triggerClassify } from "../api/client";
+import { getGLCodes, getBatches, uploadCSV, triggerClassify } from "../api/client";
 import {
   useTransactions,
   useApproveTransaction,
   useFlagTransaction,
+  useSuggestRules,
+  useReclassifyAll,
+  useReclassifySingle,
+  useStats,
 } from "../hooks/useTransactions";
 import { ConfidenceBadge, ReviewBadge } from "../components/shared/Badge";
 import StatsBar from "../components/shared/StatsBar";
 import ReclassifyModal from "../components/transactions/ReclassifyModal";
 import ConvertToRuleModal from "../components/transactions/ConvertToRuleModal";
+import RuleSuggestionsPanel from "../components/transactions/RuleSuggestionsPanel";
 
 ModuleRegistry.registerModules([AllCommunityModule]);
 
-const gridTheme = themeAlpine;
+const gridTheme = themeAlpine.withParams({
+  fontSize: 12,
+  rowHeight: 36,
+  headerHeight: 38,
+  cellTextColor: "#374151",
+});
 const PAGE_SIZE = 50;
 
 export default function TransactionsPage() {
   const queryClient = useQueryClient();
   const gridRef = useRef(null);
+  const detailPanelRef = useRef(null);
   const [page, setPage] = useState(1);
   const [sortBy, setSortBy] = useState("confidence");
   const [sortOrder, setSortOrder] = useState("asc");
@@ -29,7 +40,7 @@ export default function TransactionsPage() {
     confidence: "",
     gl_code: "",
     vendor_search: "",
-    source_file: "",
+    upload_batch: "",
     date_from: "",
     date_to: "",
   });
@@ -43,13 +54,18 @@ export default function TransactionsPage() {
   const [uploadResult, setUploadResult] = useState(null);
   const [classifyResult, setClassifyResult] = useState(null);
 
+  // --- Rule suggestions state ---
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [suggestionsData, setSuggestionsData] = useState(null);
+  const suggestMutation = useSuggestRules();
+
   const uploadMutation = useMutation({
     mutationFn: (file) => uploadCSV(file),
     onSuccess: (data) => {
       setUploadResult(data);
       queryClient.invalidateQueries({ queryKey: ["transactions"] });
       queryClient.invalidateQueries({ queryKey: ["stats"] });
-      queryClient.invalidateQueries({ queryKey: ["sourceFiles"] });
+      queryClient.invalidateQueries({ queryKey: ["batches"] });
     },
   });
 
@@ -87,6 +103,8 @@ export default function TransactionsPage() {
       setStagedFile({ file: csvFile, name: csvFile.name, timestamp: new Date() });
       setUploadResult(null);
       setClassifyResult(null);
+      setSuggestionsData(null);
+      setShowSuggestions(false);
     }
   }, []);
 
@@ -98,10 +116,20 @@ export default function TransactionsPage() {
     if (!uploadResult) return;
     classifyMutation.mutate(uploadResult.source_file);
   }
+  function handleSuggestRules() {
+    suggestMutation.mutate(undefined, {
+      onSuccess: (data) => {
+        setSuggestionsData(data);
+        setShowSuggestions(true);
+      },
+    });
+  }
   function handleCancel() {
     setStagedFile(null);
     setUploadResult(null);
     setClassifyResult(null);
+    setSuggestionsData(null);
+    setShowSuggestions(false);
   }
 
   // --- Data fetching ---
@@ -111,7 +139,7 @@ export default function TransactionsPage() {
     if (filters.confidence) p.confidence = filters.confidence;
     if (filters.gl_code) p.gl_code = filters.gl_code;
     if (filters.vendor_search) p.vendor_search = filters.vendor_search;
-    if (filters.source_file) p.source_file = filters.source_file;
+    if (filters.upload_batch) p.upload_batch = filters.upload_batch;
     if (filters.date_from) p.date_from = filters.date_from;
     if (filters.date_to) p.date_to = filters.date_to;
     return p;
@@ -122,13 +150,22 @@ export default function TransactionsPage() {
     queryKey: ["glCodes", 3],
     queryFn: () => getGLCodes(3),
   });
-  const { data: sourceFiles } = useQuery({
-    queryKey: ["sourceFiles"],
-    queryFn: getSourceFiles,
+  const { data: batches } = useQuery({
+    queryKey: ["batches"],
+    queryFn: getBatches,
   });
+  const { data: statsData } = useStats();
 
   const approve = useApproveTransaction();
   const flag = useFlagTransaction();
+  const reclassifyAllMutation = useReclassifyAll();
+  const reclassifySingleMutation = useReclassifySingle();
+
+  useEffect(() => {
+    if (expandedTx && detailPanelRef.current) {
+      detailPanelRef.current.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+  }, [expandedTx]);
 
   function updateFilter(field, value) {
     setFilters((f) => ({ ...f, [field]: value }));
@@ -138,6 +175,19 @@ export default function TransactionsPage() {
   const transactions = data?.transactions || [];
   const total = data?.total || 0;
   const totalPages = Math.ceil(total / PAGE_SIZE);
+
+  const unclassifiedCount = statsData?.by_method?.Unclassified || 0;
+
+  useEffect(() => {
+    if (expandedTx && transactions.length > 0) {
+      const updated = transactions.find(
+        (t) => t.transaction_id === expandedTx.transaction_id
+      );
+      if (updated && updated.id !== expandedTx.id) {
+        setExpandedTx(updated);
+      }
+    }
+  }, [transactions]);
 
   function formatAmount(val) {
     return Number(val).toLocaleString("en-US", {
@@ -152,13 +202,13 @@ export default function TransactionsPage() {
       {
         headerName: "Date",
         field: "date",
-        width: 120,
+        minWidth: 100,
         sortable: true,
       },
       {
         headerName: "Description",
         field: "raw_description",
-        flex: 2,
+        flex: 1,
         minWidth: 200,
         sortable: true,
         tooltipField: "raw_description",
@@ -166,7 +216,7 @@ export default function TransactionsPage() {
       {
         headerName: "Amount",
         field: "amount",
-        width: 130,
+        minWidth: 100,
         sortable: true,
         type: "rightAligned",
         valueFormatter: (p) => formatAmount(p.value),
@@ -174,26 +224,22 @@ export default function TransactionsPage() {
       },
       {
         headerName: "Vendor",
-        field: "vendor_name",
-        width: 160,
+        field: "vendor_id",
+        minWidth: 150,
         sortable: true,
-        valueGetter: (p) => p.data.vendor_name || p.data.vendor_id || "-",
+        cellRenderer: VendorCellRenderer,
       },
       {
         headerName: "GL Code",
         field: "gl_code",
-        width: 150,
+        minWidth: 100,
         sortable: true,
-        valueGetter: (p) => {
-          if (!p.data.gl_code) return "-";
-          const cls = p.data.gl_class ? ` (${p.data.gl_class})` : "";
-          return `${p.data.gl_code}${cls}`;
-        },
+        cellRenderer: GLCodeCellRenderer,
       },
       {
         headerName: "Confidence",
         field: "confidence",
-        width: 120,
+        minWidth: 90,
         sortable: true,
         sort: "asc",
         cellRenderer: ConfidenceCellRenderer,
@@ -201,49 +247,53 @@ export default function TransactionsPage() {
       {
         headerName: "Method",
         field: "method",
-        width: 130,
+        minWidth: 110,
         sortable: true,
-        valueFormatter: (p) => p.value || "-",
-        cellClass: "text-xs text-gray-500",
+        cellRenderer: MethodCellRenderer,
       },
       {
         headerName: "Status",
         field: "review_status",
-        width: 130,
+        minWidth: 100,
         sortable: true,
         cellRenderer: StatusCellRenderer,
       },
       {
         headerName: "Actions",
         field: "actions",
-        width: 140,
+        width: 160,
         sortable: false,
+        suppressAutoSize: true,
         cellRenderer: ActionsCellRenderer,
         cellRendererParams: {
           onApprove: (tx) =>
             approve.mutate({ id: tx.transaction_id, data: { user_id: 1 } }),
           onReclassify: (tx) => setReclassifyTx(tx),
+          onReclassifySingle: (tx) =>
+            reclassifySingleMutation.mutate(tx.transaction_id),
           onFlag: (tx) =>
             flag.mutate({ id: tx.transaction_id, data: { user_id: 1 } }),
           onConvertToRule: (tx) => setConvertTx(tx),
         },
       },
     ],
-    [approve, flag]
+    [approve, flag, reclassifySingleMutation]
   );
 
   const defaultColDef = useMemo(
     () => ({
       resizable: true,
       suppressMovable: true,
-      // Disable client-side sorting — we do server-side sorting.
-      // Returning 0 keeps AG Grid from reordering rows while still showing sort indicators.
       comparator: () => 0,
     }),
     []
   );
 
-  // Handle AG Grid sort events → server-side sorting
+  const autoSizeStrategy = useMemo(() => ({
+    type: "fitGridWidth",
+    defaultMinWidth: 80,
+  }), []);
+
   const onSortChanged = useCallback(() => {
     const gridApi = gridRef.current?.api;
     if (!gridApi) return;
@@ -259,20 +309,16 @@ export default function TransactionsPage() {
   const onRowClicked = useCallback((event) => {
     const tx = event.data;
     setExpandedTx((prev) => {
-      if (prev?.id === tx.id) {
-        // Deselect
+      if (prev?.transaction_id === tx.transaction_id) {
         event.api.deselectAll();
         return null;
       }
-      // Select this row
       event.node.setSelected(true, true);
       return tx;
     });
   }, []);
 
-  // Click outside grid clears selection
   const handleOutsideClick = useCallback((e) => {
-    // If click is inside the grid or the detail panel, ignore
     if (e.target.closest('.ag-root-wrapper') || e.target.closest('[data-detail-panel]')) return;
     setExpandedTx(null);
     gridRef.current?.api?.deselectAll();
@@ -315,12 +361,52 @@ export default function TransactionsPage() {
           classifyResult={classifyResult}
           isUploading={uploadMutation.isPending}
           isClassifying={classifyMutation.isPending}
+          isSuggesting={suggestMutation.isPending}
           uploadError={uploadMutation.error}
           classifyError={classifyMutation.error}
           onProcess={handleProcess}
           onClassify={handleClassify}
+          onSuggestRules={handleSuggestRules}
           onCancel={handleCancel}
         />
+      )}
+
+      {/* Rule suggestions panel */}
+      {showSuggestions && suggestionsData && (
+        <RuleSuggestionsPanel
+          suggestions={suggestionsData.suggestions}
+          totalUnclassified={suggestionsData.total_unclassified}
+          onClose={() => {
+            setShowSuggestions(false);
+            queryClient.invalidateQueries({ queryKey: ["transactions"] });
+            queryClient.invalidateQueries({ queryKey: ["stats"] });
+          }}
+        />
+      )}
+
+      {/* Unclassified transactions banner */}
+      {!showSuggestions && unclassifiedCount > 0 && (
+        <div className="mb-4 flex items-center justify-between rounded-lg border border-amber-300 bg-amber-50 px-4 py-3">
+          <div className="flex items-center gap-2">
+            <span className="text-amber-600 text-lg">{"\u26A0"}</span>
+            <span className="text-sm font-medium text-amber-800">
+              {unclassifiedCount} transaction{unclassifiedCount !== 1 ? "s" : ""} need rules
+            </span>
+          </div>
+          <button
+            onClick={handleSuggestRules}
+            disabled={suggestMutation.isPending}
+            className="rounded-md bg-amber-500 px-4 py-1.5 text-sm font-medium text-white hover:bg-amber-600 disabled:opacity-50"
+          >
+            {suggestMutation.isPending ? (
+              <span className="flex items-center gap-1.5">
+                <Spinner /> Generating...
+              </span>
+            ) : (
+              "Suggest Rules"
+            )}
+          </button>
+        </div>
       )}
 
       <StatsBar />
@@ -332,14 +418,14 @@ export default function TransactionsPage() {
             Batch
           </label>
           <select
-            value={filters.source_file}
-            onChange={(e) => updateFilter("source_file", e.target.value)}
+            value={filters.upload_batch}
+            onChange={(e) => updateFilter("upload_batch", e.target.value)}
             className="rounded-md border border-gray-300 px-2 py-1.5 text-sm focus:border-blue-500 focus:outline-none"
           >
             <option value="">All Batches</option>
-            {(sourceFiles || []).map((sf) => (
-              <option key={sf} value={sf}>
-                {sf}
+            {(batches || []).map((b) => (
+              <option key={b} value={b}>
+                {b}
               </option>
             ))}
           </select>
@@ -428,6 +514,25 @@ export default function TransactionsPage() {
         </div>
       </div>
 
+      {/* Table toolbar */}
+      <div className="mb-2 flex items-center justify-between">
+        <div className="text-sm text-gray-500">
+          {total} transaction{total !== 1 ? "s" : ""}
+        </div>
+        {unclassifiedCount > 0 && (
+          <button
+            onClick={() => reclassifyAllMutation.mutate()}
+            disabled={reclassifyAllMutation.isPending}
+            className="inline-flex items-center gap-1.5 rounded-md bg-amber-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-amber-600 disabled:opacity-50"
+          >
+            <span className={reclassifyAllMutation.isPending ? "animate-spin" : ""}>&#x21BB;</span>
+            {reclassifyAllMutation.isPending
+              ? "Reclassifying..."
+              : `Reclassify ${unclassifiedCount} Unclassified`}
+          </button>
+        )}
+      </div>
+
       {/* AG Grid Table */}
       <div className="rounded-lg border border-gray-200" style={{ width: "100%", height: 600 }}>
         <AgGridReact
@@ -436,6 +541,7 @@ export default function TransactionsPage() {
           rowData={transactions}
           columnDefs={columnDefs}
           defaultColDef={defaultColDef}
+          autoSizeStrategy={autoSizeStrategy}
           animateRows={true}
           rowSelection={{ mode: "singleRow", enableClickSelection: false, hideDisabledCheckboxes: true, checkboxes: false }}
           getRowClass={getRowClass}
@@ -449,11 +555,17 @@ export default function TransactionsPage() {
 
       {/* Detail panel for selected row */}
       {expandedTx && (
-        <div data-detail-panel className="mt-2 rounded-lg border border-blue-200 bg-blue-50/30 p-4">
+        <div ref={detailPanelRef} data-detail-panel className="mt-2 rounded-lg border border-blue-200 bg-blue-50/30 p-4">
           <div className="flex items-center justify-between mb-3">
-            <h3 className="font-semibold text-gray-700">
-              Transaction {expandedTx.transaction_id}
-            </h3>
+            <div>
+              <h3 className="font-semibold text-gray-800">
+                {expandedTx.raw_description}
+              </h3>
+              <p className="text-xs text-gray-400 mt-0.5">
+                {expandedTx.transaction_id} &middot; v{expandedTx.version}
+                {expandedTx.upload_batch && <span> &middot; {expandedTx.upload_batch}</span>}
+              </p>
+            </div>
             <button
               onClick={() => setExpandedTx(null)}
               className="text-gray-400 hover:text-gray-600 text-sm"
@@ -463,22 +575,44 @@ export default function TransactionsPage() {
           </div>
           <div className="grid grid-cols-2 gap-4 text-sm">
             <div>
-              <h4 className="mb-1 font-medium text-gray-700">Reasoning</h4>
-              <p className="text-gray-600">{expandedTx.reasoning || "No reasoning available."}</p>
-            </div>
-            <div>
               <h4 className="mb-1 font-medium text-gray-700">Details</h4>
-              <dl className="space-y-1 text-xs text-gray-500">
-                <div className="flex gap-2"><dt className="font-medium">Transaction ID:</dt><dd>{expandedTx.transaction_id}</dd></div>
-                <div className="flex gap-2"><dt className="font-medium">Version:</dt><dd>{expandedTx.version}</dd></div>
-                <div className="flex gap-2"><dt className="font-medium">Source:</dt><dd>{expandedTx.source_file || "-"}</dd></div>
-                <div className="flex gap-2"><dt className="font-medium">Rule ID:</dt><dd>{expandedTx.rule_id ?? "-"}</dd></div>
-                <div className="flex gap-2"><dt className="font-medium">Location:</dt><dd>{[expandedTx.city, expandedTx.state, expandedTx.country].filter(Boolean).join(", ") || "-"}</dd></div>
-                <div className="flex gap-2"><dt className="font-medium">Service:</dt><dd>{expandedTx.service_id || "-"}</dd></div>
+              <dl className="space-y-1.5 text-xs">
+                <DetailRow label="Date" value={expandedTx.date ? new Date(expandedTx.date + "T00:00:00").toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric" }) : "-"} />
+                <DetailRow label="Amount" value={formatAmount(expandedTx.amount)} />
+                <DetailRow label="Vendor" value={expandedTx.vendor_id ? `${expandedTx.vendor_id}${expandedTx.vendor_name ? ` — ${expandedTx.vendor_name}` : ""}` : "-"} />
+                <DetailRow label="Service" value={expandedTx.service_id || "-"} />
+                <DetailRow label="Location" value={[expandedTx.city, expandedTx.state, expandedTx.country].filter(Boolean).join(", ") || "-"} />
+                <div className="border-t border-blue-100 pt-1.5" />
+                <DetailRow label="GL Code" value={expandedTx.gl_code ? `${expandedTx.gl_code}${expandedTx.gl_class ? ` — ${expandedTx.gl_class}` : ""}` : "Unclassified"} />
+                <DetailRow label="Confidence" value={expandedTx.confidence || "-"} />
+                <DetailRow label="Method" value={expandedTx.method || "-"} />
+                <DetailRow label="Status" value={expandedTx.review_status} />
+                <DetailRow label="Rule ID" value={expandedTx.rule_id != null ? `R-${expandedTx.rule_id}` : "-"} />
                 {expandedTx.reviewed_by && (
-                  <div className="flex gap-2"><dt className="font-medium">Reviewed by:</dt><dd>User {expandedTx.reviewed_by} at {expandedTx.reviewed_at ? new Date(expandedTx.reviewed_at).toLocaleString() : "-"}</dd></div>
+                  <DetailRow label="Reviewed by" value={`User ${expandedTx.reviewed_by} at ${expandedTx.reviewed_at ? new Date(expandedTx.reviewed_at).toLocaleString() : "-"}`} />
                 )}
               </dl>
+
+              {(expandedTx.review_status === "Unreviewed" || expandedTx.review_status === "Flagged") && (
+                <div className="mt-3 flex gap-2">
+                  <button
+                    onClick={() => approve.mutate({ id: expandedTx.transaction_id, data: { user_id: 1 } })}
+                    className="rounded-md bg-green-600 px-3 py-1.5 text-xs font-medium text-white hover:bg-green-700"
+                  >
+                    Approve
+                  </button>
+                  <button
+                    onClick={() => setReclassifyTx(expandedTx)}
+                    className="rounded-md bg-blue-600 px-3 py-1.5 text-xs font-medium text-white hover:bg-blue-700"
+                  >
+                    Reclassify
+                  </button>
+                </div>
+              )}
+            </div>
+            <div>
+              <h4 className="mb-1 font-medium text-gray-700">Classification Reasoning</h4>
+              <ReasoningBlock reasoning={expandedTx.reasoning} />
             </div>
           </div>
         </div>
@@ -527,8 +661,95 @@ export default function TransactionsPage() {
 }
 
 // ---------------------------------------------------------------------------
-// Badge Cell Renderers (AG Grid React components)
+// Cell Renderers
 // ---------------------------------------------------------------------------
+
+function ReasoningBlock({ reasoning }) {
+  if (!reasoning) {
+    return <p className="text-gray-400 text-xs">No reasoning available.</p>;
+  }
+
+  const sections = [];
+  let remaining = reasoning;
+
+  const justificationSplit = remaining.split("\n\nRule Justification:");
+  if (justificationSplit.length > 1) {
+    remaining = justificationSplit[0];
+    sections.push({
+      type: "justification",
+      label: "LLM Rule Justification",
+      text: justificationSplit[1].trim(),
+    });
+  }
+
+  const advisorySplit = remaining.split("\n\nLLM Advisory:");
+  if (advisorySplit.length > 1) {
+    remaining = advisorySplit[0];
+    sections.push({
+      type: "advisory",
+      label: "LLM Advisory",
+      text: advisorySplit[1].trim(),
+    });
+  }
+
+  return (
+    <div className="space-y-2">
+      <p className="text-gray-600 text-xs leading-relaxed">{remaining}</p>
+      {sections.map((s, i) => (
+        <div
+          key={i}
+          className={`rounded-md border p-3 ${
+            s.type === "justification"
+              ? "border-indigo-200 bg-indigo-50"
+              : "border-sky-200 bg-sky-50"
+          }`}
+        >
+          <p className={`text-xs font-medium mb-1 ${
+            s.type === "justification" ? "text-indigo-700" : "text-sky-700"
+          }`}>{s.label}</p>
+          <p className={`text-xs leading-relaxed ${
+            s.type === "justification" ? "text-indigo-800" : "text-sky-800"
+          }`}>{s.text}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function DetailRow({ label, value }) {
+  return (
+    <div className="flex gap-2">
+      <dt className="font-medium text-gray-500 shrink-0 w-20">{label}</dt>
+      <dd className="text-gray-700">{value}</dd>
+    </div>
+  );
+}
+
+function VendorCellRenderer(props) {
+  const tx = props.data;
+  if (!tx.vendor_id) return <span className="text-gray-400">{"\u2014"}</span>;
+  return (
+    <span>
+      {tx.vendor_id}
+      {tx.service_id && <span className="text-gray-400 ml-1">/ {tx.service_id}</span>}
+    </span>
+  );
+}
+
+function GLCodeCellRenderer(props) {
+  if (!props.data.gl_code) {
+    if (props.data.method === "Unclassified") {
+      return (
+        <span className="inline-block rounded-full bg-orange-100 px-2 py-0.5 text-xs font-medium text-orange-700">
+          Unclassified
+        </span>
+      );
+    }
+    return <span className="text-gray-400">{"\u2014"}</span>;
+  }
+  const cls = props.data.gl_class ? ` (${props.data.gl_class})` : "";
+  return <span>{props.data.gl_code}{cls}</span>;
+}
 
 function ConfidenceCellRenderer(props) {
   if (!props.value) return <span>-</span>;
@@ -539,6 +760,23 @@ function ConfidenceCellRenderer(props) {
   };
   return (
     <span className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${colors[props.value] || ""}`}>
+      {props.value}
+    </span>
+  );
+}
+
+function MethodCellRenderer(props) {
+  if (!props.value) return <span className="text-gray-400">-</span>;
+  const colors = {
+    "Rule Match": "text-gray-600",
+    "LLM Inference": "text-purple-500",
+    "Pre-classified": "text-blue-500",
+    "Unclassified": "text-orange-600 font-medium",
+    "Unclassifiable": "text-gray-400",
+    "Manual": "text-green-600",
+  };
+  return (
+    <span className={`text-xs ${colors[props.value] || "text-gray-500"}`}>
       {props.value}
     </span>
   );
@@ -559,18 +797,18 @@ function StatusCellRenderer(props) {
 }
 
 // ---------------------------------------------------------------------------
-// Actions Cell Renderer (AG Grid component)
+// Actions Cell Renderer
 // ---------------------------------------------------------------------------
 
 function ActionsCellRenderer(props) {
-  const { data: tx, onApprove, onReclassify, onFlag, onConvertToRule } = props;
+  const { data: tx, onApprove, onReclassify, onReclassifySingle, onFlag, onConvertToRule } = props;
   if (!tx) return null;
 
   return (
     <div className="flex gap-1 items-center h-full">
-      {tx.review_status === "Unreviewed" && (
+      {(tx.review_status === "Unreviewed" || tx.review_status === "Flagged") && (
         <button
-          onClick={() => onApprove(tx)}
+          onClick={(e) => { e.stopPropagation(); onApprove(tx); }}
           title="Approve"
           className="rounded p-1 text-green-600 hover:bg-green-50"
         >
@@ -578,15 +816,22 @@ function ActionsCellRenderer(props) {
         </button>
       )}
       <button
-        onClick={() => onReclassify(tx)}
-        title="Reclassify"
+        onClick={(e) => { e.stopPropagation(); onReclassifySingle(tx); }}
+        title="Re-run classification"
+        className="rounded p-1 text-amber-600 hover:bg-amber-50"
+      >
+        {"\u21BB"}
+      </button>
+      <button
+        onClick={(e) => { e.stopPropagation(); onReclassify(tx); }}
+        title="Manual reclassify"
         className="rounded p-1 text-blue-600 hover:bg-blue-50"
       >
         {"\u270E"}
       </button>
       {tx.review_status !== "Flagged" && (
         <button
-          onClick={() => onFlag(tx)}
+          onClick={(e) => { e.stopPropagation(); onFlag(tx); }}
           title="Flag"
           className="rounded p-1 text-red-600 hover:bg-red-50"
         >
@@ -594,11 +839,11 @@ function ActionsCellRenderer(props) {
         </button>
       )}
       <button
-        onClick={() => onConvertToRule(tx)}
+        onClick={(e) => { e.stopPropagation(); onConvertToRule(tx); }}
         title="Convert to Rule"
         className="rounded p-1 text-purple-600 hover:bg-purple-50"
       >
-        {"\u21BB"}
+        {"\u2696"}
       </button>
     </div>
   );
@@ -614,20 +859,26 @@ function StagedFileCard({
   classifyResult,
   isUploading,
   isClassifying,
+  isSuggesting,
   uploadError,
   classifyError,
   onProcess,
   onClassify,
+  onSuggestRules,
   onCancel,
 }) {
   const isDone = !!classifyResult;
   const isUploaded = !!uploadResult;
+  const hasUnclassified = classifyResult?.unclassified > 0;
 
   let borderColor = "border-amber-400";
   let bgColor = "bg-amber-50";
-  if (isDone) {
+  if (isDone && !hasUnclassified) {
     borderColor = "border-green-400";
     bgColor = "bg-green-50";
+  } else if (isDone && hasUnclassified) {
+    borderColor = "border-blue-400";
+    bgColor = "bg-blue-50";
   } else if (isUploaded) {
     borderColor = "border-blue-400";
     bgColor = "bg-blue-50";
@@ -638,7 +889,7 @@ function StagedFileCard({
       <div className="flex items-start justify-between gap-4">
         <div className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white text-lg shadow-sm">
-            {isDone ? "\u2705" : isUploaded ? "\u2699\uFE0F" : "\uD83D\uDCC4"}
+            {isDone && !hasUnclassified ? "\u2705" : isUploaded ? "\u2699\uFE0F" : "\uD83D\uDCC4"}
           </div>
           <div>
             <p className="font-semibold text-gray-800">{stagedFile.name}</p>
@@ -656,12 +907,33 @@ function StagedFileCard({
               </p>
             )}
             {classifyResult && (
-              <p className="mt-0.5 text-xs text-green-700">
-                Classified: {classifyResult.classified_by_rule} by rule,{" "}
-                {classifyResult.classified_by_llm} by LLM,{" "}
-                {classifyResult.non_expense} non-expense,{" "}
-                {classifyResult.unclassifiable} unclassifiable
-              </p>
+              <div className="mt-1 flex flex-wrap gap-2 text-xs">
+                {classifyResult.pre_classified > 0 && (
+                  <span className="rounded bg-blue-100 px-1.5 py-0.5 text-blue-700">
+                    {classifyResult.pre_classified} pre-classified
+                  </span>
+                )}
+                {classifyResult.classified_by_rule > 0 && (
+                  <span className="rounded bg-green-100 px-1.5 py-0.5 text-green-700">
+                    {classifyResult.classified_by_rule} by rule
+                  </span>
+                )}
+                {classifyResult.medium_confidence > 0 && (
+                  <span className="rounded bg-yellow-100 px-1.5 py-0.5 text-yellow-700">
+                    {classifyResult.medium_confidence} conflicts (Medium)
+                  </span>
+                )}
+                {classifyResult.unclassified > 0 && (
+                  <span className="rounded bg-red-100 px-1.5 py-0.5 text-red-700">
+                    {classifyResult.unclassified} unclassified
+                  </span>
+                )}
+                {classifyResult.non_expense > 0 && (
+                  <span className="rounded bg-gray-100 px-1.5 py-0.5 text-gray-600">
+                    {classifyResult.non_expense} non-expense
+                  </span>
+                )}
+              </div>
             )}
             {uploadError && (
               <p className="mt-0.5 text-xs text-red-600">
@@ -703,6 +975,21 @@ function StagedFileCard({
                 </span>
               ) : (
                 "Classify Transactions"
+              )}
+            </button>
+          )}
+          {isDone && hasUnclassified && (
+            <button
+              onClick={onSuggestRules}
+              disabled={isSuggesting}
+              className="rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 disabled:opacity-50"
+            >
+              {isSuggesting ? (
+                <span className="flex items-center gap-1.5">
+                  <Spinner /> Generating...
+                </span>
+              ) : (
+                `Suggest Rules for ${classifyResult.unclassified} unclassified`
               )}
             </button>
           )}
