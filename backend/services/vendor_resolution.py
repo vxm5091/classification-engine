@@ -20,7 +20,7 @@ from backend.services.vendor_cache import normalise_pattern, bulk_lookup, upsert
 
 logger = logging.getLogger(__name__)
 
-LLM_MODEL = os.getenv("LLM_MODEL", "claude-sonnet-4-20250514")
+LLM_MODEL = os.getenv("LLM_MODEL", "claude-opus-4-6")
 
 SYSTEM_PROMPT = (
     "You are a financial transaction parser. Extract vendor information from "
@@ -115,15 +115,23 @@ def _ensure_service(
 ) -> VendorService:
     """Return existing service or create a new one."""
     svc = db.query(VendorService).filter(VendorService.service_id == service_id).first()
-    if not svc:
-        svc = VendorService(
-            service_id=service_id,
-            vendor_id=vendor_id,
-            service_name=service_name,
-            status="pending_confirmation",
-        )
-        db.add(svc)
-        db.flush()
+    if svc:
+        return svc
+    svc = (
+        db.query(VendorService)
+        .filter(VendorService.vendor_id == vendor_id, VendorService.service_name == service_name)
+        .first()
+    )
+    if svc:
+        return svc
+    svc = VendorService(
+        service_id=service_id,
+        vendor_id=vendor_id,
+        service_name=service_name,
+        status="pending_confirmation",
+    )
+    db.add(svc)
+    db.flush()
     return svc
 
 

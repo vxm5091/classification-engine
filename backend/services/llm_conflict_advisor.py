@@ -18,7 +18,7 @@ from backend.models import GLCode, Transaction, ClassificationRule
 
 logger = logging.getLogger(__name__)
 
-LLM_MODEL = os.getenv("LLM_MODEL", "claude-sonnet-4-20250514")
+LLM_MODEL = os.getenv("LLM_MODEL", "claude-opus-4-6")
 
 SYSTEM_PROMPT = (
     "You are an advisory engine helping accountants resolve GL code classification conflicts.\n\n"

@@ -22,7 +22,7 @@ services:
     environment:
       DATABASE_URL: postgresql://gluser:glpass@db:5432/gl_classifier
       ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
-      LLM_MODEL: claude-sonnet-4-20250514
+      LLM_MODEL: ${LLM_MODEL:-claude-opus-4-6}
     depends_on:
       db:
         condition: service_healthy

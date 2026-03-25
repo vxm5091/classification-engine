@@ -1,0 +1,87 @@
+vendor_id,vendor_name,status,created_by,confirmed_by,confirmed_at,created_at,updated_at
+AA,American Airlines,pending_confirmation,,,,2026-03-19 23:20:59.86853,2026-03-19 23:20:59.86853
+ADOBE,Adobe,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+ALDI,ALDI,pending_confirmation,,,,2026-03-19 23:20:59.86853,2026-03-19 23:20:59.86853
+AMAZON,Amazon,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+AMPROF,Americas Professor,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+AMZN,Amazon,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+APEXSW,Apex Software,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+ASCENDPAY,Ascend Payments,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+ATHGYROS,Athena's Gyros,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+ATLAIRPORT,Atlanta Airport,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+ATLAIRPRT,Atlanta Airport Parking/Services,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+ATLBRAVES,Atlanta Braves,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+ATLOFFTECH,Atlanta Office Technologies,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+ATT,AT&T,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+BARBRITOS,Barberitos,pending_confirmation,,,,2026-03-19 23:20:59.86853,2026-03-19 23:20:59.86853
+BETTERMT,Betterment,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+BLKRIFLE,Black Rifle Coffee,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+BRADYPEST,Brady Pest Control,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+CANOPY,Canopy,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+CHECKR,"Checkr, Inc.",pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+CHICKFILA,Chick-fil-A,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+CHILIS,Chili's,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+CHIPOTLE,Chipotle Mexican Grill,pending_confirmation,,,,2026-03-19 23:20:59.86853,2026-03-19 23:20:59.86853
+CITYBBQ,City BBQ,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+COMCAST,Comcast,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+DELTA,Delta Air Lines,pending_confirmation,,,,2026-03-19 23:20:59.86853,2026-03-19 23:20:59.86853
+DOCUSIGN,DocuSign,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+DOLLARTREE,Dollar Tree,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+DOMAINCOM,Domain.com,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+DOMINOS,Domino's Pizza,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+DOORDASH,DoorDash,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+DUTCHBROS,Dutch Bros,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+EDIBLE,Edible Arrangements,pending_confirmation,,,,2026-03-19 23:20:59.86853,2026-03-19 23:20:59.86853
+ELRANCHER,El Ranchero Mexican,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+EXXON,ExxonMobil,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+FOGGYBBQ,Foggy Bottom BBQ,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+GABAPTIST,Georgia Baptist Mission,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+GACLUB,The Georgia Club,pending_confirmation,,,,2026-03-19 23:20:59.86853,2026-03-19 23:20:59.86853
+GOOGL,Google,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+GRTHARV,Great Harvest Bread,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+GRYSNSWT,Grayson Sweet Home,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+HAMPTON,Hampton Inn,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+HERTZ,Hertz,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+HILTON,Hilton,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+HOBBYLOBBY,Hobby Lobby,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+HUEYMAGOO,Huey Magoo's,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+IDEMIA,IDEMIA I&S USA,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+INDEED,Indeed,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+INSXDATE,InsuranceXDate,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+KROGER,Kroger,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+KUDOBOARD,Kudoboard,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+LADYDAHLI,Lady Dahlia,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+MAILCHIMP,Mailchimp,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+MICROSOFT,Microsoft,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+MONITREDU,MonitorEDU Inc,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+MRTACO,Mr. Taco Restaurant,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+MSFT,Microsoft,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+NAMECHEAP,Namecheap,pending_confirmation,,,,2026-03-19 23:20:59.86853,2026-03-19 23:20:59.86853
+NITROPDF,Nitro PDF,pending_confirmation,,,,2026-03-19 23:20:59.86853,2026-03-19 23:20:59.86853
+OPENAI,OpenAI,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+ORBITZ,Orbitz,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+PARKBAR,Park Bar,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+POPSHELF,Popshelf,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+PROFINSUR,Professional Insurance,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+PUBLIX,Publix,pending_confirmation,,,,2026-03-19 23:20:59.86853,2026-03-19 23:20:59.86853
+RAISCANES,Raising Cane's,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+RECOATL,Reco Atlanta,pending_confirmation,,,,2026-03-19 23:20:59.86853,2026-03-19 23:20:59.86853
+RESTORDER,Restaurant Ordering,pending_confirmation,,,,2026-03-19 23:20:59.86853,2026-03-19 23:20:59.86853
+RICONO,Ricono Accounting,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+RISKINSEDU,Risk & Insurance Education,pending_confirmation,,,,2026-03-19 23:20:59.86853,2026-03-19 23:20:59.86853
+RREALTACOS,Rreal Tacos,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+SIRCON,Sircon (Vertafore),pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+SRITHAI,Sri Thai,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+STRIPE,Stripe,pending_confirmation,,,,2026-03-19 23:36:49.591847,2026-03-19 23:36:49.591847
+SUKI,Suki,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+TAILWIND,Tailwind,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+THAITASTE,Thai Taste,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+UNITED,United Airlines,pending_confirmation,,,,2026-03-19 23:20:59.86853,2026-03-19 23:20:59.86853
+USPS,USPS,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+VISTAPRINT,Vistaprint,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+VSP,VSP,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+VUE,Pearson VUE,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+WALGREENS,Walgreens,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+WALMART,Walmart,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+WALTONEMC,Walton EMC,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279
+WAVE,Wave Financial,pending_confirmation,,,,2026-03-19 23:16:24.873279,2026-03-19 23:16:24.873279

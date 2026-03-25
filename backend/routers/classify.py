@@ -50,10 +50,13 @@ def _parse_amount(raw: str) -> Decimal | None:
 def _parse_date(raw: str) -> datetime | None:
     if not raw or not raw.strip():
         return None
-    try:
-        return datetime.strptime(raw.strip(), "%m/%d/%Y").date()
-    except ValueError:
-        return None
+    s = raw.strip()
+    for fmt in ("%m/%d/%Y", "%m/%d/%y", "%Y-%m-%d", "%d-%m-%Y", "%d/%m/%Y"):
+        try:
+            return datetime.strptime(s, fmt).date()
+        except ValueError:
+            continue
+    return None
 
 
 def _latest_version_subquery(db: Session):
@@ -210,6 +213,7 @@ def run_classification(body: ClassifyRequest, db: Session = Depends(get_db)):
                 Transaction.vendor_id.is_(None),
                 Transaction.gl_code.is_(None),
                 Transaction.method.is_(None),
+                Transaction.method == "Pre-classified",
             )
         )
     )
@@ -265,7 +269,14 @@ def suggest_rules_endpoint(db: Session = Depends(get_db)):
 
     raw_suggestions = suggest_rules(db, unclassified)
 
-    suggestions = [RuleSuggestion(**s) for s in raw_suggestions]
+    suggestions = []
+    for s in raw_suggestions:
+        if s.get("gl_code") is None or s.get("vendor_id") is None:
+            continue
+        try:
+            suggestions.append(RuleSuggestion(**s))
+        except Exception:
+            continue
 
     return SuggestRulesResponse(
         suggestions=suggestions,

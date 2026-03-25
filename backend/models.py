@@ -31,7 +31,7 @@ class GLCode(Base):
 class Vendor(Base):
     __tablename__ = "vendors"
 
-    vendor_id = Column(String(10), primary_key=True)
+    vendor_id = Column(String(20), primary_key=True)
     vendor_name = Column(String(255), nullable=False)
     status = Column(String(20), nullable=False, server_default="pending_confirmation")
     created_by = Column(Integer, ForeignKey("users.user_id"))
@@ -50,8 +50,8 @@ class Vendor(Base):
 class VendorService(Base):
     __tablename__ = "vendor_services"
 
-    service_id = Column(String(20), primary_key=True)
-    vendor_id = Column(String(10), ForeignKey("vendors.vendor_id"), nullable=False)
+    service_id = Column(String(30), primary_key=True)
+    vendor_id = Column(String(20), ForeignKey("vendors.vendor_id"), nullable=False)
     service_name = Column(String(255), nullable=False)
     status = Column(String(20), nullable=False, server_default="pending_confirmation")
     created_by = Column(Integer, ForeignKey("users.user_id"))
@@ -72,8 +72,8 @@ class DescriptionVendorMap(Base):
 
     map_id = Column(Integer, primary_key=True, autoincrement=True)
     description_pattern = Column(String(255), nullable=False, unique=True)
-    vendor_id = Column(String(10), ForeignKey("vendors.vendor_id"), nullable=False)
-    service_id = Column(String(20), ForeignKey("vendor_services.service_id"))
+    vendor_id = Column(String(20), ForeignKey("vendors.vendor_id"), nullable=False)
+    service_id = Column(String(30), ForeignKey("vendor_services.service_id"))
     city = Column(String(100))
     state = Column(String(50))
     country = Column(String(100))
@@ -88,8 +88,8 @@ class ClassificationRule(Base):
     __tablename__ = "classification_rules"
 
     rule_id = Column(Integer, primary_key=True, autoincrement=True)
-    vendor_id = Column(String(10), ForeignKey("vendors.vendor_id"))
-    service_id = Column(String(20), ForeignKey("vendor_services.service_id"))
+    vendor_id = Column(String(20), ForeignKey("vendors.vendor_id"))
+    service_id = Column(String(30), ForeignKey("vendor_services.service_id"))
     amount_min = Column(Numeric(12, 2))
     amount_max = Column(Numeric(12, 2))
     time_of_month_start = Column(Integer)
@@ -122,8 +122,8 @@ class Transaction(Base):
     date = Column(Date, nullable=False)
     raw_description = Column(Text, nullable=False)
     amount = Column(Numeric(12, 2), nullable=False)
-    vendor_id = Column(String(10), ForeignKey("vendors.vendor_id"))
-    service_id = Column(String(20), ForeignKey("vendor_services.service_id"))
+    vendor_id = Column(String(20), ForeignKey("vendors.vendor_id"))
+    service_id = Column(String(30), ForeignKey("vendor_services.service_id"))
     city = Column(String(100))
     state = Column(String(50))
     country = Column(String(100))

@@ -1,0 +1,40 @@
+gl_code,gl_class,gl_level,description
+4000,Revenue,1,All revenue accounts
+4001,Premium & Commission Revenue,2,Insurance premium revenue and commission income
+4002,Other Revenue,2,Interest income and other non-operating revenue
+4010,Commission Income,3,Insurance commission revenue from carriers
+4030,Interest Income,3,Interest from bank accounts and credit union deposits
+4050,Other Income,3,Tax refunds and miscellaneous income
+5000,Cost of Sales,1,Direct costs associated with revenue generation
+5001,Sales & Marketing,2,Direct sales and marketing costs
+5002,Professional Services,2,Consulting and contracted professional services
+5030,Marketing & Advertising,3,"Google Ads, Mailchimp campaigns, Klaviyo, marketing events, lead generation services"
+5035,Travel Meals Entertainment - Sales,3,"Client meals, sales travel, and entertainment for business development"
+5100,Consulting Services,3,External consulting engagements
+5215,Telemarketing,3,Outbound calling and lead qualification services
+6000,Operating Expenses,1,General and administrative operating expenses
+6001,Personnel & Benefits,2,"Payroll, taxes, and employee benefits"
+6002,Professional Services,2,"Accounting, legal, and outside services"
+6003,Licensing & Compliance,2,"Licenses, permits, dues, and subscriptions"
+6004,Office & Operations,2,"Office supplies, postage, and operational expenses"
+6005,Travel & Entertainment,2,"Meals, travel, and entertainment expenses"
+6006,Technology,2,"Computer, internet, and software expenses"
+6007,Insurance,2,Business insurance policies
+6008,Facilities,2,"Rent, telephone, and utilities"
+6020,Payroll Taxes,3,Employer payroll tax obligations
+6030,Payroll Processing,3,Payroll processing fees (Gusto)
+6040,401K Administration,3,Betterment 401K plan administration fees
+6100,Accounting,3,"Accounting services (Shelton & Associates, Ricono)"
+6110,Legal,3,Legal services (Slotkin Law)
+6115,Outside Services,3,"IT support, cleaning, HR services, web development, testing, and other contracted services"
+6120,Licenses & Permits,3,"State insurance licenses, agent registrations, CE testing, city business licenses"
+6130,Dues & Subscriptions,3,"Professional memberships, Google One/Apps, LinkedIn Premium, industry associations"
+6140,Postage,3,"USPS, FedEx, Stamps.com shipping and mailing costs"
+6160,Office Supplies & Expenses,3,"Office supplies, equipment, groceries for office, Amazon orders, printing"
+6170,Travel Meals Entertainment - Admin,3,"Employee meals, DoorDash, restaurants, travel, hotels, car rental, team events"
+6180,Education & Training,3,"Conferences, courses, professional development"
+6200,Computer Internet & Software,3,"Software subscriptions, internet service"
+6210,Insurance Expense,3,Business insurance premiums
+6240,Rent,3,Office rent and lease payments
+6250,Telephone,3,"AT&T Fiber, Ring Central phone service"
+6260,Utilities,3,"Electric, cable/TV"

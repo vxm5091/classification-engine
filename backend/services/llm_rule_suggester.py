@@ -17,7 +17,7 @@ from backend.models import GLCode, Transaction, ClassificationRule, Vendor, Vend
 
 logger = logging.getLogger(__name__)
 
-LLM_MODEL = os.getenv("LLM_MODEL", "claude-sonnet-4-20250514")
+LLM_MODEL = os.getenv("LLM_MODEL", "claude-opus-4-6")
 
 SYSTEM_PROMPT = (
     "You are a rule suggestion engine for a GL code classification system at a small insurance agency.\n\n"
@@ -117,7 +117,23 @@ def _parse_llm_json(text: str) -> list[dict]:
         cleaned = cleaned.split("\n", 1)[1] if "\n" in cleaned else cleaned[3:]
     if cleaned.endswith("```"):
         cleaned = cleaned[:-3]
-    return json.loads(cleaned.strip())
+    cleaned = cleaned.strip()
+    try:
+        return json.loads(cleaned)
+    except json.JSONDecodeError:
+        # Truncated response — try to salvage valid entries
+        # Find the last complete object by looking for "}," or "}\n]"
+        last_complete = cleaned.rfind("},")
+        if last_complete == -1:
+            last_complete = cleaned.rfind("}")
+        if last_complete > 0:
+            truncated = cleaned[:last_complete + 1] + "\n]"
+            try:
+                return json.loads(truncated)
+            except json.JSONDecodeError:
+                pass
+        logger.error("Could not parse LLM JSON response (len=%d)", len(cleaned))
+        return []
 
 
 def suggest_rules(
@@ -162,7 +178,7 @@ def suggest_rules(
     client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
     response = client.messages.create(
         model=LLM_MODEL,
-        max_tokens=8192,
+        max_tokens=16384,
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_content}],
     )

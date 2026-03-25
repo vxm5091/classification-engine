@@ -155,17 +155,38 @@ def classify_transactions(
             txn.country = info.get("country")
 
     # ------------------------------------------------------------------
-    # Step 3: Deterministic rule matching (skip pre-classified)
+    # Step 3: Deterministic rule matching
     # ------------------------------------------------------------------
     rules = load_active_rules(db)
     conflict_items: list[dict] = []
 
     for txn in expense_txns:
-        if txn.method == "Pre-classified" and txn.gl_code is not None:
+        is_preclassified = txn.method == "Pre-classified" and txn.gl_code is not None
+        result = classify_deterministic(txn, rules)
+
+        if is_preclassified:
             summary.pre_classified += 1
+            if result is not None:
+                if result.gl_code == txn.gl_code:
+                    txn.method = "Pre-classified"
+                    txn.rule_id = result.rule_id
+                    txn.confidence = "High"
+                    rule_desc = _format_rule_reasoning(result.matched_rule) if result.matched_rule else f"Rule R-{result.rule_id}"
+                    parts = [f"Pre-classified GL {txn.gl_code} confirmed by rule match: {rule_desc}"]
+                    if result.matched_rule and getattr(result.matched_rule, "reasoning", None):
+                        parts.append(f"\n\nRule Justification: {result.matched_rule.reasoning}")
+                    txn.reasoning = "".join(parts)
+                else:
+                    txn.confidence = "Medium"
+                    txn.review_status = "Flagged"
+                    rule_desc = _format_rule_reasoning(result.matched_rule) if result.matched_rule else f"Rule R-{result.rule_id}"
+                    txn.reasoning = (
+                        f"Pre-classified as GL {txn.gl_code}, but rule match suggests GL {result.gl_code}. "
+                        f"{rule_desc}. Review recommended."
+                    )
+                    summary.medium_confidence += 1
             continue
 
-        result = classify_deterministic(txn, rules)
         if result is not None:
             _apply_rule_result(txn, result)
             summary.rule_matched += 1

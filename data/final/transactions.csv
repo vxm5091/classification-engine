@@ -1,0 +1,1054 @@
+id,transaction_id,version,date,raw_description,amount,vendor_id,service_id,city,state,country,is_expense,gl_code,confidence,method,rule_id,reasoning,review_status,reviewed_by,reviewed_at,source_file,created_at,upload_batch
+3068,UPL-001,1,2025-11-01,GOOGLE *ADS336008342CC@GOOGLE.COM       CA,519.94,GOOGL,GOOGL-ADS,,CA,US,t,5030,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3069,UPL-002,1,2025-10-31,DD *DOORDASH CUBBYS SAN FRANCISCO       CA,27.61,DOORDASH,DOORDASH-CUBBYS,SAN FRANCISCO,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3070,UPL-003,1,2025-10-31,DD *DOORDASH MCDONALSAN FRANCISCO       CA,31.06,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3071,UPL-004,1,2025-10-31,TST* RREAL TACOS- LALAWRENCEVILLE       GA,84.38,RREALTACOS,,Lawrenceville,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3072,UPL-005,1,2025-10-30,MAILCHIMP LLC       ATLANTA             GA,60.00,MAILCHIMP,,Atlanta,GA,US,t,5030,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3073,UPL-006,1,2025-10-30,WAL-MART SUPERCENTERLOGANVILLE          GA,10.93,WALMART,WALMART-SC,Loganville,GA,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3074,UPL-007,1,2025-10-29,Amazon Prime        Amazon.com          WA,16.09,AMAZON,AMZN-PRIM,,WA,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3075,UPL-008,1,2025-10-29,KUDOBOARD           DENVER              CO,5.99,KUDOBOARD,,Denver,CO,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3076,UPL-009,1,2025-10-29,KUDOBOARD           DENVER              CO,104.30,KUDOBOARD,,Denver,CO,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3077,UPL-010,1,2025-10-25,INSURANCEXDATE.COM  WILMINGTON          DE,750.00,INSXDATE,INSXDATE,Wilmington,DE,US,t,5030,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3078,UPL-011,1,2025-10-24,WALMART.COM         WALMART.COM         AR,111.69,WALMART,WLMRT-COM,,AR,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3079,UPL-012,1,2025-10-24,WALMART.COM 80092562BENTONVILLE         AR,2.05,WALMART,WLMRT-COM,Bentonville,AR,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3080,UPL-013,1,2025-10-24,DD *DOORDASH MCDONALSAN FRANCISCO       CA,31.06,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3081,UPL-014,1,2025-10-24,MDC*WALTON EMC MDC=WMONROE              GA,224.61,WALTONEMC,,Monroe,GA,US,t,6260,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3082,UPL-015,1,2025-10-23,WALMART.COM         WALMART.COM         AR,138.09,WALMART,WLMRT-COM,,AR,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3083,UPL-016,1,2025-10-21,GOOGLE *ADS336008342CC@GOOGLE.COM       CA,500.00,GOOGL,GOOGL-ADS,,CA,US,t,5030,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3084,UPL-017,1,2025-10-21,City BBQ Sandy SprinSANDY SPRINGS       GA,29.05,CITYBBQ,,SANDY SPRINGS,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3085,UPL-018,1,2025-10-21,AMERICAS PROFESSOR 8MISSOULA            MT,199.00,AMPROF,,Missoula,MT,US,t,6180,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3086,UPL-019,1,2025-10-21,MICROSOFT           MSBILL.INFO,9.99,MSFT,,,,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3087,UPL-020,1,2025-10-18,USECANOPY.COM       BEAVERTON           OR,250.00,CANOPY,,Beaverton,OR,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3088,UPL-021,1,2025-10-17,DD *DOORDASH CHIPOTLSAN FRANCISCO       CA,30.09,DOORDASH,DD-CHIPOT,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3089,UPL-022,1,2025-10-17,DD *DOORDASH MCDONALSAN FRANCISCO       CA,27.02,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3090,UPL-023,1,2025-10-17,HUEY MAGOOS LOGANVILLOGANVILLE          GA,91.98,HUEYMAGOO,HUEYMAGOO,Loganville,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3091,UPL-024,1,2025-10-17,A1010BUSD01         MSBILL.INFO,175.00,MICROSOFT,MSFT-BILL,,,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3092,UPL-025,1,2025-10-16,BETTERMENT BUSINESS NEW YORK            NY,261.53,BETTERMT,BETTERMT-B,New York,NY,US,t,6040,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3093,UPL-026,1,2025-10-16,ASCEND PAYMENTS     SAN FRANCISCO       CA,240.00,ASCENDPAY,ASCENDPAY,San Francisco,CA,US,t,6115,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3094,UPL-027,1,2025-10-16,WALMART.COM         WALMART.COM         AR,162.73,WALMART,WLMRT-COM,,AR,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3095,UPL-028,1,2025-10-15,RF *RICONO ACCOUNTINNEW YORK            NY,1700.00,RICONO,,New York,NY,US,t,6100,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3096,UPL-029,1,2025-10-14,IDEMIA I&S USA      844-321-2124        MA,51.99,IDEMIA,IDEMIA,,MA,US,t,6115,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3097,UPL-030,1,2025-10-14,AMAZON MARKEPLACE NA PA,40.26,AMZN,AMZN-MKTPL,,PA,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3098,UPL-031,1,2025-10-14,AMAZON.COM          AMZN.COM/BILL       WA,50.00,AMAZON,AMAZON-COM,,WA,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3099,UPL-032,1,2025-10-14,BLACK RIFLE COFFEE  SALT LAKE CITY      UT,20.39,BLKRIFLE,,SALT LAKE CITY,UT,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3100,UPL-033,1,2025-10-14,OPENAI *CHATGPT SUBSSAN FRANCISCO       CA,20.00,OPENAI,OPENAI-GPT,San Francisco,CA,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3101,UPL-034,1,2025-10-13,POPSHELF #23151 0000LOGANVILLE          GA,2.12,POPSHELF,,Loganville,GA,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3102,UPL-035,1,2025-10-10,GOOGLE *ADS336008342CC@GOOGLE.COM       CA,500.00,GOOGL,GOOGL-ADS,,CA,US,t,5030,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3103,UPL-036,1,2025-10-10,INSURANCEXDATE.COM  WILMINGTON          DE,250.00,INSXDATE,INSXDATE,Wilmington,DE,US,t,5030,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3104,UPL-037,1,2025-10-10,INSURANCEXDATE.COM  WILMINGTON          DE,450.00,INSXDATE,INSXDATE,Wilmington,DE,US,t,5030,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3105,UPL-038,1,2025-10-10,INSURANCEXDATE.COM  WILMINGTON          DE,1100.00,INSXDATE,INSXDATE,Wilmington,DE,US,t,5030,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3106,UPL-039,1,2025-10-10,DD *DOORDASH CHIPOTLSAN FRANCISCO       CA,28.63,DOORDASH,DD-CHIPOT,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3107,UPL-040,1,2025-10-10,DD *DOORDASH MCDONALSAN FRANCISCO       CA,28.02,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3108,UPL-041,1,2025-10-10,SUKI 0001           LOGANVILLE          GA,93.00,SUKI,SUKI,Loganville,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3109,UPL-042,1,2025-10-09,Sircon - STATEINSURA517-381-3860        MI,120.00,SIRCON,SIRCON-INS,,MI,US,t,6120,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3110,UPL-043,1,2025-10-09,OPENAI *CHATGPT SUBSSAN FRANCISCO       CA,120.00,OPENAI,OPENAI-GPT,San Francisco,CA,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3111,UPL-044,1,2025-10-09,AT&T UVERSE PAYMENT 8002882020          TX,160.00,ATT,ATT-UVERSE,,TX,US,t,6250,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3112,UPL-045,1,2025-10-09,COMCAST BUSINESS MOB844-963-0206        PA,69.70,COMCAST,COMCAST-BIZ,,PA,US,t,6260,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3113,UPL-046,1,2025-10-08,DOLLAR TREE 00000407LOGANVILLE          GA,2.65,DOLLARTREE,,Loganville,GA,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3114,UPL-047,1,2025-10-08,POPSHELF #23151 0000LOGANVILLE          GA,20.61,POPSHELF,,Loganville,GA,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3115,UPL-048,1,2025-10-07,USPS PO 1252030268 0LOGANVILLE          GA,18.05,USPS,USPS-PO,Loganville,GA,US,t,6140,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3116,UPL-049,1,2025-10-05,AMAZON MARKEPLACE NA PA,21.30,AMZN,AMZN-MKTPL,,PA,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3117,UPL-050,1,2025-10-03,GEORGIA BAPTIST MISSSuwanee             GA,400.00,GABAPTIST,GABAPTIST,Suwanee,GA,US,t,6130,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3118,UPL-051,1,2025-10-03,HOBBY-LOBBY #794 000LOGANVILLE          GA,6.32,HOBBYLOBBY,,Loganville,GA,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3119,UPL-052,1,2025-10-03,WALMART.COM         WALMART.COM         AR,164.34,WALMART,WLMRT-COM,,AR,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3120,UPL-053,1,2025-10-03,CHILI'S 1385 ECOMM 0LOGANVILLE          GA,123.61,CHILIS,CHILIS-EC,Loganville,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3121,UPL-054,1,2025-10-03,DD *DOORDASH BANDABUSAN FRANCISCO       CA,24.36,DOORDASH,DD-BANDAB,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3122,UPL-055,1,2025-10-03,DD *DOORDASH MCDONALSAN FRANCISCO       CA,24.51,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3123,UPL-056,1,2025-10-02,INDEED JOBS         AUSTIN              TX,180.00,INDEED,INDEED-JOBS,Austin,TX,US,t,6115,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3124,UPL-057,1,2025-10-01,GOOGLE *ADS336008342CC@GOOGLE.COM       CA,516.08,GOOGL,GOOGL-ADS,,CA,US,t,5030,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3125,UPL-058,1,2025-10-01,ATLANTA OFFICE TECHNNORCROSS            GA,41.24,ATLOFFTECH,,Norcross,GA,US,t,6115,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3126,UPL-059,1,2025-10-01,WAVE - *MEDTECH CONSLAWRENCEVILLE       GA,3677.81,WAVE,WAVE-MDTC,Lawrenceville,GA,US,t,6115,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3127,UPL-060,1,2025-10-01,Sircon - STATEINSURA517-381-3860        MI,87.98,SIRCON,SIRCON-INS,,MI,US,t,6120,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3128,UPL-061,1,2025-09-30,MAILCHIMP LLC       ATLANTA             GA,60.00,MAILCHIMP,,Atlanta,GA,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3129,UPL-062,1,2025-09-29,DD *DOORDASH BANDABUSAN FRANCISCO       CA,25.19,DOORDASH,DD-BANDAB,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3130,UPL-063,1,2025-09-29,DD *DOORDASH MCDONALSAN FRANCISCO       CA,22.72,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3131,UPL-064,1,2025-09-29,HUEY MAGOOS LOGANVILLOGANVILLE          GA,15.28,HUEYMAGOO,HUEYMAGOO,Loganville,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3132,UPL-065,1,2025-09-29,HUEY MAGOOS LOGANVILLOGANVILLE          GA,55.55,HUEYMAGOO,HUEYMAGOO,Loganville,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3133,UPL-066,1,2025-09-25,HOBBY-LOBBY #794 000LOGANVILLE          GA,49.95,HOBBYLOBBY,,Loganville,GA,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3134,UPL-067,1,2025-09-25,MDC*WALTON EMC MDC=WMONROE              GA,227.34,WALTONEMC,,Monroe,GA,US,t,6260,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3135,UPL-068,1,2025-09-22,WALMART.COM 80092562BENTONVILLE         AR,161.19,WALMART,WLMRT-COM,Bentonville,AR,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3136,UPL-069,1,2025-09-21,MICROSOFT           MSBILL.INFO,9.99,MSFT,,,,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3137,UPL-070,1,2025-09-19,DD *DOORDASH BANDABUSAN FRANCISCO       CA,24.36,DOORDASH,DD-BANDAB,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3138,UPL-071,1,2025-09-19,DD *DOORDASH CHICK-FSAN FRANCISCO       CA,22.29,DOORDASH,,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3139,UPL-072,1,2025-09-19,DOMINO'S 5732 000005GRAYSON             GA,38.11,DOMINOS,,Grayson,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3140,UPL-073,1,2025-09-19,GRAYSON SWEET HOME CGRAYSON             GA,17.68,GRYSNSWT,GRYSNSWT,Grayson,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3141,UPL-074,1,2025-09-19,MR. TACO RESTAURANT FORT GILLEM         GA,27.46,MRTACO,,Fort Gillem,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3142,UPL-075,1,2025-09-18,GOOGLE *ADS336008342CC@GOOGLE.COM       CA,500.00,GOOGL,GOOGL-ADS,,CA,US,t,5030,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3143,UPL-076,1,2025-09-18,USECANOPY.COM       BEAVERTON           OR,250.00,CANOPY,,Beaverton,OR,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3144,UPL-077,1,2025-09-17,MONITOREDU INC      SPRING HILL         TN,18.00,MONITREDU,MONITREDU,Spring Hill,TN,US,t,6120,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3145,UPL-078,1,2025-09-17,WL *VUE*TESTING EXAMBLOOMINGTON         MN,67.00,VUE,VUE-EXAM,Bloomington,MN,US,t,6120,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3146,UPL-079,1,2025-09-17,HOBBY-LOBBY #794 000LOGANVILLE          GA,5.28,HOBBYLOBBY,,Loganville,GA,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3147,UPL-080,1,2025-09-17,A1010BUSD01         MSBILL.INFO,175.00,MICROSOFT,MSFT-BILL,,,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3148,UPL-081,1,2025-09-16,ASCEND PAYMENTS     SAN FRANCISCO       CA,240.00,ASCENDPAY,ASCENDPAY,San Francisco,CA,US,t,6115,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3149,UPL-082,1,2025-09-16,VISTAPRINT          WALTHAM             MA,64.42,VISTAPRINT,,Waltham,MA,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3150,UPL-083,1,2025-09-15,RF *RICONO ACCOUNTINNEW YORK            NY,1700.00,RICONO,,New York,NY,US,t,6100,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3151,UPL-084,1,2025-09-14,OPENAI *CHATGPT SUBSSAN FRANCISCO       CA,20.00,OPENAI,OPENAI-GPT,San Francisco,CA,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3152,UPL-085,1,2025-09-12,DD *DOORDASH CHIPOTLSAN FRANCISCO       CA,25.75,DOORDASH,DD-CHIPOT,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3153,UPL-086,1,2025-09-12,DD *DOORDASH CHIPOTLSAN FRANCISCO       CA,42.25,DOORDASH,DD-CHIPOT,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3154,UPL-087,1,2025-09-12,EL RANCHERO MEXICAN LOGANVILLE          GA,83.21,ELRANCHER,ELRANCHER,Loganville,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3155,UPL-088,1,2025-09-10,WALMART.COM         WALMART.COM         AR,171.39,WALMART,WLMRT-COM,,AR,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3156,UPL-089,1,2025-09-10,APEX SOFTWARE APEX S210-6996666         TX,185.00,APEXSW,APEXSW,,TX,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3157,UPL-090,1,2025-09-10,APEX SOFTWARE APEX S210-6996666         TX,315.00,APEXSW,APEXSW,,TX,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3158,UPL-091,1,2025-09-09,OPENAI *CHATGPT SUBSSAN FRANCISCO       CA,120.00,OPENAI,OPENAI-GPT,San Francisco,CA,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3159,UPL-092,1,2025-09-09,AT&T UVERSE PAYMENT 8002882020          TX,160.00,ATT,ATT-UVERSE,,TX,US,t,6250,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3160,UPL-093,1,2025-09-08,COMCAST BUSINESS MOB844-963-0206        PA,69.70,COMCAST,COMCAST-BIZ,,PA,US,t,6260,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3161,UPL-094,1,2025-08-30,MAILCHIMP LLC       ATLANTA             GA,60.00,MAILCHIMP,,Atlanta,GA,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3162,UPL-095,1,2025-08-29,Amazon Prime        Amazon.com          WA,16.09,AMAZON,AMZN-PRIM,,WA,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3163,UPL-096,1,2025-08-28,93578-ATLANTA AIRPORATLANTA             GA,120.00,ATLAIRPRT,ATLAIRPRT,Atlanta,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3164,UPL-097,1,2025-08-28,TAILWIND FWA 5455000877-8144102         NC,45.86,TAILWIND,TAILWIND,,NC,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3165,UPL-098,1,2025-08-26,ATLANTA BRAVES ALL SATLANTA             GA,30.82,ATLBRAVES,ATLBRAVES,Atlanta,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3166,UPL-099,1,2025-08-26,MDC*WALTON EMC MDC=WMONROE              GA,253.70,WALTONEMC,,Monroe,GA,US,t,6260,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3167,UPL-100,1,2025-08-25,AMAZON MARKEPLACE NA PA,21.60,AMZN,AMZN-MKTPL,,PA,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3168,UPL-101,1,2025-08-25,HILTON GARDEN/HOME2SFORT WAYNE          IN,67.08,HILTON,HILTON-GI,Fort Wayne,IN,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3169,UPL-102,1,2025-08-23,WALMART.COM         WALMART.COM         AR,109.72,WALMART,WLMRT-COM,,AR,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3170,UPL-103,1,2025-08-21,PROFESSIONAL INSURAN402-3921611         NE,445.00,PROFINSUR,,,NE,US,t,6130,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3171,UPL-104,1,2025-08-21,BLACK RIFLE COFFEE  SALT LAKE CITY      UT,12.23,BLKRIFLE,,SALT LAKE CITY,UT,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3172,UPL-105,1,2025-08-21,MICROSOFT           MSBILL.INFO,9.99,MSFT,,,,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3173,UPL-106,1,2025-08-20,GOOGLE*ADS3360083427CC GOOGLE.COM,500.00,GOOGL,GOOGL-ADS,,,US,t,5030,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3174,UPL-107,1,2025-08-20,DD *DOORDASH CHIPOTLSAN FRANCISCO       CA,23.72,DOORDASH,DD-CHIPOT,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3175,UPL-108,1,2025-08-20,DD *DOORDASH MCDONALSAN FRANCISCO       CA,27.99,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3176,UPL-109,1,2025-08-20,TST* FOGGY BOTTOM BBLOGANVILLE          GA,107.99,FOGGYBBQ,,LOGANVILLE,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3177,UPL-110,1,2025-08-19,KROGER              LOGANVILLE          GA,15.60,KROGER,,Loganville,GA,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3178,UPL-111,1,2025-08-18,USECANOPY.COM       BEAVERTON           OR,250.00,CANOPY,,Beaverton,OR,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3179,UPL-112,1,2025-08-17,A1010BUSD01         MSBILL.INFO,165.00,MICROSOFT,MSFT-BILL,,,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3180,UPL-113,1,2025-08-16,ASCEND PAYMENTS     SAN FRANCISCO       CA,240.00,ASCENDPAY,ASCENDPAY,San Francisco,CA,US,t,6115,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3181,UPL-114,1,2025-08-15,RF *RICONO ACCOUNTINNEW YORK            NY,1700.00,RICONO,,New York,NY,US,t,6100,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3182,UPL-115,1,2025-08-15,CHICK-FIL-A #00916 0LOGANVILLE          GA,19.31,CHICKFILA,,Loganville,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3183,UPL-116,1,2025-08-15,DD *DOORDASH BANDABUSAN FRANCISCO       CA,27.19,DOORDASH,DD-BANDAB,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3184,UPL-117,1,2025-08-15,DD *DOORDASH CHIPOTLSAN FRANCISCO       CA,36.02,DOORDASH,DD-CHIPOT,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3185,UPL-118,1,2025-08-15,RAISINGCANES 1069MOB972-769-3100        GA,71.82,RAISCANES,,,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3186,UPL-119,1,2025-08-14,GREAT HARVEST BREAD LOGANVILLE          GA,34.13,GRTHARV,,Loganville,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3187,UPL-120,1,2025-08-14,KUDOBOARD           DENVER              CO,52.30,KUDOBOARD,,Denver,CO,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3188,UPL-121,1,2025-08-14,OPENAI *CHATGPT SUBSSAN FRANCISCO       CA,20.00,OPENAI,OPENAI-GPT,San Francisco,CA,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3189,UPL-122,1,2025-08-13,USPS KIOSK 125203955LOGANVILLE          GA,12.35,USPS,USPS-KIOSK,Loganville,GA,US,t,6140,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3190,UPL-123,1,2025-08-13,WALMART.COM         WALMART.COM         AR,107.93,WALMART,WLMRT-COM,,AR,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3191,UPL-124,1,2025-08-11,GOOGLE*ADS3360083427CC GOOGLE.COM,500.00,GOOGL,GOOGL-ADS,,,US,t,5030,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3192,UPL-125,1,2025-08-11,WALGREENS           LOGANVILLE          GA,105.34,WALGREENS,WALGREENS,Loganville,GA,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3193,UPL-126,1,2025-08-09,OPENAI *CHATGPT SUBSSAN FRANCISCO       CA,120.00,OPENAI,OPENAI-GPT,San Francisco,CA,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3194,UPL-127,1,2025-08-09,AT&T UVERSE PAYMENT 8002882020          TX,160.00,ATT,ATT-UVERSE,,TX,US,t,6250,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3195,UPL-128,1,2025-08-08,BRADY PEST CONTROL ILAWRENCEVILLE       GA,300.00,BRADYPEST,,LAWRENCEVILLE,GA,US,t,6115,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3196,UPL-129,1,2025-08-08,WALMART.COM         WALMART.COM         AR,75.68,WALMART,WLMRT-COM,,AR,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3197,UPL-130,1,2025-08-08,93577-ATLANTA AIRPORATLANTA             GA,90.00,ATLAIRPORT,,Atlanta,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3198,UPL-131,1,2025-08-08,DD *DOORDASH LOSARIBSAN FRANCISCO       CA,18.72,DOORDASH,DD-LOSARI,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3199,UPL-132,1,2025-08-08,DD *DOORDASH MIGUELSSAN FRANCISCO       CA,16.40,DOORDASH,DD-MIGUEL,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3200,UPL-133,1,2025-08-08,EXXONMOBIL 9747     HOFFMAN ESTAT       IL,17.67,EXXON,EXXON-GAS,Hoffman Estates,IL,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3201,UPL-134,1,2025-08-08,HAMPTON INN MT PROSPMT PROSPECT         IL,384.25,HAMPTON,HAMPTON,Mt Prospect,IL,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3202,UPL-135,1,2025-08-08,HERTZ CAR RENTAL,133.05,HERTZ,HERTZ-RENT,,,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3203,UPL-136,1,2025-08-08,HUEY MAGOOS LOGANVILLOGANVILLE          GA,67.71,HUEYMAGOO,HUEYMAGOO,Loganville,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3204,UPL-137,1,2025-08-08,COMCAST BUSINESS MOB844-963-0206        PA,69.70,COMCAST,COMCAST-BIZ,,PA,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3205,UPL-138,1,2025-08-07,USPS KIOSK 125203955LOGANVILLE          GA,19.60,USPS,USPS-KIOSK,Loganville,GA,US,t,6140,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3206,UPL-139,1,2025-08-07,USPS KIOSK 125203955LOGANVILLE          GA,24.35,USPS,USPS-KIOSK,Loganville,GA,US,t,6140,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3207,UPL-140,1,2025-08-06,TST* LADY DAHLIA 001MOUNT PROSPECT      IL,136.55,LADYDAHLI,LADYDAHLI,Mount Prospect,IL,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3208,UPL-141,1,2025-08-05,"CHECKR, INC CHECKR.CSAN FRANCISCO       CA",55.49,CHECKR,CHECKR,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3209,UPL-142,1,2025-08-05,DD *DOORDASH BANDABUSAN FRANCISCO       CA,19.20,DOORDASH,DD-BANDAB,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3210,UPL-143,1,2025-08-05,DD *DOORDASH MCDONALSAN FRANCISCO       CA,19.09,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3211,UPL-144,1,2025-08-05,THAI TASTE 0000     LOGANVILLE          GA,104.57,THAITASTE,THAITASTE,Loganville,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3212,UPL-145,1,2025-08-04,ORBITZ*7319682764580ORBITZ.COM          WA,139.34,ORBITZ,ORBITZ,,WA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3213,UPL-146,1,2025-08-04,GOOGLE *GOOGLE ONE   G.CO/HELPPAY#      CA,124.99,GOOGL,GOOGL-ONE,,CA,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3214,UPL-147,1,2025-08-02,INDEED JOBS         AUSTIN              TX,224.18,INDEED,INDEED-JOBS,Austin,TX,US,t,6115,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3215,UPL-148,1,2025-08-01,GOOGLE*ADS3360083427CC GOOGLE.COM,519.91,GOOGL,GOOGL-ADS,,,US,t,5030,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3216,UPL-149,1,2025-08-01,ATLANTA OFFICE TECHNNORCROSS            GA,37.74,ATLOFFTECH,,Norcross,GA,US,t,6115,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3217,UPL-150,1,2025-08-01,WAVE - *MEDTECH CONSLAWRENCEVILLE       GA,3509.91,WAVE,WAVE-MDTC,Lawrenceville,GA,US,t,6115,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3218,UPL-151,1,2025-08-01,Sircon - STATEINSURA517-381-3860        MI,143.30,SIRCON,SIRCON-INS,,MI,US,t,6120,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3219,UPL-152,1,2025-08-01,WALMART.COM 80092562BENTONVILLE         AR,41.62,WALMART,WLMRT-COM,Bentonville,AR,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3220,UPL-153,1,2025-08-01,CHILI'S             LOGANVILLE          GA,141.68,CHILIS,CHILIS,Loganville,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3221,UPL-154,1,2025-07-31,VSP*WORKWISE COMPLIATAMPA               FL,-158.95,VSP,VSP-WRKWS,Tampa,FL,US,t,6115,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3222,UPL-155,1,2025-07-30,RF *RICONO ACCOUNTINNEW YORK            NY,1700.00,RICONO,,New York,NY,US,t,6100,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3223,UPL-156,1,2025-07-30,USPS KIOSK 125203955LOGANVILLE          GA,12.30,USPS,USPS-KIOSK,Loganville,GA,US,t,6140,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3224,UPL-157,1,2025-07-30,AMAZON MARKEPLACE NA PA,39.78,AMZN,AMZN-MKTPL,,PA,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3225,UPL-158,1,2025-07-30,MAILCHIMP LLC       ATLANTA             GA,60.00,MAILCHIMP,,Atlanta,GA,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3226,UPL-159,1,2025-07-29,DOMAIN.COM          (866)539-2854       MA,26.17,DOMAINCOM,,,MA,US,t,6115,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3227,UPL-160,1,2025-07-25,USPS KIOSK 125203955LOGANVILLE          GA,21.05,USPS,USPS-KIOSK,Loganville,GA,US,t,6140,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3228,UPL-161,1,2025-07-25,WALMART.COM         WALMART.COM         AR,50.89,WALMART,WLMRT-COM,,AR,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3229,UPL-162,1,2025-07-25,MDC*WALTON EMC MDC=WMONROE              GA,225.57,WALTONEMC,,Monroe,GA,US,t,6260,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3230,UPL-163,1,2025-07-24,VISTAPRINT          WALTHAM             MA,48.32,VISTAPRINT,,Waltham,MA,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3231,UPL-164,1,2025-07-24,TST* SRI THAI SNELLVSNELLVILLE          GA,55.44,SRITHAI,,Snellville,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3232,UPL-165,1,2025-07-23,ATHENA'S GYROS      LOGANVILLE          GA,57.00,ATHGYROS,ATHGYROS,Loganville,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3233,UPL-166,1,2025-07-18,CHICK-FIL-A #00916 0LOGANVILLE          GA,44.33,CHICKFILA,,Loganville,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3234,UPL-167,1,2025-07-18,DD *DOORDASH CHILISGSAN FRANCISCO       CA,38.71,DOORDASH,DD-CHILIS,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3235,UPL-168,1,2025-07-18,DD *DOORDASH THESMOKSAN FRANCISCO       CA,32.42,DOORDASH,,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3236,UPL-169,1,2025-07-18,USECANOPY.COM       BEAVERTON           OR,250.00,CANOPY,,Beaverton,OR,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3237,UPL-170,1,2025-07-17,A1010BUSD01         MSBILL.INFO,187.50,MICROSOFT,MSFT-BILL,,,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3238,UPL-171,1,2025-07-17,COMCAST / XFINITY   800-266-2278        GA,-182.31,COMCAST,COMCAST-XFN,,GA,US,t,6260,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3239,UPL-172,1,2025-07-16,ASCEND PAYMENTS     SAN FRANCISCO       CA,240.00,ASCENDPAY,ASCENDPAY,San Francisco,CA,US,t,6115,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3240,UPL-173,1,2025-07-16,WALMART.COM         WALMART.COM         AR,78.01,WALMART,WLMRT-COM,,AR,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3241,UPL-174,1,2025-07-16,BT*DUTCH BROS       GRANTS PASS         OR,100.00,DUTCHBROS,DUTCHBROS,Grants Pass,OR,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3242,UPL-175,1,2025-07-15,VSP*WORKWISE COMPLIATAMPA               FL,158.95,VSP,VSP-WRKWS,Tampa,FL,US,t,6115,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3243,UPL-176,1,2025-07-11,ATHENA'S GYROS      LOGANVILLE          GA,57.00,ATHGYROS,ATHGYROS,Loganville,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3244,UPL-177,1,2025-07-11,DD *DOORDASH CHIPOTLSAN FRANCISCO       CA,30.40,DOORDASH,DD-CHIPOT,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3245,UPL-178,1,2025-07-11,DD *DOORDASH MCDONALSAN FRANCISCO       CA,23.67,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3246,UPL-179,1,2025-07-11,TST* PARK BAR 001909ATLANTA             GA,107.20,PARKBAR,PARKBAR,Atlanta,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3247,UPL-180,1,2025-07-11,ADOBE Adobe Systems SAN JOSE            CA,-290.07,ADOBE,,San Jose,CA,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3248,UPL-181,1,2025-07-11,ADOBE Adobe Systems SAN JOSE            CA,209.01,ADOBE,,San Jose,CA,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3249,UPL-182,1,2025-07-11,DocuSign            SEATTLE             WA,960.00,DOCUSIGN,,Seattle,WA,US,t,6200,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3250,UPL-183,1,2025-07-10,GOOGLE*ADS3360083427CC GOOGLE.COM,500.00,GOOGL,GOOGL-ADS,,,US,t,5030,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3251,UPL-184,1,2025-07-09,Sircon - STATEINSURA517-381-3860        MI,57.86,SIRCON,SIRCON-INS,,MI,US,t,6120,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3252,UPL-185,1,2025-07-09,Sircon - STATEINSURA517-381-3860        MI,193.00,SIRCON,SIRCON-INS,,MI,US,t,6120,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3253,UPL-186,1,2025-07-09,AMAZON MARKEPLACE NA PA,14.63,AMZN,AMZN-MKTPL,,PA,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3254,UPL-187,1,2025-07-09,AT&T UVERSE PAYMENT 8002882020          TX,160.00,ATT,ATT-UVERSE,,TX,US,t,6250,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3255,UPL-188,1,2025-07-09,COMCAST BUSINESS MOB844-963-0206        PA,42.30,COMCAST,COMCAST-BIZ,,PA,US,t,6260,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3256,UPL-189,1,2025-07-04,GOOGLE *GOOGLE ONE   G.CO/HELPPAY#      CA,124.99,GOOGL,GOOGL-ONE,,CA,US,t,6130,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3257,UPL-190,1,2025-07-02,WALMART.COM         WALMART.COM         AR,6.58,WALMART,WLMRT-COM,,AR,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3258,UPL-191,1,2025-07-02,WALMART.COM 80092562BENTONVILLE         AR,61.92,WALMART,WLMRT-COM,Bentonville,AR,US,t,6160,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3259,UPL-192,1,2025-07-02,DD *DOORDASH CHIPOTLSAN FRANCISCO       CA,25.91,DOORDASH,DD-CHIPOT,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3260,UPL-193,1,2025-07-02,DD *DOORDASH MCDONALSAN FRANCISCO       CA,23.83,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3261,UPL-194,1,2025-07-02,GREAT HARVEST BREAD LOGANVILLE          GA,25.36,GRTHARV,,Loganville,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3262,UPL-195,1,2025-07-02,HUEY MAGOOS LOGANVILLOGANVILLE          GA,70.72,HUEYMAGOO,HUEYMAGOO,Loganville,GA,US,t,6170,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3263,UPL-196,1,2025-07-01,GOOGLE*ADS3360083427CC GOOGLE.COM,484.43,GOOGL,GOOGL-ADS,,,US,t,5030,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3264,UPL-197,1,2025-07-01,ATLANTA OFFICE TECHNNORCROSS            GA,25.11,ATLOFFTECH,,Norcross,GA,US,t,6115,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3265,UPL-198,1,2025-07-01,WAVE - *MEDTECH CONSLAWRENCEVILLE       GA,3509.82,WAVE,WAVE-MDTC,Lawrenceville,GA,US,t,6115,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3266,UPL-199,1,2025-06-30,MAILCHIMP LLC       ATLANTA             GA,60.00,MAILCHIMP,,Atlanta,GA,US,t,5030,High,Pre-classified,,,Unreviewed,,,classified.csv,2026-03-19 23:15:54.028746,"classified.csv (Mar 19, 2026 7:15 PM)"
+3267,UPL-200,1,2025-11-04,WALMART.COM         WALMART.COM         AR,150.38,WALMART,WLMRT-COM,,AR,US,t,6160,High,Rule Match,131,"Deterministic match: Rule R-131 | vendor=WALMART | → GL 6160
+
+Rule Justification: All 10 historical Walmart transactions are classified as GL 6160 (Office Supplies & Expenses). Walmart purchases at this agency cover office supplies, groceries for the office, and general equipment. This covers both Walmart.com (WLMRT-COM) and in-store (WALMART-SC) service IDs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3268,UPL-201,1,2025-11-03,ATLANTA OFFICE TECHNNORCROSS            GA,24.63,ATLOFFTECH,,Norcross,GA,US,t,6115,High,Rule Match,155,"Deterministic match: Rule R-155 | vendor=ATLOFFTECH | → GL 6115
+
+Rule Justification: All 3 historical Atlanta Office Technologies transactions are classified as GL 6115 (Outside Services). This vendor provides IT support and office technology services.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3269,UPL-202,1,2025-11-03,AUTOPAY PAYMENT - THANK YOU,-860.30,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3270,UPL-203,1,2025-11-03,Sircon - STATEINSURA517-381-3860        MI,34.11,SIRCON,SIRCON-INS,,MI,US,t,6120,High,Rule Match,137,"Deterministic match: Rule R-137 | vendor=SIRCON | → GL 6120
+
+Rule Justification: All 5 historical Sircon transactions are classified as GL 6120 (Licenses & Permits). Sircon (Vertafore) provides state insurance licensing and agent registration services, which aligns perfectly with the GL description.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3271,UPL-204,1,2025-11-03,WAVE - *MEDTECH CONSLAWRENCEVILLE       GA,3679.35,WAVE,WAVE-MDTC,Lawrenceville,GA,US,t,6115,High,Rule Match,136,"Deterministic match: Rule R-136 | vendor=WAVE | → GL 6115
+
+Rule Justification: All 3 historical Wave Financial (MEDTECH CONS) transactions are classified as GL 6115 (Outside Services). These are large recurring payments (~$3,500/month) for contracted consulting/services via Wave payment platform.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3272,UPL-205,1,2025-11-02,INDEED JOBS         AUSTIN              TX,94.07,INDEED,INDEED-JOBS,Austin,TX,US,t,6115,High,Rule Match,147,"Deterministic match: Rule R-147 | vendor=INDEED | → GL 6115
+
+Rule Justification: Both historical Indeed transactions are classified as GL 6115 (Outside Services). Indeed is a job posting/recruitment platform. Recruitment services fall under outside services (HR services mentioned in 6115 description).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3273,UPL-206,1,2025-11-01,GOOGLE *ADS336008342CC@GOOGLE.COM       CA,519.94,GOOGL,GOOGL-ADS,,CA,US,t,5030,High,Rule Match,132,"Deterministic match: Rule R-132 | vendor=GOOGL | service=GOOGL-ADS | → GL 5030
+
+Rule Justification: All historical Google Ads transactions (8/8) are classified as GL 5030 (Marketing & Advertising). Google Ads is a core marketing/lead generation channel for the insurance agency.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3274,UPL-207,1,2025-10-31,DD *DOORDASH CUBBYS SAN FRANCISCO       CA,27.61,DOORDASH,DOORDASH-CUBBYS,SAN FRANCISCO,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3275,UPL-208,1,2025-10-31,DD *DOORDASH MCDONALSAN FRANCISCO       CA,31.06,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3276,UPL-209,1,2025-10-31,TST* RREAL TACOS- LALAWRENCEVILLE       GA,84.38,RREALTACOS,,Lawrenceville,GA,US,t,6170,High,Rule Match,180,"Deterministic match: Rule R-180 | vendor=RREALTACOS | → GL 6170
+
+Rule Justification: The one historical Rreal Tacos transaction (UPL-004, $84.38) is classified as GL 6170 (Travel Meals Entertainment - Admin). Restaurant meals.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3277,UPL-210,1,2025-10-30,MAILCHIMP LLC       ATLANTA             GA,60.00,MAILCHIMP,,Atlanta,GA,US,t,5030,High,Rule Match,159,"Deterministic match: Rule R-159 | vendor=MAILCHIMP | → GL 5030
+
+Rule Justification: Historical Mailchimp transactions show a split: 2 coded as GL 5030 (Marketing & Advertising) and 2 coded as GL 6200 (Computer Internet & Software). However, Mailchimp is explicitly listed in the GL 5030 hierarchy description as a marketing campaign tool. The 6200 classifications appear to be inconsistencies. Recommending GL 5030 per the GL hierarchy definition.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3278,UPL-211,1,2025-10-30,WAL-MART SUPERCENTERLOGANVILLE          GA,10.93,WALMART,WALMART-SC,Loganville,GA,US,t,6160,High,Rule Match,131,"Deterministic match: Rule R-131 | vendor=WALMART | → GL 6160
+
+Rule Justification: All 10 historical Walmart transactions are classified as GL 6160 (Office Supplies & Expenses). Walmart purchases at this agency cover office supplies, groceries for the office, and general equipment. This covers both Walmart.com (WLMRT-COM) and in-store (WALMART-SC) service IDs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3279,UPL-212,1,2025-10-29,Amazon Prime        Amazon.com          WA,16.09,AMAZON,AMZN-PRIM,,WA,US,t,6160,High,Rule Match,149,"Deterministic match: Rule R-149 | vendor=AMAZON | → GL 6160
+
+Rule Justification: All 3 historical Amazon (Prime and Amazon.com) transactions are classified as GL 6160 (Office Supplies & Expenses). Amazon Prime membership and Amazon.com purchases support office supply procurement.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3280,UPL-213,1,2025-10-29,KUDOBOARD           DENVER              CO,5.99,KUDOBOARD,,Denver,CO,US,t,6160,High,Rule Match,199,"Deterministic match: Rule R-199 | vendor=KUDOBOARD | → GL 6160
+
+Rule Justification: Historical Kudoboard transactions show a split: 2 coded as GL 6160 (UPL-008 $5.99, UPL-009 $104.30) and 1 coded as GL 6170 (UPL-120 $52.30). The majority pattern is GL 6160 (Office Supplies & Expenses). Kudoboard is a digital greeting card/recognition platform that could be considered an office supply. Note: User may want to review whether team recognition expenses should be 6170 instead.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3281,UPL-214,1,2025-10-29,KUDOBOARD           DENVER              CO,104.30,KUDOBOARD,,Denver,CO,US,t,6160,High,Rule Match,199,"Deterministic match: Rule R-199 | vendor=KUDOBOARD | → GL 6160
+
+Rule Justification: Historical Kudoboard transactions show a split: 2 coded as GL 6160 (UPL-008 $5.99, UPL-009 $104.30) and 1 coded as GL 6170 (UPL-120 $52.30). The majority pattern is GL 6160 (Office Supplies & Expenses). Kudoboard is a digital greeting card/recognition platform that could be considered an office supply. Note: User may want to review whether team recognition expenses should be 6170 instead.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3282,UPL-215,1,2025-10-27,AUTOPAY PAYMENT - THANK YOU,-1995.54,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3283,UPL-216,1,2025-10-25,INSURANCEXDATE.COM  WILMINGTON          DE,750.00,INSXDATE,INSXDATE,Wilmington,DE,US,t,5030,High,Rule Match,146,"Deterministic match: Rule R-146 | vendor=INSXDATE | → GL 5030
+
+Rule Justification: All 4 historical InsuranceXDate transactions are classified as GL 5030 (Marketing & Advertising). InsuranceXDate is a lead generation service for insurance agencies, fitting the marketing/lead generation category.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3284,UPL-217,1,2025-10-24,DD *DOORDASH MCDONALSAN FRANCISCO       CA,31.06,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3285,UPL-218,1,2025-10-24,MDC*WALTON EMC MDC=WMONROE              GA,224.61,WALTONEMC,,Monroe,GA,US,t,6260,High,Rule Match,139,"Deterministic match: Rule R-139 | vendor=WALTONEMC | → GL 6260
+
+Rule Justification: All 4 historical Walton EMC transactions are classified as GL 6260 (Utilities). Walton EMC is an electric membership corporation — an electric utility provider.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3286,UPL-219,1,2025-10-24,WALMART.COM         WALMART.COM         AR,111.69,WALMART,WLMRT-COM,,AR,US,t,6160,High,Rule Match,131,"Deterministic match: Rule R-131 | vendor=WALMART | → GL 6160
+
+Rule Justification: All 10 historical Walmart transactions are classified as GL 6160 (Office Supplies & Expenses). Walmart purchases at this agency cover office supplies, groceries for the office, and general equipment. This covers both Walmart.com (WLMRT-COM) and in-store (WALMART-SC) service IDs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3287,UPL-220,1,2025-10-24,WALMART.COM 80092562BENTONVILLE         AR,2.05,WALMART,WLMRT-COM,Bentonville,AR,US,t,6160,High,Rule Match,131,"Deterministic match: Rule R-131 | vendor=WALMART | → GL 6160
+
+Rule Justification: All 10 historical Walmart transactions are classified as GL 6160 (Office Supplies & Expenses). Walmart purchases at this agency cover office supplies, groceries for the office, and general equipment. This covers both Walmart.com (WLMRT-COM) and in-store (WALMART-SC) service IDs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3288,UPL-221,1,2025-10-23,WALMART.COM         WALMART.COM         AR,138.09,WALMART,WLMRT-COM,,AR,US,t,6160,High,Rule Match,131,"Deterministic match: Rule R-131 | vendor=WALMART | → GL 6160
+
+Rule Justification: All 10 historical Walmart transactions are classified as GL 6160 (Office Supplies & Expenses). Walmart purchases at this agency cover office supplies, groceries for the office, and general equipment. This covers both Walmart.com (WLMRT-COM) and in-store (WALMART-SC) service IDs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3289,UPL-222,1,2025-10-21,AMERICAS PROFESSOR 8MISSOULA            MT,199.00,AMPROF,,Missoula,MT,US,t,6180,High,Rule Match,170,"Deterministic match: Rule R-170 | vendor=AMPROF | → GL 6180
+
+Rule Justification: The one historical Americas Professor transaction (UPL-018, $199.00) is classified as GL 6180 (Education & Training). This is a professional development/course provider.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3290,UPL-223,1,2025-10-21,City BBQ Sandy SprinSANDY SPRINGS       GA,29.05,CITYBBQ,,SANDY SPRINGS,GA,US,t,6170,High,Rule Match,179,"Deterministic match: Rule R-179 | vendor=CITYBBQ | → GL 6170
+
+Rule Justification: The one historical City BBQ transaction (UPL-017, $29.05) is classified as GL 6170 (Travel Meals Entertainment - Admin). Restaurant meals.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3291,UPL-224,1,2025-10-21,GOOGLE *ADS336008342CC@GOOGLE.COM       CA,500.00,GOOGL,GOOGL-ADS,,CA,US,t,5030,High,Rule Match,132,"Deterministic match: Rule R-132 | vendor=GOOGL | service=GOOGL-ADS | → GL 5030
+
+Rule Justification: All historical Google Ads transactions (8/8) are classified as GL 5030 (Marketing & Advertising). Google Ads is a core marketing/lead generation channel for the insurance agency.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3292,UPL-225,1,2025-10-21,MICROSOFT           MSBILL.INFO,9.99,MSFT,,,,US,t,6200,High,Rule Match,144,"Deterministic match: Rule R-144 | vendor=MSFT | → GL 6200
+
+Rule Justification: All 3 historical MSFT (MICROSOFT MSBILL.INFO at $9.99) transactions are classified as GL 6200 (Computer Internet & Software). This is a smaller Microsoft software subscription.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3293,UPL-226,1,2025-10-20,AUTOPAY PAYMENT - THANK YOU,-3154.89,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3294,UPL-227,1,2025-10-18,USECANOPY.COM       BEAVERTON           OR,250.00,CANOPY,,Beaverton,OR,US,t,6200,High,Rule Match,142,"Deterministic match: Rule R-142 | vendor=CANOPY | → GL 6200
+
+Rule Justification: All 4 historical Canopy (usecanopy.com) transactions are classified as GL 6200 (Computer Internet & Software). Canopy is a practice management software platform, consistent with software subscriptions at $250/month.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3295,UPL-228,1,2025-10-17,A1010BUSD01         MSBILL.INFO,175.00,MICROSOFT,MSFT-BILL,,,US,t,6200,High,Rule Match,143,"Deterministic match: Rule R-143 | vendor=MICROSOFT | → GL 6200
+
+Rule Justification: All 4 historical Microsoft (A1010BUSD01 MSBILL.INFO) transactions are classified as GL 6200 (Computer Internet & Software). These are Microsoft 365 business subscription fees.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3296,UPL-229,1,2025-10-17,DD *DOORDASH CHIPOTLSAN FRANCISCO       CA,30.09,DOORDASH,DD-CHIPOT,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3297,UPL-230,1,2025-10-17,DD *DOORDASH MCDONALSAN FRANCISCO       CA,27.02,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3298,UPL-231,1,2025-10-17,HUEY MAGOOS LOGANVILLOGANVILLE          GA,91.98,HUEYMAGOO,HUEYMAGOO,Loganville,GA,US,t,6170,High,Rule Match,150,"Deterministic match: Rule R-150 | vendor=HUEYMAGOO | → GL 6170
+
+Rule Justification: All 5 historical Huey Magoo's transactions are classified as GL 6170 (Travel Meals Entertainment - Admin). This is a restaurant used for employee meals.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3299,UPL-232,1,2025-10-16,ASCEND PAYMENTS     SAN FRANCISCO       CA,240.00,ASCENDPAY,ASCENDPAY,San Francisco,CA,US,t,6115,High,Rule Match,141,"Deterministic match: Rule R-141 | vendor=ASCENDPAY | → GL 6115
+
+Rule Justification: All 4 historical Ascend Payments transactions are classified as GL 6115 (Outside Services). Ascend Payments is a payment processing platform; the consistent $240/month pattern suggests a contracted outside service.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3300,UPL-233,1,2025-10-16,BETTERMENT BUSINESS NEW YORK            NY,261.53,BETTERMT,BETTERMT-B,New York,NY,US,t,6040,High,Rule Match,152,"Deterministic match: Rule R-152 | vendor=BETTERMT | → GL 6040
+
+Rule Justification: The one historical Betterment transaction (UPL-025, $261.53) is classified as GL 6040 (401K Administration). Betterment Business provides 401K plan administration, as explicitly noted in the GL hierarchy.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3301,UPL-234,1,2025-10-16,WALMART.COM         WALMART.COM         AR,162.73,WALMART,WLMRT-COM,,AR,US,t,6160,High,Rule Match,131,"Deterministic match: Rule R-131 | vendor=WALMART | → GL 6160
+
+Rule Justification: All 10 historical Walmart transactions are classified as GL 6160 (Office Supplies & Expenses). Walmart purchases at this agency cover office supplies, groceries for the office, and general equipment. This covers both Walmart.com (WLMRT-COM) and in-store (WALMART-SC) service IDs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3302,UPL-235,1,2025-10-15,RF *RICONO ACCOUNTINNEW YORK            NY,1700.00,RICONO,,New York,NY,US,t,6100,High,Rule Match,135,"Deterministic match: Rule R-135 | vendor=RICONO | → GL 6100
+
+Rule Justification: All 4 historical Ricono Accounting transactions are classified as GL 6100 (Accounting). Ricono is explicitly listed in the GL hierarchy description for accounting services.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3303,UPL-236,1,2025-10-14,AMAZON MARKEPLACE NA PA,40.26,AMZN,AMZN-MKTPL,,PA,US,t,6160,High,Rule Match,148,"Deterministic match: Rule R-148 | vendor=AMZN | → GL 6160
+
+Rule Justification: All 5 historical Amazon Marketplace transactions are classified as GL 6160 (Office Supplies & Expenses). Amazon Marketplace orders are used for office supplies and equipment, as explicitly noted in the GL hierarchy.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3304,UPL-237,1,2025-10-14,AMAZON.COM          AMZN.COM/BILL       WA,50.00,AMAZON,AMAZON-COM,,WA,US,t,6160,High,Rule Match,149,"Deterministic match: Rule R-149 | vendor=AMAZON | → GL 6160
+
+Rule Justification: All 3 historical Amazon (Prime and Amazon.com) transactions are classified as GL 6160 (Office Supplies & Expenses). Amazon Prime membership and Amazon.com purchases support office supply procurement.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3305,UPL-238,1,2025-10-14,BLACK RIFLE COFFEE  SALT LAKE CITY      UT,20.39,BLKRIFLE,,SALT LAKE CITY,UT,US,t,6170,High,Rule Match,160,"Deterministic match: Rule R-160 | vendor=BLKRIFLE | → GL 6170
+
+Rule Justification: Both historical Black Rifle Coffee transactions are classified as GL 6170 (Travel Meals Entertainment - Admin). Coffee purchases for employee consumption.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3306,UPL-239,1,2025-10-14,IDEMIA I&S USA      844-321-2124        MA,51.99,IDEMIA,IDEMIA,,MA,US,t,6115,High,Rule Match,173,"Deterministic match: Rule R-173 | vendor=IDEMIA | → GL 6115
+
+Rule Justification: The one historical IDEMIA transaction (UPL-029, $51.99) is classified as GL 6115 (Outside Services). IDEMIA provides identity and security services (fingerprinting, background checks for licensing).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3307,UPL-240,1,2025-10-14,OPENAI *CHATGPT SUBSSAN FRANCISCO       CA,20.00,OPENAI,OPENAI-GPT,San Francisco,CA,US,t,6200,High,Rule Match,134,"Deterministic match: Rule R-134 | vendor=OPENAI | → GL 6200
+
+Rule Justification: All 6 historical OpenAI/ChatGPT transactions are classified as GL 6200 (Computer Internet & Software). OpenAI ChatGPT subscriptions are software subscriptions.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3308,UPL-241,1,2025-10-13,AMAZON MARKEPLACE NA PA,31.78,AMZN,AMZN-MKTPL,,PA,US,t,6160,High,Rule Match,148,"Deterministic match: Rule R-148 | vendor=AMZN | → GL 6160
+
+Rule Justification: All 5 historical Amazon Marketplace transactions are classified as GL 6160 (Office Supplies & Expenses). Amazon Marketplace orders are used for office supplies and equipment, as explicitly noted in the GL hierarchy.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3309,UPL-242,1,2025-10-13,AUTOPAY PAYMENT - THANK YOU,-3210.65,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3310,UPL-243,1,2025-10-13,POPSHELF #23151 0000LOGANVILLE          GA,2.12,POPSHELF,,Loganville,GA,US,t,6160,High,Rule Match,164,"Deterministic match: Rule R-164 | vendor=POPSHELF | → GL 6160
+
+Rule Justification: Both historical Popshelf transactions are classified as GL 6160 (Office Supplies & Expenses). Popshelf is a discount retail store used for office supply purchases.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3311,UPL-244,1,2025-10-10,DD *DOORDASH CHIPOTLSAN FRANCISCO       CA,28.63,DOORDASH,DD-CHIPOT,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3312,UPL-245,1,2025-10-10,DD *DOORDASH MCDONALSAN FRANCISCO       CA,28.02,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3313,UPL-246,1,2025-10-10,GOOGLE *ADS336008342CC@GOOGLE.COM       CA,500.00,GOOGL,GOOGL-ADS,,CA,US,t,5030,High,Rule Match,132,"Deterministic match: Rule R-132 | vendor=GOOGL | service=GOOGL-ADS | → GL 5030
+
+Rule Justification: All historical Google Ads transactions (8/8) are classified as GL 5030 (Marketing & Advertising). Google Ads is a core marketing/lead generation channel for the insurance agency.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3314,UPL-247,1,2025-10-10,INSURANCEXDATE.COM  WILMINGTON          DE,250.00,INSXDATE,INSXDATE,Wilmington,DE,US,t,5030,High,Rule Match,146,"Deterministic match: Rule R-146 | vendor=INSXDATE | → GL 5030
+
+Rule Justification: All 4 historical InsuranceXDate transactions are classified as GL 5030 (Marketing & Advertising). InsuranceXDate is a lead generation service for insurance agencies, fitting the marketing/lead generation category.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3315,UPL-248,1,2025-10-10,INSURANCEXDATE.COM  WILMINGTON          DE,450.00,INSXDATE,INSXDATE,Wilmington,DE,US,t,5030,High,Rule Match,146,"Deterministic match: Rule R-146 | vendor=INSXDATE | → GL 5030
+
+Rule Justification: All 4 historical InsuranceXDate transactions are classified as GL 5030 (Marketing & Advertising). InsuranceXDate is a lead generation service for insurance agencies, fitting the marketing/lead generation category.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3316,UPL-249,1,2025-10-10,INSURANCEXDATE.COM  WILMINGTON          DE,1100.00,INSXDATE,INSXDATE,Wilmington,DE,US,t,5030,High,Rule Match,146,"Deterministic match: Rule R-146 | vendor=INSXDATE | → GL 5030
+
+Rule Justification: All 4 historical InsuranceXDate transactions are classified as GL 5030 (Marketing & Advertising). InsuranceXDate is a lead generation service for insurance agencies, fitting the marketing/lead generation category.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3317,UPL-250,1,2025-10-10,SUKI 0001           LOGANVILLE          GA,93.00,SUKI,SUKI,Loganville,GA,US,t,6170,High,Rule Match,177,"Deterministic match: Rule R-177 | vendor=SUKI | → GL 6170
+
+Rule Justification: The one historical Suki transaction (UPL-041, $93.00) is classified as GL 6170 (Travel Meals Entertainment - Admin). Restaurant meals.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3318,UPL-251,1,2025-10-09,AT&T UVERSE PAYMENT 8002882020          TX,160.00,ATT,ATT-UVERSE,,TX,US,t,6250,High,Rule Match,138,"Deterministic match: Rule R-138 | vendor=ATT | → GL 6250
+
+Rule Justification: All 4 historical AT&T transactions are classified as GL 6250 (Telephone). AT&T is explicitly listed in the GL hierarchy description for telephone service.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3319,UPL-252,1,2025-10-09,COMCAST BUSINESS MOB844-963-0206        PA,69.70,COMCAST,COMCAST-BIZ,,PA,US,t,6260,High,Rule Match,140,"Deterministic match: Rule R-140 | vendor=COMCAST | → GL 6260
+
+Rule Justification: 4 out of 5 historical Comcast transactions are classified as GL 6260 (Utilities - electric, cable/TV). One outlier (UPL-137) was coded 6200, but the dominant pattern is 6260 for Comcast business mobile/cable services. The GL hierarchy explicitly includes cable/TV under 6260.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3320,UPL-253,1,2025-10-09,OPENAI *CHATGPT SUBSSAN FRANCISCO       CA,120.00,OPENAI,OPENAI-GPT,San Francisco,CA,US,t,6200,High,Rule Match,134,"Deterministic match: Rule R-134 | vendor=OPENAI | → GL 6200
+
+Rule Justification: All 6 historical OpenAI/ChatGPT transactions are classified as GL 6200 (Computer Internet & Software). OpenAI ChatGPT subscriptions are software subscriptions.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3321,UPL-254,1,2025-10-09,Sircon - STATEINSURA517-381-3860        MI,120.00,SIRCON,SIRCON-INS,,MI,US,t,6120,High,Rule Match,137,"Deterministic match: Rule R-137 | vendor=SIRCON | → GL 6120
+
+Rule Justification: All 5 historical Sircon transactions are classified as GL 6120 (Licenses & Permits). Sircon (Vertafore) provides state insurance licensing and agent registration services, which aligns perfectly with the GL description.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3322,UPL-255,1,2025-10-08,DOLLAR TREE 00000407LOGANVILLE          GA,2.65,DOLLARTREE,,Loganville,GA,US,t,6160,High,Rule Match,165,"Deterministic match: Rule R-165 | vendor=DOLLARTREE | → GL 6160
+
+Rule Justification: The one historical Dollar Tree transaction (UPL-046, $2.65) is classified as GL 6160 (Office Supplies & Expenses). Small office supply purchases.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3323,UPL-256,1,2025-10-08,POPSHELF #23151 0000LOGANVILLE          GA,20.61,POPSHELF,,Loganville,GA,US,t,6160,High,Rule Match,164,"Deterministic match: Rule R-164 | vendor=POPSHELF | → GL 6160
+
+Rule Justification: Both historical Popshelf transactions are classified as GL 6160 (Office Supplies & Expenses). Popshelf is a discount retail store used for office supply purchases.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3324,UPL-257,1,2025-10-07,USPS PO 1252030268 0LOGANVILLE          GA,18.05,USPS,USPS-PO,Loganville,GA,US,t,6140,High,Rule Match,145,"Deterministic match: Rule R-145 | vendor=USPS | → GL 6140
+
+Rule Justification: All 6 historical USPS transactions are classified as GL 6140 (Postage). USPS is explicitly listed in the GL hierarchy description for shipping and mailing costs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3325,UPL-258,1,2025-10-06,AUTOPAY PAYMENT - THANK YOU,-5462.38,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3326,UPL-259,1,2025-10-05,AMAZON MARKEPLACE NA PA,21.30,AMZN,AMZN-MKTPL,,PA,US,t,6160,High,Rule Match,148,"Deterministic match: Rule R-148 | vendor=AMZN | → GL 6160
+
+Rule Justification: All 5 historical Amazon Marketplace transactions are classified as GL 6160 (Office Supplies & Expenses). Amazon Marketplace orders are used for office supplies and equipment, as explicitly noted in the GL hierarchy.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3327,UPL-260,1,2025-10-04,GOOGLE *GOOGLE ONE   G.CO/HELPPAY#      CA,249.99,GOOGL,GOOGL-ONE,,CA,US,t,6200,High,Rule Match,133,"Deterministic match: Rule R-133 | vendor=GOOGL | service=GOOGL-ONE | → GL 6200
+
+Rule Justification: The one historical Google One transaction (UPL-146, $124.99) was classified as GL 6200 (Computer Internet & Software). Google One is a cloud storage/subscription service, fitting the software subscriptions category. Note: GL hierarchy also lists Google One under 6130 (Dues & Subscriptions), but historical precedent points to 6200.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3328,UPL-261,1,2025-10-03,CHILI'S 1385 ECOMM 0LOGANVILLE          GA,123.61,CHILIS,CHILIS-EC,Loganville,GA,US,t,6170,High,Rule Match,162,"Deterministic match: Rule R-162 | vendor=CHILIS | → GL 6170
+
+Rule Justification: Both historical Chili's transactions are classified as GL 6170 (Travel Meals Entertainment - Admin). Restaurant meals for employees/team events.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3329,UPL-262,1,2025-10-03,DD *DOORDASH BANDABUSAN FRANCISCO       CA,24.36,DOORDASH,DD-BANDAB,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3330,UPL-263,1,2025-10-03,DD *DOORDASH MCDONALSAN FRANCISCO       CA,24.51,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3331,UPL-264,1,2025-10-03,GEORGIA BAPTIST MISSSuwanee             GA,400.00,GABAPTIST,GABAPTIST,Suwanee,GA,US,t,6130,High,Rule Match,169,"Deterministic match: Rule R-169 | vendor=GABAPTIST | → GL 6130
+
+Rule Justification: The one historical Georgia Baptist Mission transaction (UPL-050, $400.00) is classified as GL 6130 (Dues & Subscriptions). This appears to be a membership or organizational dues payment.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3332,UPL-265,1,2025-10-03,HOBBY-LOBBY #794 000LOGANVILLE          GA,6.32,HOBBYLOBBY,,Loganville,GA,US,t,6160,High,Rule Match,151,"Deterministic match: Rule R-151 | vendor=HOBBYLOBBY | → GL 6160
+
+Rule Justification: All 3 historical Hobby Lobby transactions are classified as GL 6160 (Office Supplies & Expenses). Office decoration and supply purchases from Hobby Lobby.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3333,UPL-266,1,2025-10-03,WALMART.COM         WALMART.COM         AR,164.34,WALMART,WLMRT-COM,,AR,US,t,6160,High,Rule Match,131,"Deterministic match: Rule R-131 | vendor=WALMART | → GL 6160
+
+Rule Justification: All 10 historical Walmart transactions are classified as GL 6160 (Office Supplies & Expenses). Walmart purchases at this agency cover office supplies, groceries for the office, and general equipment. This covers both Walmart.com (WLMRT-COM) and in-store (WALMART-SC) service IDs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3334,UPL-267,1,2025-10-02,INDEED JOBS         AUSTIN              TX,180.00,INDEED,INDEED-JOBS,Austin,TX,US,t,6115,High,Rule Match,147,"Deterministic match: Rule R-147 | vendor=INDEED | → GL 6115
+
+Rule Justification: Both historical Indeed transactions are classified as GL 6115 (Outside Services). Indeed is a job posting/recruitment platform. Recruitment services fall under outside services (HR services mentioned in 6115 description).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3335,UPL-268,1,2025-10-01,ATLANTA OFFICE TECHNNORCROSS            GA,41.24,ATLOFFTECH,,Norcross,GA,US,t,6115,High,Rule Match,155,"Deterministic match: Rule R-155 | vendor=ATLOFFTECH | → GL 6115
+
+Rule Justification: All 3 historical Atlanta Office Technologies transactions are classified as GL 6115 (Outside Services). This vendor provides IT support and office technology services.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3336,UPL-269,1,2025-10-01,GOOGLE *ADS336008342CC@GOOGLE.COM       CA,516.08,GOOGL,GOOGL-ADS,,CA,US,t,5030,High,Rule Match,132,"Deterministic match: Rule R-132 | vendor=GOOGL | service=GOOGL-ADS | → GL 5030
+
+Rule Justification: All historical Google Ads transactions (8/8) are classified as GL 5030 (Marketing & Advertising). Google Ads is a core marketing/lead generation channel for the insurance agency.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3337,UPL-270,1,2025-10-01,Sircon - STATEINSURA517-381-3860        MI,87.98,SIRCON,SIRCON-INS,,MI,US,t,6120,High,Rule Match,137,"Deterministic match: Rule R-137 | vendor=SIRCON | → GL 6120
+
+Rule Justification: All 5 historical Sircon transactions are classified as GL 6120 (Licenses & Permits). Sircon (Vertafore) provides state insurance licensing and agent registration services, which aligns perfectly with the GL description.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3338,UPL-271,1,2025-10-01,WAVE - *MEDTECH CONSLAWRENCEVILLE       GA,3677.81,WAVE,WAVE-MDTC,Lawrenceville,GA,US,t,6115,High,Rule Match,136,"Deterministic match: Rule R-136 | vendor=WAVE | → GL 6115
+
+Rule Justification: All 3 historical Wave Financial (MEDTECH CONS) transactions are classified as GL 6115 (Outside Services). These are large recurring payments (~$3,500/month) for contracted consulting/services via Wave payment platform.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3339,UPL-272,1,2025-09-30,MAILCHIMP LLC       ATLANTA             GA,60.00,MAILCHIMP,,Atlanta,GA,US,t,5030,High,Rule Match,159,"Deterministic match: Rule R-159 | vendor=MAILCHIMP | → GL 5030
+
+Rule Justification: Historical Mailchimp transactions show a split: 2 coded as GL 5030 (Marketing & Advertising) and 2 coded as GL 6200 (Computer Internet & Software). However, Mailchimp is explicitly listed in the GL 5030 hierarchy description as a marketing campaign tool. The 6200 classifications appear to be inconsistencies. Recommending GL 5030 per the GL hierarchy definition.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3340,UPL-273,1,2025-09-29,AUTOPAY PAYMENT - THANK YOU,-438.73,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3341,UPL-274,1,2025-09-29,Amazon Prime        Amazon.com          WA,16.09,AMAZON,AMZN-PRIM,,WA,US,t,6160,High,Rule Match,149,"Deterministic match: Rule R-149 | vendor=AMAZON | → GL 6160
+
+Rule Justification: All 3 historical Amazon (Prime and Amazon.com) transactions are classified as GL 6160 (Office Supplies & Expenses). Amazon Prime membership and Amazon.com purchases support office supply procurement.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3342,UPL-275,1,2025-09-29,DD *DOORDASH BANDABUSAN FRANCISCO       CA,25.19,DOORDASH,DD-BANDAB,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3343,UPL-276,1,2025-09-29,DD *DOORDASH MCDONALSAN FRANCISCO       CA,22.72,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3344,UPL-277,1,2025-09-29,HUEY MAGOOS LOGANVILLOGANVILLE          GA,15.28,HUEYMAGOO,HUEYMAGOO,Loganville,GA,US,t,6170,High,Rule Match,150,"Deterministic match: Rule R-150 | vendor=HUEYMAGOO | → GL 6170
+
+Rule Justification: All 5 historical Huey Magoo's transactions are classified as GL 6170 (Travel Meals Entertainment - Admin). This is a restaurant used for employee meals.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3345,UPL-278,1,2025-09-29,HUEY MAGOOS LOGANVILLOGANVILLE          GA,55.55,HUEYMAGOO,HUEYMAGOO,Loganville,GA,US,t,6170,High,Rule Match,150,"Deterministic match: Rule R-150 | vendor=HUEYMAGOO | → GL 6170
+
+Rule Justification: All 5 historical Huey Magoo's transactions are classified as GL 6170 (Travel Meals Entertainment - Admin). This is a restaurant used for employee meals.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3346,UPL-279,1,2025-09-25,HOBBY-LOBBY #794 000LOGANVILLE          GA,49.95,HOBBYLOBBY,,Loganville,GA,US,t,6160,High,Rule Match,151,"Deterministic match: Rule R-151 | vendor=HOBBYLOBBY | → GL 6160
+
+Rule Justification: All 3 historical Hobby Lobby transactions are classified as GL 6160 (Office Supplies & Expenses). Office decoration and supply purchases from Hobby Lobby.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3347,UPL-280,1,2025-09-25,MDC*WALTON EMC MDC=WMONROE              GA,227.34,WALTONEMC,,Monroe,GA,US,t,6260,High,Rule Match,139,"Deterministic match: Rule R-139 | vendor=WALTONEMC | → GL 6260
+
+Rule Justification: All 4 historical Walton EMC transactions are classified as GL 6260 (Utilities). Walton EMC is an electric membership corporation — an electric utility provider.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3348,UPL-281,1,2025-09-22,AUTOPAY PAYMENT - THANK YOU,-3159.59,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3349,UPL-282,1,2025-09-22,WALMART.COM         WALMART.COM         AR,0.25,WALMART,WLMRT-COM,,AR,US,t,6160,High,Rule Match,131,"Deterministic match: Rule R-131 | vendor=WALMART | → GL 6160
+
+Rule Justification: All 10 historical Walmart transactions are classified as GL 6160 (Office Supplies & Expenses). Walmart purchases at this agency cover office supplies, groceries for the office, and general equipment. This covers both Walmart.com (WLMRT-COM) and in-store (WALMART-SC) service IDs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3350,UPL-283,1,2025-09-22,WALMART.COM 80092562BENTONVILLE         AR,161.19,WALMART,WLMRT-COM,Bentonville,AR,US,t,6160,High,Rule Match,131,"Deterministic match: Rule R-131 | vendor=WALMART | → GL 6160
+
+Rule Justification: All 10 historical Walmart transactions are classified as GL 6160 (Office Supplies & Expenses). Walmart purchases at this agency cover office supplies, groceries for the office, and general equipment. This covers both Walmart.com (WLMRT-COM) and in-store (WALMART-SC) service IDs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3351,UPL-284,1,2025-09-21,MICROSOFT           MSBILL.INFO,9.99,MSFT,,,,US,t,6200,High,Rule Match,144,"Deterministic match: Rule R-144 | vendor=MSFT | → GL 6200
+
+Rule Justification: All 3 historical MSFT (MICROSOFT MSBILL.INFO at $9.99) transactions are classified as GL 6200 (Computer Internet & Software). This is a smaller Microsoft software subscription.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3352,UPL-285,1,2025-09-19,DD *DOORDASH BANDABUSAN FRANCISCO       CA,24.36,DOORDASH,DD-BANDAB,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3353,UPL-286,1,2025-09-19,DD *DOORDASH CHICK-FSAN FRANCISCO       CA,22.29,DOORDASH,,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3354,UPL-287,1,2025-09-19,DOMINO'S 5732 000005GRAYSON             GA,38.11,DOMINOS,,Grayson,GA,US,t,6170,High,Rule Match,174,"Deterministic match: Rule R-174 | vendor=DOMINOS | → GL 6170
+
+Rule Justification: The one historical Domino's transaction (UPL-072, $38.11) is classified as GL 6170 (Travel Meals Entertainment - Admin). Pizza delivery for employee meals.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3355,UPL-288,1,2025-09-19,GRAYSON SWEET HOME CGRAYSON             GA,17.68,GRYSNSWT,GRYSNSWT,Grayson,GA,US,t,6170,High,Rule Match,182,"Deterministic match: Rule R-182 | vendor=GRYSNSWT | → GL 6170
+
+Rule Justification: The one historical Grayson Sweet Home transaction (UPL-073, $17.68) is classified as GL 6170 (Travel Meals Entertainment - Admin). Food/bakery purchase for employees.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3356,UPL-289,1,2025-09-19,MR. TACO RESTAURANT FORT GILLEM         GA,27.46,MRTACO,,Fort Gillem,GA,US,t,6170,High,Rule Match,181,"Deterministic match: Rule R-181 | vendor=MRTACO | → GL 6170
+
+Rule Justification: The one historical Mr. Taco Restaurant transaction (UPL-074, $27.46) is classified as GL 6170 (Travel Meals Entertainment - Admin). Restaurant meals.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3357,UPL-290,1,2025-09-18,GOOGLE *ADS336008342CC@GOOGLE.COM       CA,500.00,GOOGL,GOOGL-ADS,,CA,US,t,5030,High,Rule Match,132,"Deterministic match: Rule R-132 | vendor=GOOGL | service=GOOGL-ADS | → GL 5030
+
+Rule Justification: All historical Google Ads transactions (8/8) are classified as GL 5030 (Marketing & Advertising). Google Ads is a core marketing/lead generation channel for the insurance agency.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3358,UPL-291,1,2025-09-18,USECANOPY.COM       BEAVERTON           OR,250.00,CANOPY,,Beaverton,OR,US,t,6200,High,Rule Match,142,"Deterministic match: Rule R-142 | vendor=CANOPY | → GL 6200
+
+Rule Justification: All 4 historical Canopy (usecanopy.com) transactions are classified as GL 6200 (Computer Internet & Software). Canopy is a practice management software platform, consistent with software subscriptions at $250/month.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3359,UPL-292,1,2025-09-17,A1010BUSD01         MSBILL.INFO,175.00,MICROSOFT,MSFT-BILL,,,US,t,6200,High,Rule Match,143,"Deterministic match: Rule R-143 | vendor=MICROSOFT | → GL 6200
+
+Rule Justification: All 4 historical Microsoft (A1010BUSD01 MSBILL.INFO) transactions are classified as GL 6200 (Computer Internet & Software). These are Microsoft 365 business subscription fees.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3360,UPL-293,1,2025-09-17,HOBBY-LOBBY #794 000LOGANVILLE          GA,5.28,HOBBYLOBBY,,Loganville,GA,US,t,6160,High,Rule Match,151,"Deterministic match: Rule R-151 | vendor=HOBBYLOBBY | → GL 6160
+
+Rule Justification: All 3 historical Hobby Lobby transactions are classified as GL 6160 (Office Supplies & Expenses). Office decoration and supply purchases from Hobby Lobby.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3361,UPL-294,1,2025-09-17,MONITOREDU INC      SPRING HILL         TN,18.00,MONITREDU,MONITREDU,Spring Hill,TN,US,t,6120,High,Rule Match,158,"Deterministic match: Rule R-158 | vendor=MONITREDU | → GL 6120
+
+Rule Justification: The one historical MonitorEDU transaction (UPL-077, $18.00) is classified as GL 6120 (Licenses & Permits). MonitorEDU provides proctoring for CE (continuing education) testing, which fits the GL 6120 description.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3362,UPL-295,1,2025-09-17,WL *VUE*TESTING EXAMBLOOMINGTON         MN,67.00,VUE,VUE-EXAM,Bloomington,MN,US,t,6120,High,Rule Match,157,"Deterministic match: Rule R-157 | vendor=VUE | → GL 6120
+
+Rule Justification: The one historical Pearson VUE transaction (UPL-078, $67.00) is classified as GL 6120 (Licenses & Permits). Pearson VUE administers insurance licensing exams and CE testing, which is explicitly mentioned in the GL hierarchy description.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3363,UPL-296,1,2025-09-16,ASCEND PAYMENTS     SAN FRANCISCO       CA,240.00,ASCENDPAY,ASCENDPAY,San Francisco,CA,US,t,6115,High,Rule Match,141,"Deterministic match: Rule R-141 | vendor=ASCENDPAY | → GL 6115
+
+Rule Justification: All 4 historical Ascend Payments transactions are classified as GL 6115 (Outside Services). Ascend Payments is a payment processing platform; the consistent $240/month pattern suggests a contracted outside service.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3364,UPL-297,1,2025-09-16,VISTAPRINT          WALTHAM             MA,64.42,VISTAPRINT,,Waltham,MA,US,t,6160,High,Rule Match,201,"Deterministic match: Rule R-201 | vendor=VISTAPRINT | → GL 6160
+
+Rule Justification: Historical Vistaprint transactions show a split: UPL-082 ($64.42) coded as GL 6200 and UPL-163 ($48.32) coded as GL 6160. Vistaprint primarily provides printed materials (business cards, marketing collateral). GL 6160 (Office Supplies - printing) seems most appropriate per the GL hierarchy description which explicitly mentions printing. Note: Some orders may be more marketing-oriented. User should review.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3365,UPL-298,1,2025-09-15,AUTOPAY PAYMENT - THANK YOU,-1192.30,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3366,UPL-299,1,2025-09-15,RF *RICONO ACCOUNTINNEW YORK            NY,1700.00,RICONO,,New York,NY,US,t,6100,High,Rule Match,135,"Deterministic match: Rule R-135 | vendor=RICONO | → GL 6100
+
+Rule Justification: All 4 historical Ricono Accounting transactions are classified as GL 6100 (Accounting). Ricono is explicitly listed in the GL hierarchy description for accounting services.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3367,UPL-300,1,2025-09-14,OPENAI *CHATGPT SUBSSAN FRANCISCO       CA,20.00,OPENAI,OPENAI-GPT,San Francisco,CA,US,t,6200,High,Rule Match,134,"Deterministic match: Rule R-134 | vendor=OPENAI | → GL 6200
+
+Rule Justification: All 6 historical OpenAI/ChatGPT transactions are classified as GL 6200 (Computer Internet & Software). OpenAI ChatGPT subscriptions are software subscriptions.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3368,UPL-301,1,2025-09-12,DD *DOORDASH CHIPOTLSAN FRANCISCO       CA,25.75,DOORDASH,DD-CHIPOT,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3369,UPL-302,1,2025-09-12,DD *DOORDASH CHIPOTLSAN FRANCISCO       CA,42.25,DOORDASH,DD-CHIPOT,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3370,UPL-303,1,2025-09-12,EL RANCHERO MEXICAN LOGANVILLE          GA,83.21,ELRANCHER,ELRANCHER,Loganville,GA,US,t,6170,High,Rule Match,176,"Deterministic match: Rule R-176 | vendor=ELRANCHER | → GL 6170
+
+Rule Justification: The one historical El Ranchero Mexican transaction (UPL-087, $83.21) is classified as GL 6170 (Travel Meals Entertainment - Admin). Restaurant meals.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3371,UPL-304,1,2025-09-10,APEX SOFTWARE APEX S210-6996666         TX,185.00,APEXSW,APEXSW,,TX,US,t,6200,High,Rule Match,156,"Deterministic match: Rule R-156 | vendor=APEXSW | → GL 6200
+
+Rule Justification: Both historical Apex Software transactions are classified as GL 6200 (Computer Internet & Software). Apex Software provides agency management software.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3372,UPL-305,1,2025-09-10,APEX SOFTWARE APEX S210-6996666         TX,315.00,APEXSW,APEXSW,,TX,US,t,6200,High,Rule Match,156,"Deterministic match: Rule R-156 | vendor=APEXSW | → GL 6200
+
+Rule Justification: Both historical Apex Software transactions are classified as GL 6200 (Computer Internet & Software). Apex Software provides agency management software.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3373,UPL-306,1,2025-09-10,WALMART.COM         WALMART.COM         AR,171.39,WALMART,WLMRT-COM,,AR,US,t,6160,High,Rule Match,131,"Deterministic match: Rule R-131 | vendor=WALMART | → GL 6160
+
+Rule Justification: All 10 historical Walmart transactions are classified as GL 6160 (Office Supplies & Expenses). Walmart purchases at this agency cover office supplies, groceries for the office, and general equipment. This covers both Walmart.com (WLMRT-COM) and in-store (WALMART-SC) service IDs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3374,UPL-307,1,2025-09-09,AT&T UVERSE PAYMENT 8002882020          TX,160.00,ATT,ATT-UVERSE,,TX,US,t,6250,High,Rule Match,138,"Deterministic match: Rule R-138 | vendor=ATT | → GL 6250
+
+Rule Justification: All 4 historical AT&T transactions are classified as GL 6250 (Telephone). AT&T is explicitly listed in the GL hierarchy description for telephone service.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3375,UPL-308,1,2025-09-09,OPENAI *CHATGPT SUBSSAN FRANCISCO       CA,120.00,OPENAI,OPENAI-GPT,San Francisco,CA,US,t,6200,High,Rule Match,134,"Deterministic match: Rule R-134 | vendor=OPENAI | → GL 6200
+
+Rule Justification: All 6 historical OpenAI/ChatGPT transactions are classified as GL 6200 (Computer Internet & Software). OpenAI ChatGPT subscriptions are software subscriptions.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3376,UPL-309,1,2025-09-08,AUTOPAY PAYMENT - THANK YOU,-5199.49,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3377,UPL-310,1,2025-09-08,COMCAST BUSINESS MOB844-963-0206        PA,69.70,COMCAST,COMCAST-BIZ,,PA,US,t,6260,High,Rule Match,140,"Deterministic match: Rule R-140 | vendor=COMCAST | → GL 6260
+
+Rule Justification: 4 out of 5 historical Comcast transactions are classified as GL 6260 (Utilities - electric, cable/TV). One outlier (UPL-137) was coded 6200, but the dominant pattern is 6260 for Comcast business mobile/cable services. The GL hierarchy explicitly includes cable/TV under 6260.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3378,UPL-311,1,2025-09-07,GOOGLE *ADS336008342CC@GOOGLE.COM       CA,500.00,GOOGL,GOOGL-ADS,,CA,US,t,5030,High,Rule Match,132,"Deterministic match: Rule R-132 | vendor=GOOGL | service=GOOGL-ADS | → GL 5030
+
+Rule Justification: All historical Google Ads transactions (8/8) are classified as GL 5030 (Marketing & Advertising). Google Ads is a core marketing/lead generation channel for the insurance agency.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3379,UPL-312,1,2025-09-05,DD *DOORDASH CHIPOTLSAN FRANCISCO       CA,28.23,DOORDASH,DD-CHIPOT,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3380,UPL-313,1,2025-09-05,DD *DOORDASH LUNAGRISAN FRANCISCO       CA,31.24,DOORDASH,DD-LUNAGR,SAN FRANCISCO,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3381,UPL-314,1,2025-09-05,TST* FOGGY BOTTOM BBLOGANVILLE          GA,126.18,FOGGYBBQ,,LOGANVILLE,GA,US,t,6170,High,Rule Match,175,"Deterministic match: Rule R-175 | vendor=FOGGYBBQ | → GL 6170
+
+Rule Justification: The one historical Foggy Bottom BBQ transaction (UPL-109, $107.99) is classified as GL 6170 (Travel Meals Entertainment - Admin). Restaurant meals for employees.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3382,UPL-315,1,2025-09-05,WALGREENS           LOGANVILLE          GA,25.00,WALGREENS,WALGREENS,Loganville,GA,US,t,6160,High,Rule Match,166,"Deterministic match: Rule R-166 | vendor=WALGREENS | → GL 6160
+
+Rule Justification: The one historical Walgreens transaction (UPL-125, $105.34) is classified as GL 6160 (Office Supplies & Expenses). Retail purchases for office supplies.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3383,UPL-316,1,2025-09-04,AMAZON MARKEPLACE NA PA,63.54,AMZN,AMZN-MKTPL,,PA,US,t,6160,High,Rule Match,148,"Deterministic match: Rule R-148 | vendor=AMZN | → GL 6160
+
+Rule Justification: All 5 historical Amazon Marketplace transactions are classified as GL 6160 (Office Supplies & Expenses). Amazon Marketplace orders are used for office supplies and equipment, as explicitly noted in the GL hierarchy.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3384,UPL-317,1,2025-09-04,GOOGLE *GOOGLE ONE  G.CO/HELPPAY#       CA,249.99,GOOGL,GOOGL-ONE,,CA,US,t,6200,High,Rule Match,133,"Deterministic match: Rule R-133 | vendor=GOOGL | service=GOOGL-ONE | → GL 6200
+
+Rule Justification: The one historical Google One transaction (UPL-146, $124.99) was classified as GL 6200 (Computer Internet & Software). Google One is a cloud storage/subscription service, fitting the software subscriptions category. Note: GL hierarchy also lists Google One under 6130 (Dues & Subscriptions), but historical precedent points to 6200.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3385,UPL-318,1,2025-09-04,USPS KIOSK 125203955LOGANVILLE          GA,11.00,USPS,USPS-KIOSK,Loganville,GA,US,t,6140,High,Rule Match,145,"Deterministic match: Rule R-145 | vendor=USPS | → GL 6140
+
+Rule Justification: All 6 historical USPS transactions are classified as GL 6140 (Postage). USPS is explicitly listed in the GL hierarchy description for shipping and mailing costs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3386,UPL-319,1,2025-09-04,GOOGLE *GOOGLE ONE   G.CO/HELPPAY#      CA,249.99,GOOGL,GOOGL-ONE,,CA,US,t,6200,High,Rule Match,133,"Deterministic match: Rule R-133 | vendor=GOOGL | service=GOOGL-ONE | → GL 6200
+
+Rule Justification: The one historical Google One transaction (UPL-146, $124.99) was classified as GL 6200 (Computer Internet & Software). Google One is a cloud storage/subscription service, fitting the software subscriptions category. Note: GL hierarchy also lists Google One under 6130 (Dues & Subscriptions), but historical precedent points to 6200.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3387,UPL-320,1,2025-09-03,EDIBLE.COM          ATLANTA             GA,37.16,EDIBLE,EDIBLE,ATLANTA,GA,US,t,6160,High,Rule Match,207,"Deterministic match: Rule R-207 | vendor=EDIBLE | → GL 6160
+
+Rule Justification: No direct historical data for Edible Arrangements, but this is typically a gift/office occasion purchase. Similar small retail purchases (Kudoboard, Popshelf) are classified as GL 6160 (Office Supplies & Expenses). Could also be GL 6170 if used for team events. User should review.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3388,UPL-321,1,2025-09-03,PUBLIX              LOGANVILLE          GA,26.20,PUBLIX,PUBLIX,LOGANVILLE,GA,US,t,6160,High,Rule Match,202,"Deterministic match: Rule R-202 | vendor=PUBLIX | → GL 6160
+
+Rule Justification: No direct historical data for Publix, but similar grocery/retail stores (Kroger, Walgreens, Dollar Tree) at this agency are consistently classified as GL 6160 (Office Supplies & Expenses). The GL hierarchy explicitly includes groceries for office under 6160.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3389,UPL-322,1,2025-09-02,ATLANTA OFFICE TECHNNORCROSS            GA,36.63,ATLOFFTECH,,Norcross,GA,US,t,6115,High,Rule Match,155,"Deterministic match: Rule R-155 | vendor=ATLOFFTECH | → GL 6115
+
+Rule Justification: All 3 historical Atlanta Office Technologies transactions are classified as GL 6115 (Outside Services). This vendor provides IT support and office technology services.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3390,UPL-323,1,2025-09-02,Sircon - STATEINSURA517-381-3860        MI,34.63,SIRCON,SIRCON-INS,,MI,US,t,6120,High,Rule Match,137,"Deterministic match: Rule R-137 | vendor=SIRCON | → GL 6120
+
+Rule Justification: All 5 historical Sircon transactions are classified as GL 6120 (Licenses & Permits). Sircon (Vertafore) provides state insurance licensing and agent registration services, which aligns perfectly with the GL description.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3391,UPL-324,1,2025-09-02,WAVE - *MEDTECH CONSLAWRENCEVILLE       GA,3509.91,WAVE,WAVE-MDTC,Lawrenceville,GA,US,t,6115,High,Rule Match,136,"Deterministic match: Rule R-136 | vendor=WAVE | → GL 6115
+
+Rule Justification: All 3 historical Wave Financial (MEDTECH CONS) transactions are classified as GL 6115 (Outside Services). These are large recurring payments (~$3,500/month) for contracted consulting/services via Wave payment platform.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3392,UPL-325,1,2025-09-01,AUTOPAY PAYMENT - THANK YOU,-615.15,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3393,UPL-326,1,2025-09-01,GOOGLE *ADS336008342CC@GOOGLE.COM       CA,519.78,GOOGL,GOOGL-ADS,,CA,US,t,5030,High,Rule Match,132,"Deterministic match: Rule R-132 | vendor=GOOGL | service=GOOGL-ADS | → GL 5030
+
+Rule Justification: All historical Google Ads transactions (8/8) are classified as GL 5030 (Marketing & Advertising). Google Ads is a core marketing/lead generation channel for the insurance agency.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3394,UPL-327,1,2025-08-30,MAILCHIMP LLC       ATLANTA             GA,60.00,MAILCHIMP,,Atlanta,GA,US,t,5030,High,Rule Match,159,"Deterministic match: Rule R-159 | vendor=MAILCHIMP | → GL 5030
+
+Rule Justification: Historical Mailchimp transactions show a split: 2 coded as GL 5030 (Marketing & Advertising) and 2 coded as GL 6200 (Computer Internet & Software). However, Mailchimp is explicitly listed in the GL 5030 hierarchy description as a marketing campaign tool. The 6200 classifications appear to be inconsistencies. Recommending GL 5030 per the GL hierarchy definition.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3395,UPL-328,1,2025-08-29,Amazon Prime        Amazon.com          WA,16.09,AMAZON,AMZN-PRIM,,WA,US,t,6160,High,Rule Match,149,"Deterministic match: Rule R-149 | vendor=AMAZON | → GL 6160
+
+Rule Justification: All 3 historical Amazon (Prime and Amazon.com) transactions are classified as GL 6160 (Office Supplies & Expenses). Amazon Prime membership and Amazon.com purchases support office supply procurement.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3396,UPL-329,1,2025-08-28,93578-ATLANTA AIRPORATLANTA             GA,120.00,ATLAIRPRT,ATLAIRPRT,Atlanta,GA,US,t,6170,High,Rule Match,190,"Deterministic match: Rule R-190 | vendor=ATLAIRPRT | → GL 6170
+
+Rule Justification: The one historical Atlanta Airport (93578) transaction (UPL-096, $120.00) is classified as GL 6170 (Travel Meals Entertainment - Admin). Airport parking for admin travel.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3397,UPL-330,1,2025-08-28,TAILWIND FWA 5455000877-8144102         NC,45.86,TAILWIND,TAILWIND,,NC,US,t,6170,High,Rule Match,194,"Deterministic match: Rule R-194 | vendor=TAILWIND | → GL 6170
+
+Rule Justification: The one historical Tailwind transaction (UPL-097, $45.86) is classified as GL 6170 (Travel Meals Entertainment - Admin). Tailwind appears to be an airport concession or travel-related expense.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3398,UPL-331,1,2025-08-26,ATLANTA BRAVES ALL SATLANTA             GA,30.82,ATLBRAVES,ATLBRAVES,Atlanta,GA,US,t,6170,High,Rule Match,196,"Deterministic match: Rule R-196 | vendor=ATLBRAVES | → GL 6170
+
+Rule Justification: The one historical Atlanta Braves transaction (UPL-098, $30.82) is classified as GL 6170 (Travel Meals Entertainment - Admin). Team entertainment/event expense.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3399,UPL-332,1,2025-08-26,MDC*WALTON EMC MDC=WMONROE              GA,253.70,WALTONEMC,,Monroe,GA,US,t,6260,High,Rule Match,139,"Deterministic match: Rule R-139 | vendor=WALTONEMC | → GL 6260
+
+Rule Justification: All 4 historical Walton EMC transactions are classified as GL 6260 (Utilities). Walton EMC is an electric membership corporation — an electric utility provider.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3400,UPL-333,1,2025-08-25,AMAZON MARKEPLACE NA PA,21.60,AMZN,AMZN-MKTPL,,PA,US,t,6160,High,Rule Match,148,"Deterministic match: Rule R-148 | vendor=AMZN | → GL 6160
+
+Rule Justification: All 5 historical Amazon Marketplace transactions are classified as GL 6160 (Office Supplies & Expenses). Amazon Marketplace orders are used for office supplies and equipment, as explicitly noted in the GL hierarchy.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3401,UPL-334,1,2025-08-25,AUTOPAY PAYMENT - THANK YOU,-1502.24,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3402,UPL-335,1,2025-08-25,HILTON GARDEN/HOME2SFORT WAYNE          IN,67.08,HILTON,HILTON-GI,Fort Wayne,IN,US,t,6170,High,Rule Match,187,"Deterministic match: Rule R-187 | vendor=HILTON | → GL 6170
+
+Rule Justification: The one historical Hilton transaction (UPL-101, $67.08) is classified as GL 6170 (Travel Meals Entertainment - Admin). Hotel charges for admin travel.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3403,UPL-336,1,2025-08-23,WALMART.COM         WALMART.COM         AR,109.72,WALMART,WLMRT-COM,,AR,US,t,6160,High,Rule Match,131,"Deterministic match: Rule R-131 | vendor=WALMART | → GL 6160
+
+Rule Justification: All 10 historical Walmart transactions are classified as GL 6160 (Office Supplies & Expenses). Walmart purchases at this agency cover office supplies, groceries for the office, and general equipment. This covers both Walmart.com (WLMRT-COM) and in-store (WALMART-SC) service IDs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3404,UPL-337,1,2025-08-21,BLACK RIFLE COFFEE  SALT LAKE CITY      UT,12.23,BLKRIFLE,,SALT LAKE CITY,UT,US,t,6170,High,Rule Match,160,"Deterministic match: Rule R-160 | vendor=BLKRIFLE | → GL 6170
+
+Rule Justification: Both historical Black Rifle Coffee transactions are classified as GL 6170 (Travel Meals Entertainment - Admin). Coffee purchases for employee consumption.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3405,UPL-338,1,2025-08-21,MICROSOFT           MSBILL.INFO,9.99,MSFT,,,,US,t,6200,High,Rule Match,144,"Deterministic match: Rule R-144 | vendor=MSFT | → GL 6200
+
+Rule Justification: All 3 historical MSFT (MICROSOFT MSBILL.INFO at $9.99) transactions are classified as GL 6200 (Computer Internet & Software). This is a smaller Microsoft software subscription.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3406,UPL-339,1,2025-08-21,PROFESSIONAL INSURAN402-3921611         NE,445.00,PROFINSUR,,,NE,US,t,6130,High,Rule Match,168,"Deterministic match: Rule R-168 | vendor=PROFINSUR | → GL 6130
+
+Rule Justification: The one historical Professional Insurance transaction (UPL-103, $445.00) is classified as GL 6130 (Dues & Subscriptions). Professional Insurance likely refers to a professional industry association membership.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3407,UPL-340,1,2025-08-20,DD *DOORDASH CHIPOTLSAN FRANCISCO       CA,23.72,DOORDASH,DD-CHIPOT,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3408,UPL-341,1,2025-08-20,DD *DOORDASH MCDONALSAN FRANCISCO       CA,27.99,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3409,UPL-342,1,2025-08-20,GOOGLE*ADS3360083427CC GOOGLE.COM,500.00,GOOGL,GOOGL-ADS,,,US,t,5030,High,Rule Match,132,"Deterministic match: Rule R-132 | vendor=GOOGL | service=GOOGL-ADS | → GL 5030
+
+Rule Justification: All historical Google Ads transactions (8/8) are classified as GL 5030 (Marketing & Advertising). Google Ads is a core marketing/lead generation channel for the insurance agency.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3410,UPL-343,1,2025-08-20,TST* FOGGY BOTTOM BBLOGANVILLE          GA,107.99,FOGGYBBQ,,LOGANVILLE,GA,US,t,6170,High,Rule Match,175,"Deterministic match: Rule R-175 | vendor=FOGGYBBQ | → GL 6170
+
+Rule Justification: The one historical Foggy Bottom BBQ transaction (UPL-109, $107.99) is classified as GL 6170 (Travel Meals Entertainment - Admin). Restaurant meals for employees.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3411,UPL-344,1,2025-08-19,KROGER              LOGANVILLE          GA,15.60,KROGER,,Loganville,GA,US,t,6160,High,Rule Match,167,"Deterministic match: Rule R-167 | vendor=KROGER | → GL 6160
+
+Rule Justification: The one historical Kroger transaction (UPL-110, $15.60) is classified as GL 6160 (Office Supplies & Expenses). Grocery store purchases for the office, which the GL hierarchy includes under office supplies.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3412,UPL-345,1,2025-08-18,AUTOPAY PAYMENT - THANK YOU,-3091.39,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3413,UPL-346,1,2025-08-18,USECANOPY.COM       BEAVERTON           OR,250.00,CANOPY,,Beaverton,OR,US,t,6200,High,Rule Match,142,"Deterministic match: Rule R-142 | vendor=CANOPY | → GL 6200
+
+Rule Justification: All 4 historical Canopy (usecanopy.com) transactions are classified as GL 6200 (Computer Internet & Software). Canopy is a practice management software platform, consistent with software subscriptions at $250/month.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3414,UPL-347,1,2025-08-17,A1010BUSD01         MSBILL.INFO,165.00,MICROSOFT,MSFT-BILL,,,US,t,6200,High,Rule Match,143,"Deterministic match: Rule R-143 | vendor=MICROSOFT | → GL 6200
+
+Rule Justification: All 4 historical Microsoft (A1010BUSD01 MSBILL.INFO) transactions are classified as GL 6200 (Computer Internet & Software). These are Microsoft 365 business subscription fees.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3415,UPL-348,1,2025-08-16,ASCEND PAYMENTS     SAN FRANCISCO       CA,240.00,ASCENDPAY,ASCENDPAY,San Francisco,CA,US,t,6115,High,Rule Match,141,"Deterministic match: Rule R-141 | vendor=ASCENDPAY | → GL 6115
+
+Rule Justification: All 4 historical Ascend Payments transactions are classified as GL 6115 (Outside Services). Ascend Payments is a payment processing platform; the consistent $240/month pattern suggests a contracted outside service.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3416,UPL-349,1,2025-08-15,CHICK-FIL-A #00916 0LOGANVILLE          GA,19.31,CHICKFILA,,Loganville,GA,US,t,6170,High,Rule Match,161,"Deterministic match: Rule R-161 | vendor=CHICKFILA | → GL 6170
+
+Rule Justification: Both historical Chick-fil-A transactions are classified as GL 6170 (Travel Meals Entertainment - Admin). Restaurant meals for employees.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3417,UPL-350,1,2025-08-15,DD *DOORDASH BANDABUSAN FRANCISCO       CA,27.19,DOORDASH,DD-BANDAB,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3418,UPL-351,1,2025-08-15,DD *DOORDASH CHIPOTLSAN FRANCISCO       CA,36.02,DOORDASH,DD-CHIPOT,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3419,UPL-352,1,2025-08-15,RAISINGCANES 1069MOB972-769-3100        GA,71.82,RAISCANES,,,GA,US,t,6170,High,Rule Match,186,"Deterministic match: Rule R-186 | vendor=RAISCANES | → GL 6170
+
+Rule Justification: The one historical Raising Cane's transaction (UPL-118, $71.82) is classified as GL 6170 (Travel Meals Entertainment - Admin). Restaurant meals for employees.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3420,UPL-353,1,2025-08-15,RF *RICONO ACCOUNTINNEW YORK            NY,1700.00,RICONO,,New York,NY,US,t,6100,High,Rule Match,135,"Deterministic match: Rule R-135 | vendor=RICONO | → GL 6100
+
+Rule Justification: All 4 historical Ricono Accounting transactions are classified as GL 6100 (Accounting). Ricono is explicitly listed in the GL hierarchy description for accounting services.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3421,UPL-354,1,2025-08-14,GREAT HARVEST BREAD LOGANVILLE          GA,34.13,GRTHARV,,Loganville,GA,US,t,6170,High,Rule Match,163,"Deterministic match: Rule R-163 | vendor=GRTHARV | → GL 6170
+
+Rule Justification: Both historical Great Harvest Bread transactions are classified as GL 6170 (Travel Meals Entertainment - Admin). Food purchases for employees.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3422,UPL-355,1,2025-08-14,KUDOBOARD           DENVER              CO,52.30,KUDOBOARD,,Denver,CO,US,t,6160,High,Rule Match,199,"Deterministic match: Rule R-199 | vendor=KUDOBOARD | → GL 6160
+
+Rule Justification: Historical Kudoboard transactions show a split: 2 coded as GL 6160 (UPL-008 $5.99, UPL-009 $104.30) and 1 coded as GL 6170 (UPL-120 $52.30). The majority pattern is GL 6160 (Office Supplies & Expenses). Kudoboard is a digital greeting card/recognition platform that could be considered an office supply. Note: User may want to review whether team recognition expenses should be 6170 instead.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3423,UPL-356,1,2025-08-14,OPENAI *CHATGPT SUBSSAN FRANCISCO       CA,20.00,OPENAI,OPENAI-GPT,San Francisco,CA,US,t,6200,High,Rule Match,134,"Deterministic match: Rule R-134 | vendor=OPENAI | → GL 6200
+
+Rule Justification: All 6 historical OpenAI/ChatGPT transactions are classified as GL 6200 (Computer Internet & Software). OpenAI ChatGPT subscriptions are software subscriptions.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3424,UPL-357,1,2025-08-13,USPS KIOSK 125203955LOGANVILLE          GA,12.35,USPS,USPS-KIOSK,Loganville,GA,US,t,6140,High,Rule Match,145,"Deterministic match: Rule R-145 | vendor=USPS | → GL 6140
+
+Rule Justification: All 6 historical USPS transactions are classified as GL 6140 (Postage). USPS is explicitly listed in the GL hierarchy description for shipping and mailing costs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3425,UPL-358,1,2025-08-13,WALMART.COM         WALMART.COM         AR,107.93,WALMART,WLMRT-COM,,AR,US,t,6160,High,Rule Match,131,"Deterministic match: Rule R-131 | vendor=WALMART | → GL 6160
+
+Rule Justification: All 10 historical Walmart transactions are classified as GL 6160 (Office Supplies & Expenses). Walmart purchases at this agency cover office supplies, groceries for the office, and general equipment. This covers both Walmart.com (WLMRT-COM) and in-store (WALMART-SC) service IDs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3426,UPL-359,1,2025-08-11,AUTOPAY PAYMENT - THANK YOU,-2096.36,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3427,UPL-360,1,2025-08-11,GOOGLE*ADS3360083427CC GOOGLE.COM,500.00,GOOGL,GOOGL-ADS,,,US,t,5030,High,Rule Match,132,"Deterministic match: Rule R-132 | vendor=GOOGL | service=GOOGL-ADS | → GL 5030
+
+Rule Justification: All historical Google Ads transactions (8/8) are classified as GL 5030 (Marketing & Advertising). Google Ads is a core marketing/lead generation channel for the insurance agency.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3428,UPL-361,1,2025-08-11,WALGREENS           LOGANVILLE          GA,105.34,WALGREENS,WALGREENS,Loganville,GA,US,t,6160,High,Rule Match,166,"Deterministic match: Rule R-166 | vendor=WALGREENS | → GL 6160
+
+Rule Justification: The one historical Walgreens transaction (UPL-125, $105.34) is classified as GL 6160 (Office Supplies & Expenses). Retail purchases for office supplies.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3429,UPL-362,1,2025-08-09,AT&T UVERSE PAYMENT 8002882020          TX,160.00,ATT,ATT-UVERSE,,TX,US,t,6250,High,Rule Match,138,"Deterministic match: Rule R-138 | vendor=ATT | → GL 6250
+
+Rule Justification: All 4 historical AT&T transactions are classified as GL 6250 (Telephone). AT&T is explicitly listed in the GL hierarchy description for telephone service.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3430,UPL-363,1,2025-08-09,OPENAI *CHATGPT SUBSSAN FRANCISCO       CA,120.00,OPENAI,OPENAI-GPT,San Francisco,CA,US,t,6200,High,Rule Match,134,"Deterministic match: Rule R-134 | vendor=OPENAI | → GL 6200
+
+Rule Justification: All 6 historical OpenAI/ChatGPT transactions are classified as GL 6200 (Computer Internet & Software). OpenAI ChatGPT subscriptions are software subscriptions.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3431,UPL-364,1,2025-08-08,93577-ATLANTA AIRPORATLANTA             GA,90.00,ATLAIRPORT,,Atlanta,GA,US,t,6170,High,Rule Match,191,"Deterministic match: Rule R-191 | vendor=ATLAIRPORT | → GL 6170
+
+Rule Justification: The one historical Atlanta Airport (93577) transaction (UPL-130, $90.00) is classified as GL 6170 (Travel Meals Entertainment - Admin). Airport parking for admin travel.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3432,UPL-365,1,2025-08-08,BRADY PEST CONTROL ILAWRENCEVILLE       GA,300.00,BRADYPEST,,LAWRENCEVILLE,GA,US,t,6115,High,Rule Match,172,"Deterministic match: Rule R-172 | vendor=BRADYPEST | → GL 6115
+
+Rule Justification: The one historical Brady Pest Control transaction (UPL-128, $300.00) is classified as GL 6115 (Outside Services). Pest control is a contracted maintenance/cleaning service for the office.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3433,UPL-366,1,2025-08-08,COMCAST BUSINESS MOB844-963-0206        PA,69.70,COMCAST,COMCAST-BIZ,,PA,US,t,6260,High,Rule Match,140,"Deterministic match: Rule R-140 | vendor=COMCAST | → GL 6260
+
+Rule Justification: 4 out of 5 historical Comcast transactions are classified as GL 6260 (Utilities - electric, cable/TV). One outlier (UPL-137) was coded 6200, but the dominant pattern is 6260 for Comcast business mobile/cable services. The GL hierarchy explicitly includes cable/TV under 6260.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3434,UPL-367,1,2025-08-08,DD *DOORDASH LOSARIBSAN FRANCISCO       CA,18.72,DOORDASH,DD-LOSARI,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3435,UPL-368,1,2025-08-08,DD *DOORDASH MIGUELSSAN FRANCISCO       CA,16.40,DOORDASH,DD-MIGUEL,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3436,UPL-369,1,2025-08-08,EXXONMOBIL 9747     HOFFMAN ESTAT       IL,17.67,EXXON,EXXON-GAS,Hoffman Estates,IL,US,t,6170,High,Rule Match,192,"Deterministic match: Rule R-192 | vendor=EXXON | → GL 6170
+
+Rule Justification: The one historical ExxonMobil transaction (UPL-133, $17.67) is classified as GL 6170 (Travel Meals Entertainment - Admin). Gas/fuel during admin travel.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3437,UPL-370,1,2025-08-08,HAMPTON INN MT PROSPMT PROSPECT         IL,384.25,HAMPTON,HAMPTON,Mt Prospect,IL,US,t,6170,High,Rule Match,188,"Deterministic match: Rule R-188 | vendor=HAMPTON | → GL 6170
+
+Rule Justification: The one historical Hampton Inn transaction (UPL-134, $384.25) is classified as GL 6170 (Travel Meals Entertainment - Admin). Hotel charges for admin travel.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3438,UPL-371,1,2025-08-08,HERTZ CAR RENTAL,133.05,HERTZ,HERTZ-RENT,,,US,t,6170,High,Rule Match,193,"Deterministic match: Rule R-193 | vendor=HERTZ | → GL 6170
+
+Rule Justification: The one historical Hertz transaction (UPL-135, $133.05) is classified as GL 6170 (Travel Meals Entertainment - Admin). Car rental for admin travel.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3439,UPL-372,1,2025-08-08,HUEY MAGOOS LOGANVILLOGANVILLE          GA,67.71,HUEYMAGOO,HUEYMAGOO,Loganville,GA,US,t,6170,High,Rule Match,150,"Deterministic match: Rule R-150 | vendor=HUEYMAGOO | → GL 6170
+
+Rule Justification: All 5 historical Huey Magoo's transactions are classified as GL 6170 (Travel Meals Entertainment - Admin). This is a restaurant used for employee meals.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3440,UPL-373,1,2025-08-08,WALMART.COM         WALMART.COM         AR,75.68,WALMART,WLMRT-COM,,AR,US,t,6160,High,Rule Match,131,"Deterministic match: Rule R-131 | vendor=WALMART | → GL 6160
+
+Rule Justification: All 10 historical Walmart transactions are classified as GL 6160 (Office Supplies & Expenses). Walmart purchases at this agency cover office supplies, groceries for the office, and general equipment. This covers both Walmart.com (WLMRT-COM) and in-store (WALMART-SC) service IDs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3441,UPL-374,1,2025-08-07,USPS KIOSK 125203955LOGANVILLE          GA,19.60,USPS,USPS-KIOSK,Loganville,GA,US,t,6140,High,Rule Match,145,"Deterministic match: Rule R-145 | vendor=USPS | → GL 6140
+
+Rule Justification: All 6 historical USPS transactions are classified as GL 6140 (Postage). USPS is explicitly listed in the GL hierarchy description for shipping and mailing costs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3442,UPL-375,1,2025-08-07,USPS KIOSK 125203955LOGANVILLE          GA,24.35,USPS,USPS-KIOSK,Loganville,GA,US,t,6140,High,Rule Match,145,"Deterministic match: Rule R-145 | vendor=USPS | → GL 6140
+
+Rule Justification: All 6 historical USPS transactions are classified as GL 6140 (Postage). USPS is explicitly listed in the GL hierarchy description for shipping and mailing costs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3443,UPL-376,1,2025-08-06,TST* LADY DAHLIA 001MOUNT PROSPECT      IL,136.55,LADYDAHLI,LADYDAHLI,Mount Prospect,IL,US,t,6170,High,Rule Match,195,"Deterministic match: Rule R-195 | vendor=LADYDAHLI | → GL 6170
+
+Rule Justification: The one historical Lady Dahlia transaction (UPL-140, $136.55) is classified as GL 6170 (Travel Meals Entertainment - Admin). Restaurant meal during travel.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3444,UPL-377,1,2025-08-05,"CHECKR, INC CHECKR.CSAN FRANCISCO       CA",55.49,CHECKR,CHECKR,San Francisco,CA,US,t,6170,High,Rule Match,198,"Deterministic match: Rule R-198 | vendor=CHECKR | → GL 6170
+
+Rule Justification: The one historical Checkr transaction (UPL-141, $55.49) was classified as GL 6170 (Travel Meals Entertainment - Admin). Note: This classification seems unusual for a background check service — Checkr provides employment background checks which might be better suited for GL 6115 (Outside Services - HR services). However, following the historical precedent. User may want to review this classification.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3445,UPL-378,1,2025-08-05,DD *DOORDASH BANDABUSAN FRANCISCO       CA,19.20,DOORDASH,DD-BANDAB,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3446,UPL-379,1,2025-08-05,DD *DOORDASH MCDONALSAN FRANCISCO       CA,19.09,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3447,UPL-380,1,2025-08-05,THAI TASTE 0000     LOGANVILLE          GA,104.57,THAITASTE,THAITASTE,Loganville,GA,US,t,6170,High,Rule Match,183,"Deterministic match: Rule R-183 | vendor=THAITASTE | → GL 6170
+
+Rule Justification: The one historical Thai Taste transaction (UPL-144, $104.57) is classified as GL 6170 (Travel Meals Entertainment - Admin). Restaurant meals.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3448,UPL-381,1,2025-08-04,AUTOPAY PAYMENT - THANK YOU,-6313.73,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3449,UPL-382,1,2025-08-04,GOOGLE *GOOGLE ONE   G.CO/HELPPAY#      CA,124.99,GOOGL,GOOGL-ONE,,CA,US,t,6200,High,Rule Match,133,"Deterministic match: Rule R-133 | vendor=GOOGL | service=GOOGL-ONE | → GL 6200
+
+Rule Justification: The one historical Google One transaction (UPL-146, $124.99) was classified as GL 6200 (Computer Internet & Software). Google One is a cloud storage/subscription service, fitting the software subscriptions category. Note: GL hierarchy also lists Google One under 6130 (Dues & Subscriptions), but historical precedent points to 6200.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3450,UPL-383,1,2025-08-04,ORBITZ*7319682764580ORBITZ.COM          WA,139.34,ORBITZ,ORBITZ,,WA,US,t,6170,High,Rule Match,189,"Deterministic match: Rule R-189 | vendor=ORBITZ | → GL 6170
+
+Rule Justification: The one historical Orbitz transaction (UPL-145, $139.34) is classified as GL 6170 (Travel Meals Entertainment - Admin). Travel booking for admin purposes.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3451,UPL-384,1,2025-08-02,INDEED JOBS         AUSTIN              TX,224.18,INDEED,INDEED-JOBS,Austin,TX,US,t,6115,High,Rule Match,147,"Deterministic match: Rule R-147 | vendor=INDEED | → GL 6115
+
+Rule Justification: Both historical Indeed transactions are classified as GL 6115 (Outside Services). Indeed is a job posting/recruitment platform. Recruitment services fall under outside services (HR services mentioned in 6115 description).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3452,UPL-385,1,2025-08-01,ATLANTA OFFICE TECHNNORCROSS            GA,37.74,ATLOFFTECH,,Norcross,GA,US,t,6115,High,Rule Match,155,"Deterministic match: Rule R-155 | vendor=ATLOFFTECH | → GL 6115
+
+Rule Justification: All 3 historical Atlanta Office Technologies transactions are classified as GL 6115 (Outside Services). This vendor provides IT support and office technology services.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3453,UPL-386,1,2025-08-01,CHILI'S             LOGANVILLE          GA,141.68,CHILIS,CHILIS,Loganville,GA,US,t,6170,High,Rule Match,162,"Deterministic match: Rule R-162 | vendor=CHILIS | → GL 6170
+
+Rule Justification: Both historical Chili's transactions are classified as GL 6170 (Travel Meals Entertainment - Admin). Restaurant meals for employees/team events.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3454,UPL-387,1,2025-08-01,GOOGLE*ADS3360083427CC GOOGLE.COM,519.91,GOOGL,GOOGL-ADS,,,US,t,5030,High,Rule Match,132,"Deterministic match: Rule R-132 | vendor=GOOGL | service=GOOGL-ADS | → GL 5030
+
+Rule Justification: All historical Google Ads transactions (8/8) are classified as GL 5030 (Marketing & Advertising). Google Ads is a core marketing/lead generation channel for the insurance agency.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3455,UPL-388,1,2025-08-01,Sircon - STATEINSURA517-381-3860        MI,143.30,SIRCON,SIRCON-INS,,MI,US,t,6120,High,Rule Match,137,"Deterministic match: Rule R-137 | vendor=SIRCON | → GL 6120
+
+Rule Justification: All 5 historical Sircon transactions are classified as GL 6120 (Licenses & Permits). Sircon (Vertafore) provides state insurance licensing and agent registration services, which aligns perfectly with the GL description.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3456,UPL-389,1,2025-08-01,WALMART.COM 80092562BENTONVILLE         AR,41.62,WALMART,WLMRT-COM,Bentonville,AR,US,t,6160,High,Rule Match,131,"Deterministic match: Rule R-131 | vendor=WALMART | → GL 6160
+
+Rule Justification: All 10 historical Walmart transactions are classified as GL 6160 (Office Supplies & Expenses). Walmart purchases at this agency cover office supplies, groceries for the office, and general equipment. This covers both Walmart.com (WLMRT-COM) and in-store (WALMART-SC) service IDs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3457,UPL-390,1,2025-08-01,WAVE - *MEDTECH CONSLAWRENCEVILLE       GA,3509.91,WAVE,WAVE-MDTC,Lawrenceville,GA,US,t,6115,High,Rule Match,136,"Deterministic match: Rule R-136 | vendor=WAVE | → GL 6115
+
+Rule Justification: All 3 historical Wave Financial (MEDTECH CONS) transactions are classified as GL 6115 (Outside Services). These are large recurring payments (~$3,500/month) for contracted consulting/services via Wave payment platform.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3458,UPL-391,1,2025-07-31,VSP*WORKWISE COMPLIATAMPA               FL,-158.95,VSP,VSP-WRKWS,Tampa,FL,US,t,6115,High,Rule Match,154,"Deterministic match: Rule R-154 | vendor=VSP | → GL 6115
+
+Rule Justification: Both historical VSP WorkWise Compliance transactions are classified as GL 6115 (Outside Services). VSP WorkWise provides HR compliance services, which falls under outside services.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3459,UPL-392,1,2025-07-30,AMAZON MARKEPLACE NA PA,39.78,AMZN,AMZN-MKTPL,,PA,US,t,6160,High,Rule Match,148,"Deterministic match: Rule R-148 | vendor=AMZN | → GL 6160
+
+Rule Justification: All 5 historical Amazon Marketplace transactions are classified as GL 6160 (Office Supplies & Expenses). Amazon Marketplace orders are used for office supplies and equipment, as explicitly noted in the GL hierarchy.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3460,UPL-393,1,2025-07-30,MAILCHIMP LLC       ATLANTA             GA,60.00,MAILCHIMP,,Atlanta,GA,US,t,5030,High,Rule Match,159,"Deterministic match: Rule R-159 | vendor=MAILCHIMP | → GL 5030
+
+Rule Justification: Historical Mailchimp transactions show a split: 2 coded as GL 5030 (Marketing & Advertising) and 2 coded as GL 6200 (Computer Internet & Software). However, Mailchimp is explicitly listed in the GL 5030 hierarchy description as a marketing campaign tool. The 6200 classifications appear to be inconsistencies. Recommending GL 5030 per the GL hierarchy definition.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3461,UPL-394,1,2025-07-30,RF *RICONO ACCOUNTINNEW YORK            NY,1700.00,RICONO,,New York,NY,US,t,6100,High,Rule Match,135,"Deterministic match: Rule R-135 | vendor=RICONO | → GL 6100
+
+Rule Justification: All 4 historical Ricono Accounting transactions are classified as GL 6100 (Accounting). Ricono is explicitly listed in the GL hierarchy description for accounting services.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3462,UPL-395,1,2025-07-30,USPS KIOSK 125203955LOGANVILLE          GA,12.30,USPS,USPS-KIOSK,Loganville,GA,US,t,6140,High,Rule Match,145,"Deterministic match: Rule R-145 | vendor=USPS | → GL 6140
+
+Rule Justification: All 6 historical USPS transactions are classified as GL 6140 (Postage). USPS is explicitly listed in the GL hierarchy description for shipping and mailing costs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3463,UPL-396,1,2025-07-29,Amazon Prime        Amazon.com          WA,16.09,AMAZON,AMZN-PRIM,,WA,US,t,6160,High,Rule Match,149,"Deterministic match: Rule R-149 | vendor=AMAZON | → GL 6160
+
+Rule Justification: All 3 historical Amazon (Prime and Amazon.com) transactions are classified as GL 6160 (Office Supplies & Expenses). Amazon Prime membership and Amazon.com purchases support office supply procurement.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3464,UPL-397,1,2025-07-29,DOMAIN.COM          (866)539-2854       MA,26.17,DOMAINCOM,,,MA,US,t,6115,High,Rule Match,200,"Deterministic match: Rule R-200 | vendor=DOMAINCOM | → GL 6115
+
+Rule Justification: The one historical Domain.com transaction (UPL-159, $26.17) is classified as GL 6115 (Outside Services). Domain registration and web hosting services fall under web development/outside services.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3465,UPL-398,1,2025-07-28,AUTOPAY PAYMENT - THANK YOU,-1185.53,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3466,UPL-399,1,2025-07-25,MDC*WALTON EMC MDC=WMONROE              GA,225.57,WALTONEMC,,Monroe,GA,US,t,6260,High,Rule Match,139,"Deterministic match: Rule R-139 | vendor=WALTONEMC | → GL 6260
+
+Rule Justification: All 4 historical Walton EMC transactions are classified as GL 6260 (Utilities). Walton EMC is an electric membership corporation — an electric utility provider.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3467,UPL-400,1,2025-07-25,USPS KIOSK 125203955LOGANVILLE          GA,21.05,USPS,USPS-KIOSK,Loganville,GA,US,t,6140,High,Rule Match,145,"Deterministic match: Rule R-145 | vendor=USPS | → GL 6140
+
+Rule Justification: All 6 historical USPS transactions are classified as GL 6140 (Postage). USPS is explicitly listed in the GL hierarchy description for shipping and mailing costs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3468,UPL-401,1,2025-07-25,WALMART.COM         WALMART.COM         AR,50.89,WALMART,WLMRT-COM,,AR,US,t,6160,High,Rule Match,131,"Deterministic match: Rule R-131 | vendor=WALMART | → GL 6160
+
+Rule Justification: All 10 historical Walmart transactions are classified as GL 6160 (Office Supplies & Expenses). Walmart purchases at this agency cover office supplies, groceries for the office, and general equipment. This covers both Walmart.com (WLMRT-COM) and in-store (WALMART-SC) service IDs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3469,UPL-402,1,2025-07-24,TST* SRI THAI SNELLVSNELLVILLE          GA,55.44,SRITHAI,,Snellville,GA,US,t,6170,High,Rule Match,184,"Deterministic match: Rule R-184 | vendor=SRITHAI | → GL 6170
+
+Rule Justification: The one historical Sri Thai transaction (UPL-164, $55.44) is classified as GL 6170 (Travel Meals Entertainment - Admin). Restaurant meals.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3470,UPL-403,1,2025-07-24,VISTAPRINT          WALTHAM             MA,48.32,VISTAPRINT,,Waltham,MA,US,t,6160,High,Rule Match,201,"Deterministic match: Rule R-201 | vendor=VISTAPRINT | → GL 6160
+
+Rule Justification: Historical Vistaprint transactions show a split: UPL-082 ($64.42) coded as GL 6200 and UPL-163 ($48.32) coded as GL 6160. Vistaprint primarily provides printed materials (business cards, marketing collateral). GL 6160 (Office Supplies - printing) seems most appropriate per the GL hierarchy description which explicitly mentions printing. Note: Some orders may be more marketing-oriented. User should review.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3471,UPL-404,1,2025-07-23,CBI*NITRO PDF       800-799-9570        IL,151.89,NITROPDF,NITROPDF,,IL,US,t,6200,High,Rule Match,209,"Deterministic match: Rule R-209 | vendor=NITROPDF | → GL 6200
+
+Rule Justification: No direct historical data for Nitro PDF, but it is a PDF/document management software subscription. Similar software subscriptions (Adobe, OpenAI, Canopy, DocuSign) are classified as GL 6200 (Computer Internet & Software).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3472,UPL-405,1,2025-07-23,ATHENA'S GYROS      LOGANVILLE          GA,57.00,ATHGYROS,ATHGYROS,Loganville,GA,US,t,6170,High,Rule Match,178,"Deterministic match: Rule R-178 | vendor=ATHGYROS | → GL 6170
+
+Rule Justification: Both historical Athena's Gyros transactions are classified as GL 6170 (Travel Meals Entertainment - Admin). Restaurant meals for employees.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3473,UPL-406,1,2025-07-22,GOOGLE*ADS3360083427CC GOOGLE.COM,500.00,GOOGL,GOOGL-ADS,,,US,t,5030,High,Rule Match,132,"Deterministic match: Rule R-132 | vendor=GOOGL | service=GOOGL-ADS | → GL 5030
+
+Rule Justification: All historical Google Ads transactions (8/8) are classified as GL 5030 (Marketing & Advertising). Google Ads is a core marketing/lead generation channel for the insurance agency.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3474,UPL-407,1,2025-07-22,INSURANCEXDATE.COM  WILMINGTON          DE,65.38,INSXDATE,INSXDATE,Wilmington,DE,US,t,5030,High,Rule Match,146,"Deterministic match: Rule R-146 | vendor=INSXDATE | → GL 5030
+
+Rule Justification: All 4 historical InsuranceXDate transactions are classified as GL 5030 (Marketing & Advertising). InsuranceXDate is a lead generation service for insurance agencies, fitting the marketing/lead generation category.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3475,UPL-408,1,2025-07-21,AUTOPAY PAYMENT - THANK YOU,-967.61,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3476,UPL-409,1,2025-07-21,MICROSOFT           MSBILL.INFO,9.99,MSFT,,,,US,t,6200,High,Rule Match,144,"Deterministic match: Rule R-144 | vendor=MSFT | → GL 6200
+
+Rule Justification: All 3 historical MSFT (MICROSOFT MSBILL.INFO at $9.99) transactions are classified as GL 6200 (Computer Internet & Software). This is a smaller Microsoft software subscription.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3477,UPL-410,1,2025-07-18,CHICK-FIL-A #00916 0LOGANVILLE          GA,44.33,CHICKFILA,,Loganville,GA,US,t,6170,High,Rule Match,161,"Deterministic match: Rule R-161 | vendor=CHICKFILA | → GL 6170
+
+Rule Justification: Both historical Chick-fil-A transactions are classified as GL 6170 (Travel Meals Entertainment - Admin). Restaurant meals for employees.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3478,UPL-411,1,2025-07-18,DD *DOORDASH CHILISGSAN FRANCISCO       CA,38.71,DOORDASH,DD-CHILIS,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3479,UPL-412,1,2025-07-18,DD *DOORDASH THESMOKSAN FRANCISCO       CA,32.42,DOORDASH,,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3480,UPL-413,1,2025-07-18,USECANOPY.COM       BEAVERTON           OR,250.00,CANOPY,,Beaverton,OR,US,t,6200,High,Rule Match,142,"Deterministic match: Rule R-142 | vendor=CANOPY | → GL 6200
+
+Rule Justification: All 4 historical Canopy (usecanopy.com) transactions are classified as GL 6200 (Computer Internet & Software). Canopy is a practice management software platform, consistent with software subscriptions at $250/month.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3481,UPL-414,1,2025-07-17,A1010BUSD01         MSBILL.INFO,187.50,MICROSOFT,MSFT-BILL,,,US,t,6200,High,Rule Match,143,"Deterministic match: Rule R-143 | vendor=MICROSOFT | → GL 6200
+
+Rule Justification: All 4 historical Microsoft (A1010BUSD01 MSBILL.INFO) transactions are classified as GL 6200 (Computer Internet & Software). These are Microsoft 365 business subscription fees.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3482,UPL-415,1,2025-07-17,COMCAST / XFINITY   800-266-2278        GA,-182.31,COMCAST,COMCAST-XFN,,GA,US,t,6260,High,Rule Match,140,"Deterministic match: Rule R-140 | vendor=COMCAST | → GL 6260
+
+Rule Justification: 4 out of 5 historical Comcast transactions are classified as GL 6260 (Utilities - electric, cable/TV). One outlier (UPL-137) was coded 6200, but the dominant pattern is 6260 for Comcast business mobile/cable services. The GL hierarchy explicitly includes cable/TV under 6260.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3483,UPL-416,1,2025-07-16,ASCEND PAYMENTS     SAN FRANCISCO       CA,240.00,ASCENDPAY,ASCENDPAY,San Francisco,CA,US,t,6115,High,Rule Match,141,"Deterministic match: Rule R-141 | vendor=ASCENDPAY | → GL 6115
+
+Rule Justification: All 4 historical Ascend Payments transactions are classified as GL 6115 (Outside Services). Ascend Payments is a payment processing platform; the consistent $240/month pattern suggests a contracted outside service.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3484,UPL-417,1,2025-07-16,BT*DUTCH BROS       GRANTS PASS         OR,100.00,DUTCHBROS,DUTCHBROS,Grants Pass,OR,US,t,6170,High,Rule Match,185,"Deterministic match: Rule R-185 | vendor=DUTCHBROS | → GL 6170
+
+Rule Justification: The one historical Dutch Bros transaction (UPL-174, $100.00) is classified as GL 6170 (Travel Meals Entertainment - Admin). Coffee/beverage purchase for employees.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3485,UPL-418,1,2025-07-16,WALMART.COM         WALMART.COM         AR,78.01,WALMART,WLMRT-COM,,AR,US,t,6160,High,Rule Match,131,"Deterministic match: Rule R-131 | vendor=WALMART | → GL 6160
+
+Rule Justification: All 10 historical Walmart transactions are classified as GL 6160 (Office Supplies & Expenses). Walmart purchases at this agency cover office supplies, groceries for the office, and general equipment. This covers both Walmart.com (WLMRT-COM) and in-store (WALMART-SC) service IDs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3486,UPL-419,1,2025-07-15,VSP*WORKWISE COMPLIATAMPA               FL,158.95,VSP,VSP-WRKWS,Tampa,FL,US,t,6115,High,Rule Match,154,"Deterministic match: Rule R-154 | vendor=VSP | → GL 6115
+
+Rule Justification: Both historical VSP WorkWise Compliance transactions are classified as GL 6115 (Outside Services). VSP WorkWise provides HR compliance services, which falls under outside services.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3487,UPL-420,1,2025-07-14,AUTOPAY PAYMENT - THANK YOU,-3008.51,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3488,UPL-421,1,2025-07-14,OPENAI *CHATGPT SUBSSAN FRANCISCO       CA,20.00,OPENAI,OPENAI-GPT,San Francisco,CA,US,t,6200,High,Rule Match,134,"Deterministic match: Rule R-134 | vendor=OPENAI | → GL 6200
+
+Rule Justification: All 6 historical OpenAI/ChatGPT transactions are classified as GL 6200 (Computer Internet & Software). OpenAI ChatGPT subscriptions are software subscriptions.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3489,UPL-422,1,2025-07-11,ADOBE Adobe Systems SAN JOSE            CA,-290.07,ADOBE,,San Jose,CA,US,t,6200,High,Rule Match,153,"Deterministic match: Rule R-153 | vendor=ADOBE | → GL 6200
+
+Rule Justification: Both historical Adobe transactions are classified as GL 6200 (Computer Internet & Software). Adobe provides software subscriptions (PDF, Creative Cloud, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3490,UPL-423,1,2025-07-11,ADOBE Adobe Systems SAN JOSE            CA,209.01,ADOBE,,San Jose,CA,US,t,6200,High,Rule Match,153,"Deterministic match: Rule R-153 | vendor=ADOBE | → GL 6200
+
+Rule Justification: Both historical Adobe transactions are classified as GL 6200 (Computer Internet & Software). Adobe provides software subscriptions (PDF, Creative Cloud, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3491,UPL-424,1,2025-07-11,ATHENA'S GYROS      LOGANVILLE          GA,57.00,ATHGYROS,ATHGYROS,Loganville,GA,US,t,6170,High,Rule Match,178,"Deterministic match: Rule R-178 | vendor=ATHGYROS | → GL 6170
+
+Rule Justification: Both historical Athena's Gyros transactions are classified as GL 6170 (Travel Meals Entertainment - Admin). Restaurant meals for employees.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3492,UPL-425,1,2025-07-11,DD *DOORDASH CHIPOTLSAN FRANCISCO       CA,30.40,DOORDASH,DD-CHIPOT,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3493,UPL-426,1,2025-07-11,DD *DOORDASH MCDONALSAN FRANCISCO       CA,23.67,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3494,UPL-427,1,2025-07-11,DocuSign            SEATTLE             WA,960.00,DOCUSIGN,,Seattle,WA,US,t,6200,High,Rule Match,171,"Deterministic match: Rule R-171 | vendor=DOCUSIGN | → GL 6200
+
+Rule Justification: The one historical DocuSign transaction (UPL-182, $960.00) is classified as GL 6200 (Computer Internet & Software). DocuSign is an electronic signature software subscription.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3495,UPL-428,1,2025-07-11,TST* PARK BAR 001909ATLANTA             GA,107.20,PARKBAR,PARKBAR,Atlanta,GA,US,t,6170,High,Rule Match,197,"Deterministic match: Rule R-197 | vendor=PARKBAR | → GL 6170
+
+Rule Justification: The one historical Park Bar transaction (UPL-179, $107.20) is classified as GL 6170 (Travel Meals Entertainment - Admin). Restaurant/bar meal expense.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3496,UPL-429,1,2025-07-10,GOOGLE*ADS3360083427CC GOOGLE.COM,500.00,GOOGL,GOOGL-ADS,,,US,t,5030,High,Rule Match,132,"Deterministic match: Rule R-132 | vendor=GOOGL | service=GOOGL-ADS | → GL 5030
+
+Rule Justification: All historical Google Ads transactions (8/8) are classified as GL 5030 (Marketing & Advertising). Google Ads is a core marketing/lead generation channel for the insurance agency.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3497,UPL-430,1,2025-07-09,OPENAI *CHATGPT SUBSSAN FRANCISCO       CA,120.00,OPENAI,OPENAI-GPT,San Francisco,CA,US,t,6200,High,Rule Match,134,"Deterministic match: Rule R-134 | vendor=OPENAI | → GL 6200
+
+Rule Justification: All 6 historical OpenAI/ChatGPT transactions are classified as GL 6200 (Computer Internet & Software). OpenAI ChatGPT subscriptions are software subscriptions.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3498,UPL-431,1,2025-07-09,AMAZON MARKEPLACE NA PA,14.63,AMZN,AMZN-MKTPL,,PA,US,t,6160,High,Rule Match,148,"Deterministic match: Rule R-148 | vendor=AMZN | → GL 6160
+
+Rule Justification: All 5 historical Amazon Marketplace transactions are classified as GL 6160 (Office Supplies & Expenses). Amazon Marketplace orders are used for office supplies and equipment, as explicitly noted in the GL hierarchy.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3499,UPL-432,1,2025-07-09,AT&T UVERSE PAYMENT 8002882020          TX,160.00,ATT,ATT-UVERSE,,TX,US,t,6250,High,Rule Match,138,"Deterministic match: Rule R-138 | vendor=ATT | → GL 6250
+
+Rule Justification: All 4 historical AT&T transactions are classified as GL 6250 (Telephone). AT&T is explicitly listed in the GL hierarchy description for telephone service.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3500,UPL-433,1,2025-07-09,COMCAST BUSINESS MOB844-963-0206        PA,42.30,COMCAST,COMCAST-BIZ,,PA,US,t,6260,High,Rule Match,140,"Deterministic match: Rule R-140 | vendor=COMCAST | → GL 6260
+
+Rule Justification: 4 out of 5 historical Comcast transactions are classified as GL 6260 (Utilities - electric, cable/TV). One outlier (UPL-137) was coded 6200, but the dominant pattern is 6260 for Comcast business mobile/cable services. The GL hierarchy explicitly includes cable/TV under 6260.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3501,UPL-434,1,2025-07-09,Sircon - STATEINSURA517-381-3860        MI,57.86,SIRCON,SIRCON-INS,,MI,US,t,6120,High,Rule Match,137,"Deterministic match: Rule R-137 | vendor=SIRCON | → GL 6120
+
+Rule Justification: All 5 historical Sircon transactions are classified as GL 6120 (Licenses & Permits). Sircon (Vertafore) provides state insurance licensing and agent registration services, which aligns perfectly with the GL description.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3502,UPL-435,1,2025-07-09,Sircon - STATEINSURA517-381-3860        MI,193.00,SIRCON,SIRCON-INS,,MI,US,t,6120,High,Rule Match,137,"Deterministic match: Rule R-137 | vendor=SIRCON | → GL 6120
+
+Rule Justification: All 5 historical Sircon transactions are classified as GL 6120 (Licenses & Permits). Sircon (Vertafore) provides state insurance licensing and agent registration services, which aligns perfectly with the GL description.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3503,UPL-436,1,2025-07-08,BETTERMENT BUSINESS NEW YORK            NY,225.60,BETTERMT,BETTERMT-B,New York,NY,US,t,6040,High,Rule Match,152,"Deterministic match: Rule R-152 | vendor=BETTERMT | → GL 6040
+
+Rule Justification: The one historical Betterment transaction (UPL-025, $261.53) is classified as GL 6040 (401K Administration). Betterment Business provides 401K plan administration, as explicitly noted in the GL hierarchy.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3504,UPL-437,1,2025-07-08,DELTA AIR LINES,187.96,DELTA,DELTA,,,US,t,6170,High,Rule Match,205,"Deterministic match: Rule R-205 | vendor=DELTA | → GL 6170
+
+Rule Justification: No direct historical data for Delta Air Lines, but similar travel expenses (Orbitz, Hertz, airport parking, hotels) are consistently classified as GL 6170 (Travel Meals Entertainment - Admin). Airline charges are travel expenses.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3505,UPL-438,1,2025-07-08,IDEMIA I&S USA      844-321-2124        MA,51.99,IDEMIA,IDEMIA,,MA,US,t,6115,High,Rule Match,173,"Deterministic match: Rule R-173 | vendor=IDEMIA | → GL 6115
+
+Rule Justification: The one historical IDEMIA transaction (UPL-029, $51.99) is classified as GL 6115 (Outside Services). IDEMIA provides identity and security services (fingerprinting, background checks for licensing).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3506,UPL-439,1,2025-07-07,AMAZON.COM          AMZN.COM/BILL       WA,50.00,AMAZON,AMAZON-COM,,WA,US,t,6160,High,Rule Match,149,"Deterministic match: Rule R-149 | vendor=AMAZON | → GL 6160
+
+Rule Justification: All 3 historical Amazon (Prime and Amazon.com) transactions are classified as GL 6160 (Office Supplies & Expenses). Amazon Prime membership and Amazon.com purchases support office supply procurement.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3507,UPL-440,1,2025-07-07,AUTOPAY PAYMENT - THANK YOU,-4418.67,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3508,UPL-441,1,2025-07-07,Sircon - STATEINSURA517-381-3860        MI,120.00,SIRCON,SIRCON-INS,,MI,US,t,6120,High,Rule Match,137,"Deterministic match: Rule R-137 | vendor=SIRCON | → GL 6120
+
+Rule Justification: All 5 historical Sircon transactions are classified as GL 6120 (Licenses & Permits). Sircon (Vertafore) provides state insurance licensing and agent registration services, which aligns perfectly with the GL description.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3509,UPL-442,1,2025-07-04,GOOGLE *GOOGLE ONE   G.CO/HELPPAY#      CA,124.99,GOOGL,GOOGL-ONE,,CA,US,t,6200,High,Rule Match,133,"Deterministic match: Rule R-133 | vendor=GOOGL | service=GOOGL-ONE | → GL 6200
+
+Rule Justification: The one historical Google One transaction (UPL-146, $124.99) was classified as GL 6200 (Computer Internet & Software). Google One is a cloud storage/subscription service, fitting the software subscriptions category. Note: GL hierarchy also lists Google One under 6130 (Dues & Subscriptions), but historical precedent points to 6200.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3510,UPL-443,1,2025-07-02,DD *DOORDASH CHIPOTLSAN FRANCISCO       CA,25.91,DOORDASH,DD-CHIPOT,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3511,UPL-444,1,2025-07-02,DD *DOORDASH MCDONALSAN FRANCISCO       CA,23.83,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3512,UPL-445,1,2025-07-02,GREAT HARVEST BREAD LOGANVILLE          GA,25.36,GRTHARV,,Loganville,GA,US,t,6170,High,Rule Match,163,"Deterministic match: Rule R-163 | vendor=GRTHARV | → GL 6170
+
+Rule Justification: Both historical Great Harvest Bread transactions are classified as GL 6170 (Travel Meals Entertainment - Admin). Food purchases for employees.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3513,UPL-446,1,2025-07-02,HUEY MAGOOS LOGANVILLOGANVILLE          GA,70.72,HUEYMAGOO,HUEYMAGOO,Loganville,GA,US,t,6170,High,Rule Match,150,"Deterministic match: Rule R-150 | vendor=HUEYMAGOO | → GL 6170
+
+Rule Justification: All 5 historical Huey Magoo's transactions are classified as GL 6170 (Travel Meals Entertainment - Admin). This is a restaurant used for employee meals.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3514,UPL-447,1,2025-07-02,WALMART.COM         WALMART.COM         AR,6.58,WALMART,WLMRT-COM,,AR,US,t,6160,High,Rule Match,131,"Deterministic match: Rule R-131 | vendor=WALMART | → GL 6160
+
+Rule Justification: All 10 historical Walmart transactions are classified as GL 6160 (Office Supplies & Expenses). Walmart purchases at this agency cover office supplies, groceries for the office, and general equipment. This covers both Walmart.com (WLMRT-COM) and in-store (WALMART-SC) service IDs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3515,UPL-448,1,2025-07-02,WALMART.COM 80092562BENTONVILLE         AR,61.92,WALMART,WLMRT-COM,Bentonville,AR,US,t,6160,High,Rule Match,131,"Deterministic match: Rule R-131 | vendor=WALMART | → GL 6160
+
+Rule Justification: All 10 historical Walmart transactions are classified as GL 6160 (Office Supplies & Expenses). Walmart purchases at this agency cover office supplies, groceries for the office, and general equipment. This covers both Walmart.com (WLMRT-COM) and in-store (WALMART-SC) service IDs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3516,UPL-449,1,2025-07-01,ATLANTA OFFICE TECHNNORCROSS            GA,25.11,ATLOFFTECH,,Norcross,GA,US,t,6115,High,Rule Match,155,"Deterministic match: Rule R-155 | vendor=ATLOFFTECH | → GL 6115
+
+Rule Justification: All 3 historical Atlanta Office Technologies transactions are classified as GL 6115 (Outside Services). This vendor provides IT support and office technology services.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3517,UPL-450,1,2025-07-01,GOOGLE*ADS3360083427CC GOOGLE.COM,484.43,GOOGL,GOOGL-ADS,,,US,t,5030,High,Rule Match,132,"Deterministic match: Rule R-132 | vendor=GOOGL | service=GOOGL-ADS | → GL 5030
+
+Rule Justification: All historical Google Ads transactions (8/8) are classified as GL 5030 (Marketing & Advertising). Google Ads is a core marketing/lead generation channel for the insurance agency.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3518,UPL-451,1,2025-07-01,WAVE - *MEDTECH CONSLAWRENCEVILLE       GA,3509.82,WAVE,WAVE-MDTC,Lawrenceville,GA,US,t,6115,High,Rule Match,136,"Deterministic match: Rule R-136 | vendor=WAVE | → GL 6115
+
+Rule Justification: All 3 historical Wave Financial (MEDTECH CONS) transactions are classified as GL 6115 (Outside Services). These are large recurring payments (~$3,500/month) for contracted consulting/services via Wave payment platform.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3519,UPL-452,1,2025-06-30,AUTOPAY PAYMENT - THANK YOU,-649.24,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3520,UPL-453,1,2025-06-30,MAILCHIMP LLC       ATLANTA             GA,60.00,MAILCHIMP,,Atlanta,GA,US,t,5030,High,Rule Match,159,"Deterministic match: Rule R-159 | vendor=MAILCHIMP | → GL 5030
+
+Rule Justification: Historical Mailchimp transactions show a split: 2 coded as GL 5030 (Marketing & Advertising) and 2 coded as GL 6200 (Computer Internet & Software). However, Mailchimp is explicitly listed in the GL 5030 hierarchy description as a marketing campaign tool. The 6200 classifications appear to be inconsistencies. Recommending GL 5030 per the GL hierarchy definition.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3521,UPL-454,1,2025-06-29,Amazon Prime        Amazon.com          WA,16.09,AMAZON,AMZN-PRIM,,WA,US,t,6160,High,Rule Match,149,"Deterministic match: Rule R-149 | vendor=AMAZON | → GL 6160
+
+Rule Justification: All 3 historical Amazon (Prime and Amazon.com) transactions are classified as GL 6160 (Office Supplies & Expenses). Amazon Prime membership and Amazon.com purchases support office supply procurement.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3522,UPL-455,1,2025-06-28,AMERICAN AIRLINES   FT WORTH            TX,26.97,AA,AA-FLIGHT,FT WORTH,TX,US,t,6170,High,Rule Match,206,"Deterministic match: Rule R-206 | vendor=AA | → GL 6170
+
+Rule Justification: No direct historical data for American Airlines, but similar travel expenses are consistently classified as GL 6170 (Travel Meals Entertainment - Admin). Airline charges are travel expenses.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3523,UPL-456,1,2025-06-27,DD *DOORDASH CHILISGSAN FRANCISCO       CA,34.72,DOORDASH,DD-CHILIS,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3524,UPL-457,1,2025-06-27,DD *DOORDASH STREETTSAN FRANCISCO       CA,20.41,DOORDASH,DD-STREET,SAN FRANCISCO,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3525,UPL-458,1,2025-06-27,RESTAURANT ORDERING ATHENS              GA,46.11,RESTORDER,RESTORDER,ATHENS,GA,US,t,6170,High,Rule Match,203,"Deterministic match: Rule R-203 | vendor=RESTORDER | → GL 6170
+
+Rule Justification: No direct historical data for Restaurant Ordering, but all restaurant and food delivery vendors at this agency are classified as GL 6170 (Travel Meals Entertainment - Admin). This is a restaurant ordering service.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3526,UPL-459,1,2025-06-27,THE GEORGIA CLUB - RSTATHAM             GA,162.00,GACLUB,GACLUB-R,STATHAM,GA,US,t,6170,High,Rule Match,208,"Deterministic match: Rule R-208 | vendor=GACLUB | → GL 6170
+
+Rule Justification: No direct historical data for The Georgia Club, but at $162.00 this appears to be a dining/entertainment expense at a country club restaurant. Similar restaurant and entertainment expenses are classified as GL 6170 (Travel Meals Entertainment - Admin).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3527,UPL-460,1,2025-06-26,WALMART.COM         WALMART.COM         AR,67.78,WALMART,WLMRT-COM,,AR,US,t,6160,High,Rule Match,131,"Deterministic match: Rule R-131 | vendor=WALMART | → GL 6160
+
+Rule Justification: All 10 historical Walmart transactions are classified as GL 6160 (Office Supplies & Expenses). Walmart purchases at this agency cover office supplies, groceries for the office, and general equipment. This covers both Walmart.com (WLMRT-COM) and in-store (WALMART-SC) service IDs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3528,UPL-461,1,2025-06-25,MDC*WALTON EMC MDC=WMONROE              GA,181.19,WALTONEMC,,Monroe,GA,US,t,6260,High,Rule Match,139,"Deterministic match: Rule R-139 | vendor=WALTONEMC | → GL 6260
+
+Rule Justification: All 4 historical Walton EMC transactions are classified as GL 6260 (Utilities). Walton EMC is an electric membership corporation — an electric utility provider.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3529,UPL-462,1,2025-06-23,AUTOPAY PAYMENT - THANK YOU,-2103.65,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3530,UPL-463,1,2025-06-23,WL *VUE*TESTING EXAMBLOOMINGTON         MN,67.00,VUE,VUE-EXAM,Bloomington,MN,US,t,6120,High,Rule Match,157,"Deterministic match: Rule R-157 | vendor=VUE | → GL 6120
+
+Rule Justification: The one historical Pearson VUE transaction (UPL-078, $67.00) is classified as GL 6120 (Licenses & Permits). Pearson VUE administers insurance licensing exams and CE testing, which is explicitly mentioned in the GL hierarchy description.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3531,UPL-464,1,2025-06-21,GREAT HARVEST BREAD 678-580-0734        GA,76.21,GRTHARV,GRTHARV,,GA,US,t,6170,High,Rule Match,163,"Deterministic match: Rule R-163 | vendor=GRTHARV | → GL 6170
+
+Rule Justification: Both historical Great Harvest Bread transactions are classified as GL 6170 (Travel Meals Entertainment - Admin). Food purchases for employees.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3532,UPL-465,1,2025-06-21,MICROSOFT           MSBILL.INFO,9.99,MSFT,,,,US,t,6200,High,Rule Match,144,"Deterministic match: Rule R-144 | vendor=MSFT | → GL 6200
+
+Rule Justification: All 3 historical MSFT (MICROSOFT MSBILL.INFO at $9.99) transactions are classified as GL 6200 (Computer Internet & Software). This is a smaller Microsoft software subscription.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3533,UPL-466,1,2025-06-21,UNITED AIRLINES     HOUSTON             TX,40.00,UNITED,UNITED,HOUSTON,TX,US,t,6170,High,Rule Match,204,"Deterministic match: Rule R-204 | vendor=UNITED | → GL 6170
+
+Rule Justification: No direct historical data for United Airlines, but similar travel expenses (Orbitz, Hertz, airport parking, hotels) are consistently classified as GL 6170 (Travel Meals Entertainment - Admin). Airline charges are travel expenses.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3534,UPL-467,1,2025-06-20,DD *DOORDASH LOSARIBSAN FRANCISCO       CA,26.76,DOORDASH,DD-LOSARI,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3535,UPL-468,1,2025-06-20,GOOGLE*ADS3360083427CC GOOGLE.COM,500.00,GOOGL,GOOGL-ADS,,,US,t,5030,High,Rule Match,132,"Deterministic match: Rule R-132 | vendor=GOOGL | service=GOOGL-ADS | → GL 5030
+
+Rule Justification: All historical Google Ads transactions (8/8) are classified as GL 5030 (Marketing & Advertising). Google Ads is a core marketing/lead generation channel for the insurance agency.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3536,UPL-469,1,2025-06-19,AMAZON.COM          AMZN.COM/BILL       WA,105.95,AMAZON,AMAZON-COM,,WA,US,t,6160,High,Rule Match,149,"Deterministic match: Rule R-149 | vendor=AMAZON | → GL 6160
+
+Rule Justification: All 3 historical Amazon (Prime and Amazon.com) transactions are classified as GL 6160 (Office Supplies & Expenses). Amazon Prime membership and Amazon.com purchases support office supply procurement.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3537,UPL-470,1,2025-06-18,RECOATLANTA         6789008708          GA,366.38,RECOATL,RECOATL,ATLANTA,GA,US,t,6170,High,Rule Match,212,"Deterministic match: Rule R-212 | vendor=RECOATL | → GL 6170
+
+Rule Justification: No direct historical data for Reco Atlanta. At $366.38, this appears to be a restaurant/dining venue in Atlanta. Similar restaurant expenses are classified as GL 6170 (Travel Meals Entertainment - Admin). User should confirm this is a restaurant and not another type of service.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3538,UPL-471,1,2025-06-18,RISK & INSURANCE EDUAUSTIN              TX,125.00,RISKINSEDU,RISKINSEDU,AUSTIN,TX,US,t,6180,High,Rule Match,210,"Deterministic match: Rule R-210 | vendor=RISKINSEDU | → GL 6180
+
+Rule Justification: No direct historical data for Risk & Insurance Education, but the name clearly indicates an education/training provider for insurance professionals. Similar to Americas Professor (GL 6180). GL 6180 covers conferences, courses, and professional development.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3539,UPL-472,1,2025-06-18,USECANOPY.COM       BEAVERTON           OR,250.00,CANOPY,,Beaverton,OR,US,t,6200,High,Rule Match,142,"Deterministic match: Rule R-142 | vendor=CANOPY | → GL 6200
+
+Rule Justification: All 4 historical Canopy (usecanopy.com) transactions are classified as GL 6200 (Computer Internet & Software). Canopy is a practice management software platform, consistent with software subscriptions at $250/month.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3540,UPL-473,1,2025-06-17,A1010BUSD01         MSBILL.INFO,192.50,MICROSOFT,MSFT-BILL,,,US,t,6200,High,Rule Match,143,"Deterministic match: Rule R-143 | vendor=MICROSOFT | → GL 6200
+
+Rule Justification: All 4 historical Microsoft (A1010BUSD01 MSBILL.INFO) transactions are classified as GL 6200 (Computer Internet & Software). These are Microsoft 365 business subscription fees.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3541,UPL-474,1,2025-06-16,ASCEND PAYMENTS     SAN FRANCISCO       CA,240.00,ASCENDPAY,ASCENDPAY,San Francisco,CA,US,t,6115,High,Rule Match,141,"Deterministic match: Rule R-141 | vendor=ASCENDPAY | → GL 6115
+
+Rule Justification: All 4 historical Ascend Payments transactions are classified as GL 6115 (Outside Services). Ascend Payments is a payment processing platform; the consistent $240/month pattern suggests a contracted outside service.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3542,UPL-475,1,2025-06-16,AUTOPAY PAYMENT - THANK YOU,-1188.39,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3543,UPL-476,1,2025-06-16,WALMART.COM         WALMART.COM         AR,130.86,WALMART,WLMRT-COM,,AR,US,t,6160,High,Rule Match,131,"Deterministic match: Rule R-131 | vendor=WALMART | → GL 6160
+
+Rule Justification: All 10 historical Walmart transactions are classified as GL 6160 (Office Supplies & Expenses). Walmart purchases at this agency cover office supplies, groceries for the office, and general equipment. This covers both Walmart.com (WLMRT-COM) and in-store (WALMART-SC) service IDs.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3544,UPL-477,1,2025-06-14,NAME-CHEAP.COM* 87U0PHOENIX             AZ,30.14,NAMECHEAP,NAMECHEAP,PHOENIX,AZ,US,t,6115,High,Rule Match,211,"Deterministic match: Rule R-211 | vendor=NAMECHEAP | → GL 6115
+
+Rule Justification: No direct historical data for Namecheap, but similar domain/web services (Domain.com, UPL-159) are classified as GL 6115 (Outside Services). Namecheap provides domain registration and web hosting, which falls under web development/outside services in the GL hierarchy.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3545,UPL-478,1,2025-06-13,CHIPOTLE MEX GR ONLINEWPORT BEACH       CA,87.26,CHIPOTLE,CHIPOTLE-O,NEWPORT BEACH,CA,US,t,6170,High,Rule Match,214,"Deterministic match: Rule R-214 | vendor=CHIPOTLE | → GL 6170
+
+Rule Justification: No direct historical data for direct Chipotle purchases, but Chipotle orders via DoorDash are classified as GL 6170 (Travel Meals Entertainment - Admin). This direct order follows the same pattern for restaurant meals.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3546,UPL-479,1,2025-06-13,DD *DOORDASH CHIPOTLSAN FRANCISCO       CA,25.73,DOORDASH,DD-CHIPOT,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3547,UPL-480,1,2025-06-13,DD *DOORDASH MCDONALSAN FRANCISCO       CA,23.56,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3548,UPL-481,1,2025-06-11,ALDI 76022 7602     LOGANVILLE          GA,25.00,ALDI,ALDI,LOGANVILLE,GA,US,t,6160,High,Rule Match,213,"Deterministic match: Rule R-213 | vendor=ALDI | → GL 6160
+
+Rule Justification: No direct historical data for ALDI, but similar grocery stores (Kroger, Publix) used for office grocery purchases are classified as GL 6160 (Office Supplies & Expenses). The GL hierarchy explicitly includes groceries for office.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3549,UPL-482,1,2025-06-11,AT&T UVERSE PAYMENT 8002882020          TX,160.00,ATT,ATT-UVERSE,,TX,US,t,6250,High,Rule Match,138,"Deterministic match: Rule R-138 | vendor=ATT | → GL 6250
+
+Rule Justification: All 4 historical AT&T transactions are classified as GL 6250 (Telephone). AT&T is explicitly listed in the GL hierarchy description for telephone service.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3550,UPL-483,1,2025-06-10,BARBERITOS - MONROE MONROE              GA,27.56,BARBRITOS,BARBRITOS,MONROE,GA,US,t,6170,High,Rule Match,215,"Deterministic match: Rule R-215 | vendor=BARBRITOS | → GL 6170
+
+Rule Justification: No direct historical data for Barberitos, but all restaurant purchases at this agency are consistently classified as GL 6170 (Travel Meals Entertainment - Admin).",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3551,UPL-484,1,2025-06-10,GOOGLE*ADS3360083427CC GOOGLE.COM,500.00,GOOGL,GOOGL-ADS,,,US,t,5030,High,Rule Match,132,"Deterministic match: Rule R-132 | vendor=GOOGL | service=GOOGL-ADS | → GL 5030
+
+Rule Justification: All historical Google Ads transactions (8/8) are classified as GL 5030 (Marketing & Advertising). Google Ads is a core marketing/lead generation channel for the insurance agency.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3552,UPL-485,1,2025-06-10,WL *VUE*TESTING EXAMBLOOMINGTON         MN,67.00,VUE,VUE-EXAM,Bloomington,MN,US,t,6120,High,Rule Match,157,"Deterministic match: Rule R-157 | vendor=VUE | → GL 6120
+
+Rule Justification: The one historical Pearson VUE transaction (UPL-078, $67.00) is classified as GL 6120 (Licenses & Permits). Pearson VUE administers insurance licensing exams and CE testing, which is explicitly mentioned in the GL hierarchy description.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3553,UPL-486,1,2025-06-09,AUTOPAY PAYMENT - THANK YOU,-6131.00,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3554,UPL-487,1,2025-06-09,OPENAI *CHATGPT SUBSSAN FRANCISCO       CA,90.00,OPENAI,OPENAI-GPT,San Francisco,CA,US,t,6200,High,Rule Match,134,"Deterministic match: Rule R-134 | vendor=OPENAI | → GL 6200
+
+Rule Justification: All 6 historical OpenAI/ChatGPT transactions are classified as GL 6200 (Computer Internet & Software). OpenAI ChatGPT subscriptions are software subscriptions.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3555,UPL-488,1,2025-06-09,OPENAI *CHATGPT SUBSSAN FRANCISCO       CA,120.00,OPENAI,OPENAI-GPT,San Francisco,CA,US,t,6200,High,Rule Match,134,"Deterministic match: Rule R-134 | vendor=OPENAI | → GL 6200
+
+Rule Justification: All 6 historical OpenAI/ChatGPT transactions are classified as GL 6200 (Computer Internet & Software). OpenAI ChatGPT subscriptions are software subscriptions.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3556,UPL-489,1,2025-06-08,COMCAST BUSINESS MOB844-963-0206        PA,32.14,COMCAST,COMCAST-BIZ,,PA,US,t,6260,High,Rule Match,140,"Deterministic match: Rule R-140 | vendor=COMCAST | → GL 6260
+
+Rule Justification: 4 out of 5 historical Comcast transactions are classified as GL 6260 (Utilities - electric, cable/TV). One outlier (UPL-137) was coded 6200, but the dominant pattern is 6260 for Comcast business mobile/cable services. The GL hierarchy explicitly includes cable/TV under 6260.",Unreviewed,,,classify.csv,2026-03-19 23:20:55.490984,"classify.csv (Mar 19, 2026 7:20 PM)"
+3567,UPL-490,1,2026-03-19,AUTOPAY PAYMENT - THANK YOU,-2500.00,,,,,,f,,,Unclassifiable,,Non-expense transaction: credit card payment,Approved,,,test_curveball.csv,2026-03-19 23:41:27.087226,"test_curveball.csv (Mar 19, 2026 7:41 PM)"
+3568,UPL-491,1,2026-03-19,GOOGLE *ADS336008342CC@GOOGLE.COM       CA,519.94,GOOGL,GOOGL-ADS,,CA,US,t,5030,High,Rule Match,132,"Deterministic match: Rule R-132 | vendor=GOOGL | service=GOOGL-ADS | → GL 5030
+
+Rule Justification: All historical Google Ads transactions (8/8) are classified as GL 5030 (Marketing & Advertising). Google Ads is a core marketing/lead generation channel for the insurance agency.",Unreviewed,,,test_curveball.csv,2026-03-19 23:41:27.087226,"test_curveball.csv (Mar 19, 2026 7:41 PM)"
+3569,UPL-492,1,2026-03-18,DD *DOORDASH MCDONALSAN FRANCISCO       CA,31.06,DOORDASH,DD-MCDNLD,San Francisco,CA,US,t,6170,High,Rule Match,130,"Deterministic match: Rule R-130 | vendor=DOORDASH | → GL 6170
+
+Rule Justification: All historical DoorDash transactions (10/10) are classified as GL 6170 (Travel Meals Entertainment - Admin). DoorDash is a food delivery service used for employee meals. This covers all DoorDash service variants (DD-MCDNLD, DD-CHIPOT, DD-BANDAB, DD-CHILIS, DD-LOSARI, DD-MIGUEL, DD-LUNAGR, DD-STREET, etc.).",Unreviewed,,,test_curveball.csv,2026-03-19 23:41:27.087226,"test_curveball.csv (Mar 19, 2026 7:41 PM)"
+3570,UPL-493,1,2026-03-18,USPS KIOSK 125203955LOGANVILLE          GA,8.75,USPS,USPS-KIOSK,Loganville,GA,US,t,6140,High,Rule Match,145,"Deterministic match: Rule R-145 | vendor=USPS | → GL 6140
+
+Rule Justification: All 6 historical USPS transactions are classified as GL 6140 (Postage). USPS is explicitly listed in the GL hierarchy description for shipping and mailing costs.",Unreviewed,,,test_curveball.csv,2026-03-19 23:41:27.087226,"test_curveball.csv (Mar 19, 2026 7:41 PM)"
+3571,UPL-494,1,2026-03-18,COMCAST BUSINESS MOB844-963-0206        PA,69.70,COMCAST,COMCAST-BIZ,,PA,US,t,6260,High,Rule Match,140,"Deterministic match: Rule R-140 | vendor=COMCAST | → GL 6260
+
+Rule Justification: 4 out of 5 historical Comcast transactions are classified as GL 6260 (Utilities - electric, cable/TV). One outlier (UPL-137) was coded 6200, but the dominant pattern is 6260 for Comcast business mobile/cable services. The GL hierarchy explicitly includes cable/TV under 6260.",Unreviewed,,,test_curveball.csv,2026-03-19 23:41:27.087226,"test_curveball.csv (Mar 19, 2026 7:41 PM)"
+3572,UPL-495,1,2026-03-17,Amazon Prime        Amazon.com          WA,16.09,AMAZON,AMZN-PRIM,,WA,US,t,6200,High,Rule Match,220,"Deterministic match: Rule R-220 | vendor=AMAZON | service=AMZN-PRIM | → GL 6200
+
+Rule Justification: Amazon Prime is a software/digital subscription, not office supplies. Should be classified as Computer Internet & Software.",Unreviewed,,,test_curveball.csv,2026-03-19 23:41:27.087226,"test_curveball.csv (Mar 19, 2026 7:41 PM)"
+3573,UPL-496,1,2026-03-17,MICROSOFT           MSBILL.INFO,14.99,MSFT,,,,US,t,6160,High,Rule Match,221,"Deterministic match: Rule R-221 | vendor=MSFT | amount=$0.00–$20.00 | → GL 6160
+
+Rule Justification: Small Microsoft charges under $20 are typically app store purchases or incidental items, classified as office supplies rather than software subscriptions.",Unreviewed,,,test_curveball.csv,2026-03-19 23:41:27.087226,"test_curveball.csv (Mar 19, 2026 7:41 PM)"
+3574,UPL-497,1,2026-03-16,SQ *STRIPE PAYMENTS  SAN FRANCISCO       CA,245.00,STRIPE,STRIPE-PAY,SAN FRANCISCO,CA,US,t,6200,High,Rule Match,222,"Deterministic match: Rule R-222 | vendor=STRIPE | service=STRIPE-PAY | → GL 6200
+
+Rule Justification: Stripe Payments is a payment processing software platform. The $245.00 charge appears to be a subscription or processing fee for using Stripe's payment gateway software. GL 6200 (Computer Internet & Software) covers software subscriptions, which aligns with payment processing platform fees. Note: If the agency considers this more of an 'outside service' than a software subscription, GL 6115 could also be appropriate, but given that Stripe is fundamentally a SaaS platform, 6200 is the stronger fit.",Unreviewed,,,test_curveball.csv,2026-03-19 23:41:27.087226,"test_curveball.csv (Mar 19, 2026 7:41 PM)"
+3575,UPL-498,1,2026-03-16,STRIPE ATLAS INC     SAN FRANCISCO       CA,500.00,STRIPE,STRIPE-ATL,SAN FRANCISCO,CA,US,t,6115,High,Rule Match,223,"Deterministic match: Rule R-223 | vendor=STRIPE | service=STRIPE-ATL | → GL 6115
+
+Rule Justification: Stripe Atlas is a business incorporation and formation service — it helps companies form legal entities (LLCs, C-Corps), obtain EINs, and set up business banking. The $500.00 charge is a one-time or annual fee for this incorporation/business formation service. This is best classified under GL 6115 (Outside Services), which covers contracted professional services including HR services and other external business services. Note: GL 6110 (Legal) could also be considered since incorporation has a legal component, but Stripe Atlas is not a law firm — it's a contracted service that facilitates formation. GL 6115 is the more conservative and appropriate classification.",Unreviewed,,,test_curveball.csv,2026-03-19 23:41:27.087226,"test_curveball.csv (Mar 19, 2026 7:41 PM)"
+3576,UPL-499,1,2026-03-15,ADOBE Adobe Systems SAN JOSE            CA,-54.99,ADOBE,,San Jose,CA,US,t,6200,High,Rule Match,153,"Deterministic match: Rule R-153 | vendor=ADOBE | → GL 6200
+
+Rule Justification: Both historical Adobe transactions are classified as GL 6200 (Computer Internet & Software). Adobe provides software subscriptions (PDF, Creative Cloud, etc.).",Unreviewed,,,test_curveball.csv,2026-03-19 23:41:27.087226,"test_curveball.csv (Mar 19, 2026 7:41 PM)"

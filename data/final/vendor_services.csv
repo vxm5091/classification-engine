@@ -1,0 +1,74 @@
+service_id,vendor_id,service_name,status,created_by,confirmed_by,confirmed_at,created_at
+AA-FLIGHT,AA,American Airlines Flight,pending_confirmation,,,,2026-03-19 23:20:59.86853
+ALDI,ALDI,ALDI Grocery Store,pending_confirmation,,,,2026-03-19 23:20:59.86853
+AMAZON-COM,AMAZON,Amazon.com,pending_confirmation,,,,2026-03-19 23:16:24.873279
+AMZN-PRIM,AMAZON,Amazon Prime,pending_confirmation,,,,2026-03-19 23:16:24.873279
+AMZN-MKTPL,AMZN,Amazon Marketplace,pending_confirmation,,,,2026-03-19 23:16:24.873279
+APEXSW,APEXSW,Apex Software,pending_confirmation,,,,2026-03-19 23:16:24.873279
+ASCENDPAY,ASCENDPAY,Ascend Payments,pending_confirmation,,,,2026-03-19 23:16:24.873279
+ATHGYROS,ATHGYROS,Athena's Gyros Restaurant,pending_confirmation,,,,2026-03-19 23:16:24.873279
+ATLAIRPRT,ATLAIRPRT,Atlanta Airport Services,pending_confirmation,,,,2026-03-19 23:16:24.873279
+ATLBRAVES,ATLBRAVES,Atlanta Braves All-Star/Tickets,pending_confirmation,,,,2026-03-19 23:16:24.873279
+ATT-UVERSE,ATT,AT&T U-verse,pending_confirmation,,,,2026-03-19 23:16:24.873279
+BARBRITOS,BARBRITOS,Barberitos Restaurant,pending_confirmation,,,,2026-03-19 23:20:59.86853
+BETTERMT-B,BETTERMT,Betterment Business,pending_confirmation,,,,2026-03-19 23:16:24.873279
+CHECKR,CHECKR,Checkr Background Checks,pending_confirmation,,,,2026-03-19 23:16:24.873279
+CHILIS,CHILIS,Chili's Restaurant,pending_confirmation,,,,2026-03-19 23:16:24.873279
+CHILIS-EC,CHILIS,Chili's eCommerce/Online Order,pending_confirmation,,,,2026-03-19 23:16:24.873279
+CHIPOTLE-O,CHIPOTLE,Chipotle Online Order,pending_confirmation,,,,2026-03-19 23:20:59.86853
+COMCAST-BIZ,COMCAST,Comcast Business Mobile,pending_confirmation,,,,2026-03-19 23:16:24.873279
+COMCAST-XFN,COMCAST,Comcast Xfinity,pending_confirmation,,,,2026-03-19 23:16:24.873279
+DELTA,DELTA,Delta Air Lines Flight,pending_confirmation,,,,2026-03-19 23:20:59.86853
+DD-BANDAB,DOORDASH,DoorDash - Banda Burrito,pending_confirmation,,,,2026-03-19 23:16:24.873279
+DD-CHILIS,DOORDASH,DoorDash - Chili's,pending_confirmation,,,,2026-03-19 23:16:24.873279
+DD-CHIPOT,DOORDASH,DoorDash - Chipotle,pending_confirmation,,,,2026-03-19 23:16:24.873279
+DD-LOSARI,DOORDASH,DoorDash - Los Aribles/Los Arrieros,pending_confirmation,,,,2026-03-19 23:16:24.873279
+DD-LUNAGR,DOORDASH,DoorDash - Luna Grill,pending_confirmation,,,,2026-03-19 23:20:59.86853
+DD-MCDNLD,DOORDASH,DoorDash - McDonald's,pending_confirmation,,,,2026-03-19 23:16:24.873279
+DD-MIGUEL,DOORDASH,DoorDash - Miguel's,pending_confirmation,,,,2026-03-19 23:16:24.873279
+DD-STREET,DOORDASH,DoorDash - Street Tacos/Restaurant,pending_confirmation,,,,2026-03-19 23:20:59.86853
+DOORDASH-CUBBYS,DOORDASH,DoorDash - Cubby's,pending_confirmation,,,,2026-03-19 23:16:24.873279
+DUTCHBROS,DUTCHBROS,Dutch Bros Coffee,pending_confirmation,,,,2026-03-19 23:16:24.873279
+EDIBLE,EDIBLE,Edible.com,pending_confirmation,,,,2026-03-19 23:20:59.86853
+ELRANCHER,ELRANCHER,El Ranchero Mexican Restaurant,pending_confirmation,,,,2026-03-19 23:16:24.873279
+EXXON-GAS,EXXON,ExxonMobil Gas Station,pending_confirmation,,,,2026-03-19 23:16:24.873279
+GABAPTIST,GABAPTIST,Georgia Baptist Mission,pending_confirmation,,,,2026-03-19 23:16:24.873279
+GACLUB-R,GACLUB,The Georgia Club Restaurant,pending_confirmation,,,,2026-03-19 23:20:59.86853
+GOOGL-ADS,GOOGL,Google Ads,pending_confirmation,,,,2026-03-19 23:16:24.873279
+GOOGL-ONE,GOOGL,Google One,pending_confirmation,,,,2026-03-19 23:16:24.873279
+GRTHARV,GRTHARV,Great Harvest Bread,pending_confirmation,,,,2026-03-19 23:20:59.86853
+GRYSNSWT,GRYSNSWT,Grayson Sweet Home Cafe,pending_confirmation,,,,2026-03-19 23:16:24.873279
+HAMPTON,HAMPTON,Hampton Inn Hotel,pending_confirmation,,,,2026-03-19 23:16:24.873279
+HERTZ-RENT,HERTZ,Hertz Car Rental,pending_confirmation,,,,2026-03-19 23:16:24.873279
+HILTON-GI,HILTON,Hilton Garden Inn / Home2 Suites,pending_confirmation,,,,2026-03-19 23:16:24.873279
+HUEYMAGOO,HUEYMAGOO,Huey Magoo's Chicken Tenders,pending_confirmation,,,,2026-03-19 23:16:24.873279
+IDEMIA,IDEMIA,IDEMIA Identity & Security,pending_confirmation,,,,2026-03-19 23:16:24.873279
+INDEED-JOBS,INDEED,Indeed Jobs,pending_confirmation,,,,2026-03-19 23:16:24.873279
+INSXDATE,INSXDATE,InsuranceXDate.com,pending_confirmation,,,,2026-03-19 23:16:24.873279
+LADYDAHLI,LADYDAHLI,Lady Dahlia Restaurant,pending_confirmation,,,,2026-03-19 23:16:24.873279
+MSFT-BILL,MICROSOFT,Microsoft Billing,pending_confirmation,,,,2026-03-19 23:16:24.873279
+MONITREDU,MONITREDU,MonitorEDU,pending_confirmation,,,,2026-03-19 23:16:24.873279
+NAMECHEAP,NAMECHEAP,Namecheap Domain/Hosting,pending_confirmation,,,,2026-03-19 23:20:59.86853
+NITROPDF,NITROPDF,Nitro PDF Software,pending_confirmation,,,,2026-03-19 23:20:59.86853
+OPENAI-GPT,OPENAI,ChatGPT Subscription,pending_confirmation,,,,2026-03-19 23:16:24.873279
+ORBITZ,ORBITZ,Orbitz Travel Booking,pending_confirmation,,,,2026-03-19 23:16:24.873279
+PARKBAR,PARKBAR,Park Bar Restaurant/Bar,pending_confirmation,,,,2026-03-19 23:16:24.873279
+PUBLIX,PUBLIX,Publix Super Market,pending_confirmation,,,,2026-03-19 23:20:59.86853
+RECOATL,RECOATL,Reco Atlanta,pending_confirmation,,,,2026-03-19 23:20:59.86853
+RESTORDER,RESTORDER,Restaurant Ordering Service,pending_confirmation,,,,2026-03-19 23:20:59.86853
+RISKINSEDU,RISKINSEDU,Risk & Insurance Education,pending_confirmation,,,,2026-03-19 23:20:59.86853
+SIRCON-INS,SIRCON,Sircon State Insurance Licensing,pending_confirmation,,,,2026-03-19 23:16:24.873279
+STRIPE-ATL,STRIPE,Stripe Atlas,pending_confirmation,,,,2026-03-19 23:36:49.591847
+STRIPE-PAY,STRIPE,Stripe Payments,pending_confirmation,,,,2026-03-19 23:36:49.591847
+SUKI,SUKI,Suki Restaurant,pending_confirmation,,,,2026-03-19 23:16:24.873279
+TAILWIND,TAILWIND,Tailwind,pending_confirmation,,,,2026-03-19 23:16:24.873279
+THAITASTE,THAITASTE,Thai Taste Restaurant,pending_confirmation,,,,2026-03-19 23:16:24.873279
+UNITED,UNITED,United Airlines Flight,pending_confirmation,,,,2026-03-19 23:20:59.86853
+USPS-KIOSK,USPS,USPS Kiosk,pending_confirmation,,,,2026-03-19 23:16:24.873279
+USPS-PO,USPS,USPS Post Office,pending_confirmation,,,,2026-03-19 23:16:24.873279
+VSP-WRKWS,VSP,VSP WorkWise Compliance,pending_confirmation,,,,2026-03-19 23:16:24.873279
+VUE-EXAM,VUE,VUE Testing Exam,pending_confirmation,,,,2026-03-19 23:16:24.873279
+WALGREENS,WALGREENS,Walgreens Pharmacy & Store,pending_confirmation,,,,2026-03-19 23:16:24.873279
+WALMART-SC,WALMART,Walmart Supercenter,pending_confirmation,,,,2026-03-19 23:16:24.873279
+WLMRT-COM,WALMART,Walmart.com Online,pending_confirmation,,,,2026-03-19 23:16:24.873279
+WAVE-MDTC,WAVE,Wave - MedTech Consulting,pending_confirmation,,,,2026-03-19 23:16:24.873279
